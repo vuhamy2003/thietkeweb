@@ -1,0 +1,202 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+.header {
+    background-color: white;
+    padding: 10px 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    background-color: white; 
+    padding: 10px;
+}
+
+.ảnh {
+    height: 90px; 
+    margin-right: 20px; 
+}
+
+.title {
+    white-space: nowrap; 
+}
+
+.line1, .line2 {
+    display: block;
+    color: #025ba1; 
+    font-size: 20px; 
+    font-weight: bold;
+    margin-top: -10px;
+}
+
+.line2 {
+    font-size: 16px;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    margin: 5px;
+    justify-content: right;
+}
+
+
+.hotline {
+    font-size: 18px;
+    color: #025ba1;
+}
+
+.hotline a {
+    text-decoration: none;
+    color: #025ba1;
+    cursor: pointer;
+}
+
+.email {
+    font-size: 18px;
+    color: #025ba1; 
+}
+
+.email a {
+    text-decoration: none;
+    color: #025ba1;
+    cursor: pointer;
+}
+
+.hotline img {
+    width: 33px; 
+    height: auto; 
+    vertical-align: middle;
+}
+.email img {
+    width: 33px; 
+    height: auto; 
+    vertical-align: middle; 
+}
+.facebook img {
+    width: 33px; 
+    height: auto; 
+    vertical-align: middle; 
+}
+.youtube img {
+    width: 41px; 
+    height: auto; 
+    vertical-align: middle; 
+}
+
+.navbar .email {
+    margin-left: 20px; 
+    margin-right: 20px;
+}
+.navbar .facebook {
+    margin-right: 15px;
+}
+
+.search-bar {
+    background-color: #025ba1; 
+    padding: 10px; 
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+.search-input {
+    padding: 5px 5px 5px 30px; 
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-right: 5px;
+}
+
+.search-button {
+    padding: 6px 10px;
+    font-size: 16px;
+    color: white;
+    background-color: #004080; 
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    background-color: #003366; 
+}
+
+.tieude {
+    display: flex;
+    background-color:white;
+    flex: 100%;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+.tieude a {
+    color: #333;
+    padding: 14px 20px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+}
+.tieude a:hover {
+    background-color:#fff;
+    color: #025ba1;
+}
+.tieude #selected {
+    background-color:#fff;
+    color: #025ba1;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    width: 300px; 
+    text-align: left;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 10px;
+    display: block;
+    text-align: left;
+    white-space: nowrap; 
+}
+
+.dropdown-content a:hover {
+    background-color: #025ba1;
+    color: #fff;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+
