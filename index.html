@@ -3,82 +3,90 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV_VuHaMy</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <meta name="keyword" content="CV">
-    <meta name="description" content="CV của Vũ Hà My">
-    <meta name="author" content="My Vũ">
-    <meta name="copyright" content="24A4040808 VŨ HÀ MY">
+    <meta name="keyword" content="Trang chủ Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội, Công nghệ thông tin, Công nghệ đa phương tiện">
+    <meta name="description" content="Trang chủ Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội">
+    <meta name="Author" content="Nhóm 3">
+    <meta name="copyright" content="Nhóm 3">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
-    <link rel="shortcut icon" href="anh.jpg" type="image/x-icon">
-    <script src="main.js"></script>
+    <link rel="shortcut icon" href="./img/logo.ico" type="image/x-icon">
+    <title>Trang chủ - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
+    <link rel="stylesheet" type="text/css" href="./css/style.css">  
+    <script src="./js/main.js"></script>  
+
 </head>
 <body>
-    <header>
-        <div class="header_content">
-            <div class="profile_pic">
-                <img src="id.jpg">
-            </div>
-            <div class="contact_info">
-                <h1>Vũ Hà My</h2>
-                <h2>Thực tập sinh Business Analyst</h3>
-                <p>0812021203 | vuhamy2003@gmail.com | Ba Đình, Hà Nội</p>
-            </div>
-        </div>
-    </header>
-    <br>
-    <div class="grid-container">
-        <div class="left-grid">
-            <section id="about">
-                <h2>Giới thiệu</h2>
-                <p>Em là Hà My, sinh viên năm 3 ngành Hệ thống Thông tin Quản lý. Em đang tìm kiếm cơ hội được thực tập để phát triển kinh nghiệm trong lĩnh vực phân tích nghiệp vụ. Em tự tin với khả năng thành thạo các kĩ năng mềm và chuyên môn cần thiết cho vị trí này. Em cam kết sẽ nỗ lực học hỏi, tích cực tham gia và sáng tạo trong công việc công ty.</p>
-            </section>
-            <section id="certifications">
-                <h2>Chứng chỉ</h2>
-                <ul>
-                    <li>JLPT N3</li>
-                    <li>TOEFL B1</li>
-                    <li>MOS</li>
-                </ul>
-            </section>
-            <section id="languages">
-                <h2>Ngoại ngữ</h2>
-                <ul>
-                    <li>Tiếng Nhật</li>
-                    <li>Tiếng Anh</li>
-                </ul>
-            </section>
-        </div>
-        <div class="right-grid">
-            <section id="objective">
-                <h2>Mục tiêu</h2>
-                <p>Em mong muốn mở rộng, tích lũy kinh nghiệm, hoàn thiện từ kỹ năng mềm đến chuyên môn tại môi trường làm việc chuyên nghiệp và áp dụng những kiến thức đã học để đóng góp cho sự phát triển của công ty trong thời gian đồng hành. Trong tương lai, em muốn nâng cao hiểu biết và trở thành một chuyên viên phân tích nghiệp vụ xuất sắc với nhiều kinh nghiệm, có khả năng dẫn dắt và quản lý dự án lớn. </p>
-            </section>
-            <section id="education">
-                <h2>Học vấn</h2>
-                <ul>
-                    <li>Học viện Ngân hàng (2021 - Nay), GPA: 3.70</li>
-                </ul>
-            </section>
-            <section id="experience">
-                <h2>Kinh nghiệm</h2>
-                <div class="project">
-                    <h3>Dự án phân tích và thiết kế hệ thống quản lý kho</h3>
-                    <p>Thời gian: T2/2024 - T6/2024</p>
-                    <p>Mô tả: Xây dựng và triển khai hệ thống quản lý kho cho công ty TNHH MTV Gỗ Nhựa PCC-1</p>
-                    <p>Thành quả: Cải tiến quy trình nhập xuất trong quản lý kho hàng, xây dựng hệ thống đơn giản và dễ hiểu.</p>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <img src="./img/logo.png" alt="Logo" class="ảnh">
+                <div class="title">
+                    <span class="line1">KHOA CÔNG NGHỆ THÔNG TIN</span><br>
+                    <span class="line2">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</span>
                 </div>
-                <div class="project">
-                    <h3>Dự án xây dựng hệ thống quản lý cửa hàng sách</h3>
-                    <p>Thời gian: T3/2024 - T4/2024</p>
-                    <p>Mô tả: Xây dựng hệ thống quản lý thông tin nhằm tối ưu hóa hoạt động của cửa hàng.</p>
-                    <p>Thành quả: Xây dựng giao diện hệ thống đơn giản, dễ nhìn, có các chức năng chính bao gồm quản lý thông tin sách, khách hàng, nhà cung cấp, nhân viên, hóa đơn nhập/bán, tìm kiếm dữ liệu và lập các báo cáo.</p>
+            </div>          
+            
+            <nav class="navbar">
+                <div class="hotline">
+                    <a href="#" id="hotline-link" onclick="showHotline()"><img src="./img/Hotline.png" alt="Hotline" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="hotline-number" style="display: none;">024-3854-2391</span>
                 </div>
-            </section>
+                <div class="email">
+                    <a href="#" id="email-link" onclick="showEmail()"><img src="./img/Email.png" alt="Email" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="email-text" style="display: none;">khoacntt@hau.edu.vn</span>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/cntt.dhkt"><img src="./img/Facebook.png" alt="Facebook" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com/channel/UC1LQLaQng8hdIqcUhWKFbnw"><img src="./img/YouTube.png" alt="YouTube" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+            </nav>
+
+        </div>
+    
+    <div class="search-bar">
+        <div class="search-container">
+            <input type="text" placeholder="Tìm kiếm..." class="search-input">
+            <button type="submit" class="search-button">Tìm</button>
         </div>
     </div>
-    <footer>
-        <p>© 2024 Vũ Hà My. All rights reserved.</p>
-    </footer>
+
+    <nav class="tieude">
+        <a href="./index.html" id="selected">TRANG CHỦ</a>
+         
+        <div class="dropdown">
+            <a href="./gioithieu.html">GIỚI THIỆU</a>
+            <div class="dropdown-content">
+                <a href="">GIỚI THIỆU KHOA CNTT HAU</a>
+                <a href="">TẦM NHÌN</a>
+                <a href="">NHIỆM VỤ</a>
+                <a href="">ĐỘI NGŨ GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="./tintuc.html">TIN TỨC</a>
+            <div class="dropdown-content">
+                <a href="">THÔNG BÁO</a>
+                <a href="">CÔNG NGHỆ THÔNG TIN</a>
+                <a href="">CÔNG NGHỆ ĐA PHƯƠNG TIỆN</a>
+                <a href="">ĐỘI NGŨ GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <a href="./daotao.html">ĐÀO TẠO</a> 
+        <a href="./sinhvien.html">SINH VIÊN</a> 
+        <a href ="./nghiencuukhoahoc.html">NGHIÊN CỨU KHOA HỌC</a> 
+        <a href="./tuyensinh.html">TUYỂN SINH</a> 
+        <a href="./thuvienso.html">THƯ VIỆN SỐ</a>
+
+    </nav>
+
+    
+
+    <img src="./img/anh_sukien.jpg" alt="Back" class="image">
+    </header>
+
+</footer>
 </body>
 </html>
