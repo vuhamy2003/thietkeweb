@@ -1,17 +1,49 @@
 function showHotline() {
-    var hotlineNumber = document.getElementById('hotline-number');
-    hotlineNumber.style.display = 'inline';
+    var hotlineLink = document.getElementById("hotline-link");
+    var hotlineNumber = document.getElementById("hotline-number");
 
-    var hotlineLink = document.getElementById('hotline-link');
-    hotlineLink.style.display = 'none';
+    if (hotlineNumber.style.display === "none") {
+        hotlineNumber.style.display = "inline";
+        hotlineLink.style.display = "none";
+    } else {
+        hotlineNumber.style.display = "none";
+        hotlineLink.style.display = "inline";
+    }
 }
 
 function showEmail() {
-    var emailText = document.getElementById('email-text');
-    emailText.style.display = 'inline'; // Hiển thị địa chỉ email
+    var emailLink = document.getElementById("email-link");
+    var emailText = document.getElementById("email-text");
 
-    var emailLink = document.getElementById('email-link');
-    emailLink.style.display = 'none'; // Ẩn biểu tượng email
+    if (emailText.style.display === "none") {
+        emailText.style.display = "inline";
+        emailLink.style.display = "none";
+    } else {
+        emailText.style.display = "none";
+        emailLink.style.display = "inline";
+    }
+}
+
+function showSearchBar() {
+    var searchBarContainer = document.getElementById("search-bar-container");
+    var container = document.querySelector(".container");
+
+    if (searchBarContainer.classList.contains("active")) {
+        searchBarContainer.classList.remove("active");
+        container.classList.remove("search-active");
+    } else {
+        searchBarContainer.classList.add("active");
+        container.classList.add("search-active");
+    }
+}
+
+function search() {
+    var searchBar = document.getElementById("search-bar");
+    var query = searchBar.value;
+    if (query) {
+        alert("Tìm kiếm: " + query);
+        // Implement search logic here
+    }
 }
 
 // Hàm hiệu ứng khi di chuột qua
