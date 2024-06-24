@@ -141,7 +141,6 @@ body {
 
 .tieude {
     display: flex;
-    position: fixed;
     width: 100%;
     background-color:#025ba1;
     flex: 100%;
