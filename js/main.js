@@ -42,7 +42,6 @@ function search() {
     var query = searchBar.value;
     if (query) {
         alert("Tìm kiếm: " + query);
-        // Implement search logic here
     }
 }
 
@@ -68,4 +67,26 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdownContent.style.display = 'none';
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Lấy phần tử .tieude và chiều cao của nó
+    const tieude = document.querySelector('.tieude');
+    const tieudeHeight = tieude.clientHeight;
+
+    // Sử dụng sự kiện cuộn trang
+    window.addEventListener('scroll', function() {
+        // Kiểm tra vị trí cuộn của trang so với phần tử .tieude
+        if (window.scrollY > tieudeHeight) {
+            tieude.style.position = 'fixed';
+            tieude.style.top = '0';
+            tieude.style.left = '0';
+            tieude.style.width = '100%';
+            tieude.style.zIndex = '1000';
+        } else {
+            tieude.style.position = 'static';
+            tieude.style.width = 'auto';
+        }
+    });
+});
+
 
