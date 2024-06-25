@@ -68,5 +68,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+// Hiển thị nút khi cuộn xuống 100px
+window.onscroll = function() {
+    var scrollToTopBtn = document.querySelector(".scroll-to-top");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        scrollToTopBtn.style.display = "block";
+    } else {
+        scrollToTopBtn.style.display = "none";
+    }
+};
 
+// Hàm cuộn lên đầu trang
+function scrollToTop() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+}
 
