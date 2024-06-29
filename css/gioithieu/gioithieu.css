@@ -319,6 +319,7 @@ footer {
     color: #025ba1; /* Màu chữ cho phần display */
     flex: 1; /* Đảm bảo phần tử display sẽ chiếm hết không gian còn lại */
     padding: 10px 10px 10px 20px;
+    margin: 0 140px 0 140px;
 }
 
 .display p {
@@ -328,13 +329,8 @@ footer {
 .display p a {
     color: inherit; /* Kế thừa màu chữ từ phần tử cha (.display) */
     text-decoration: none; /* Bỏ gạch chân cho đường liên kết */
-    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
     font-weight: bolder;
-}
-
-.display p a:hover {
-    color: #002364; /* Màu khi hover đường liên kết */
-    text-decoration: underline; /* Gạch chân khi hover đường liên kết */
 }
 
 /*Side bar menu*/
@@ -408,4 +404,98 @@ footer {
     display: flex;
     margin-bottom: 20px; /* Khoảng cách từ ảnh bìa đến phần nội dung */
     width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.anhbia:hover {
+    transform: scale(1.02); /* Phóng to ảnh khi hover */
+    opacity: 0.9; /* Thay đổi độ mờ khi hover */
+}
+
+.content-top p {
+    text-align: justify;
+    font-family: "Source Sans Pro", sans-serif;  
+    line-height: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+}
+
+.content-top h3{
+    text-align: center;
+    line-height: 24px;
+}
+
+/*Video và chứng nhận*/
+
+.content-bottom {
+    display: flex;
+    padding: 0 10px;
+}
+
+.video {
+    flex: 1; /* Video chiếm 2/3 */
+    margin-right: 10px; /* Khoảng cách giữa video và chứng nhận */
+}
+
+.chungnhan {
+    flex: 1; /* Chứng nhận chiếm 1/3 */
+    margin-left: 10px;
+}
+
+.anhchungnhan {
+    width: 100%; /* Đảm bảo hình ảnh chứng nhận chiếm đủ 1/3 phần bên phải */
+    height: auto;
+    cursor: pointer; /* Thêm con trỏ khi hover vào ảnh */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+.anhchungnhan:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi hover */
+    opacity: 0.8; /* Thay đổi độ mờ khi hover */
+}
+
+.video iframe {
+    width: 100%; /* Video chiếm đủ 2/3 phần bên trái */
+    height: 100%;
+}
+
+/* Modal (background) */
+.modal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    z-index: 1; /* Đảm bảo modal luôn trên cùng */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.452); /* Black w/ opacity */
+    background-color: #6062668a(112, 112, 112, 0.541); /* Black w/ opacity */
+}
+
+/* Modal content (image) */
+.modal-content {
+    margin: auto;
+    margin-top: 100px;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
 }

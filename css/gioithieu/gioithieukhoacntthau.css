@@ -319,6 +319,7 @@ footer {
     color: #025ba1; /* Màu chữ cho phần display */
     flex: 1; /* Đảm bảo phần tử display sẽ chiếm hết không gian còn lại */
     padding: 10px 10px 10px 20px;
+    margin: 0 140px 0 140px;
 }
 
 .display p {
@@ -328,20 +329,15 @@ footer {
 .display p a {
     color: inherit; /* Kế thừa màu chữ từ phần tử cha (.display) */
     text-decoration: none; /* Bỏ gạch chân cho đường liên kết */
-    transition: color 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
     font-weight: bolder;
-}
-
-.display p a:hover {
-    color: #002364; /* Màu khi hover đường liên kết */
-    text-decoration: underline; /* Gạch chân khi hover đường liên kết */
 }
 
 /*Side bar menu*/
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 0 0 0 0px;
     margin-bottom: 20px;
 }
@@ -392,7 +388,10 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/*content*/
+
 .content {
-    flex: 2; /* Sử dụng không gian còn lại cho nội dung */
+    flex: 3; /* Sử dụng không gian còn lại cho nội dung */
     padding: 0 20px;
+    width: 75%;
 }
