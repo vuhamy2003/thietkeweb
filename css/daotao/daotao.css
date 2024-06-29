@@ -395,31 +395,3 @@ footer {
     padding: 0 20px;
     width: 75%;
 }
-
-.content h2 {
-    margin: 0 auto;
-    color:#025ba1;
-    text-transform: uppercase;
-}
-
-.content h3 {
-    text-transform: uppercase;
-    margin-bottom: 0;
-}
-
-.content p, li, ul {
-    text-align: justify;
-    line-height: 24px;
-    font-weight: 400;
-    word-wrap: break-word;
-    margin: 5px 0 5px 0;
-}
-
-.nhiemvu, .tamnhin {
-    margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa các thẻ div */
-    padding-bottom: 10px
-}
-
-hr{
-    color: #025ba1;
-}
