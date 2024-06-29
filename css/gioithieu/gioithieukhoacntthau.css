@@ -319,7 +319,7 @@ footer {
 .display {
     color: #025ba1; /* Màu chữ cho phần display */
     flex: 1; /* Đảm bảo phần tử display sẽ chiếm hết không gian còn lại */
-    padding: 10px;
+    padding: 10px 10px 10px 20px;
 }
 
 .display p {
@@ -356,7 +356,7 @@ footer {
     max-width: 320px; /* Đặt chiều rộng cố định */
     height: auto; /* Chiều cao tự động dựa trên nội dung */
     color: #025ba1;
-    background-color: #e1e7eb;
+    background-color: #dce9f2fe;
 }
 
 .sidebar-item ul {
@@ -387,7 +387,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.sidebar-item ul li a.selected-item {
+.sidebar-item ul li a.selected {
     background-color: #025ba1;
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
