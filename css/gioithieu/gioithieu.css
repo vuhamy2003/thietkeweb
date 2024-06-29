@@ -341,7 +341,7 @@ footer {
 
 .container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     padding: 0 0 0 0 0px;
     margin-bottom: 20px;
 }
@@ -395,4 +395,17 @@ footer {
 .content {
     flex: 3; /* Sử dụng không gian còn lại cho nội dung */
     padding: 0 20px;
+    width: 75%;
+}
+
+.content-top{
+    padding: 0 10px;
+    align-items: center; /* Căn giữa nội dung */
+    margin-bottom: 20px; /* Khoảng cách giữa nội dung và phần dưới */
+}
+
+.anhbia{
+    display: flex;
+    margin-bottom: 20px; /* Khoảng cách từ ảnh bìa đến phần nội dung */
+    width: 100%;
 }
