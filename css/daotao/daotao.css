@@ -240,12 +240,10 @@ body {
     display: block;
 }
 
-.image {
-    width: 100%;
-    height: auto;
-    display: block;
+.header{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-
 
 footer {
     background-color: #025ba1;
@@ -309,20 +307,51 @@ footer {
     text-decoration: none; 
 }
 
+/*Display*/
+
+.display-container {
+    display: flex;
+    align-items: center;
+    padding: 0;   
+}
+
+.display {
+    color: #025ba1; /* Màu chữ cho phần display */
+    flex: 1; /* Đảm bảo phần tử display sẽ chiếm hết không gian còn lại */
+    padding: 10px 10px 10px 20px;
+    margin: 0 140px 0 140px;
+}
+
+.display p {
+    margin: 0; /* Xóa margin mặc định của thẻ h3 */
+}
+
+.display p a {
+    color: inherit; /* Kế thừa màu chữ từ phần tử cha (.display) */
+    text-decoration: none; /* Bỏ gạch chân cho đường liên kết */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
+    font-weight: bolder;
+}
+
+/*Side bar menu*/
 
 .container1 {
     display: flex;
+    align-items: flex-start;
+    padding: 0 20px 0 20px;
+    margin: 0 140px 20px 140px;
+}
+
+.right-container {
+    width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
+     /* Khoảng cách giữa right-container và cạnh trái của nó */
 }
 
 .sidebar {
-    width: 320px; /* Đặt chiều rộng cố định */
+    max-width: 320px; /* Đặt chiều rộng cố định */
     height: auto; /* Chiều cao tự động dựa trên nội dung */
-    color: white;
-    padding: 20px;
-}
-
-.sidebar-item {
-    margin-bottom: 10px; /* Khoảng cách giữa các ô */
+    color: #025ba1;
+    background-color: #dce9f2fe;
 }
 
 .sidebar-item ul {
@@ -337,55 +366,32 @@ footer {
 
 .sidebar-item ul li a {
     display: block;
-    color: white;
-    background-color: #025ba1;
+    color: #025ba1;
     padding: 14px 20px;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid #025ba1;
 }
 
 .sidebar-item ul li a:hover {
-    background-color: #fff;
-    color: #025ba1;
+    background-color: #025ba1;
+    color: white;
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .sidebar-item ul li a.selected {
-    background-color: #fff;
-    color: #025ba1;
+    background-color: #025ba1;
+    color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+/*content*/
+
 .content {
-    flex-grow: 1; /* Sử dụng không gian còn lại cho nội dung */
-    padding: 20px;
+    flex: 3; /* Sử dụng không gian còn lại cho nội dung */
+    padding: 0 20px;
+    width: 75%;
 }
-
-section {
-    margin-bottom: 40px;
-}
-
-.content h2 {
-    margin-top: 0; /* Đảm bảo h2 không có khoảng cách trên */
-}
-
-article {
-    display: flex;
-    flex-direction: column;
-    border-top: 2px solid #025ba1;
-}
-
-.container1 .content {
-    margin-left: 60px; /* Tạo khoảng cách để căn chỉnh phần nội dung với sidebar */
-}
-
-.content h2:first-of-type {
-    margin-top: 0; /* Đảm bảo tiêu đề đầu tiên không có khoảng cách trên */
-}
-
-
-
-
