@@ -335,11 +335,11 @@ footer {
 
 /*Side bar menu*/
 
-.container {
+.container1 {
     display: flex;
     align-items: flex-start;
-    padding: 0 0 0 0 0px;
-    margin-bottom: 20px;
+    padding: 0 20px 0 20px;
+    margin: 0 140px 20px 140px;
 }
 
 .right-container {
@@ -388,7 +388,7 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/*content*/
+/*Content*/
 
 .content {
     flex: 3; /* Sử dụng không gian còn lại cho nội dung */
