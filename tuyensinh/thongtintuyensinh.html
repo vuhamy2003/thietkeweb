@@ -10,8 +10,8 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
     <title>Trang chủ - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
-    <link rel="stylesheet" type="text/css" href="../css/thuvien.css">  
-    <script src="../js/main.js"></script>  
+    <link rel="stylesheet" type="text/css" href="../css/tuyensinh.css">  
+    <script src="../js/tuyensinh.js"></script>  
 
 </head>
 <body>
@@ -109,40 +109,51 @@
             </div>
         </div>
 
-        <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a> 
-        <a href="../thuvienso/thuvienso.html" id="selected">THƯ VIỆN SỐ</a>
+        <a href="../tuyensinh/tuyensinh.html" id="selected">TUYỂN SINH</a> 
+        <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
 
     </nav>
-
-    <img src="../img/thuvien.png" alt="Back" class="image">
     </header>
 
     <main>
         <div class="dau">
-            <h1><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a> </h1>
+            <h1><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a> > <a href="../tuyensinh/quyche.html">QUY CHẾ TUYỂN SINH</a></h1>
         </div>
         <hr class="dongke">
-        <div class="dau"> 
-            <div class="container">
-                <div class="sidebar1">
-                    <ul>
-                        <li><a href="../thuvienso/thuvienso.html">Giới thiệu</a></li>
-                        <li class="active"><a href="../thuvienso/congnghe.html">Đề cương học phần chuyên ngành Công nghệ thông tin</a></li>
-                        <li><a href="../thuvienso/cndaphuongtien.html">Đề cương học phần chuyên ngành Công nghệ đa phương tiện</a></li>
-                        <li><a href="../thuvienso/giaotrinh.html">Giáo trình chuyên ngành</a></li>
-                        <li><a href="http://www.thuviendhkt.net/">Thư viện số Đại học Kiến trúc</a></li>
-                    </ul>
-                </div>
-                <div class="content">
-                    <h2>ĐỀ CƯƠNG HỌC PHẦN CHUYÊN NGÀNH CÔNG NGHỆ THÔNG TIN</h2>
-                    <div class="pdf-container">
-                        <iframe src="../tailieu/congnghe.pdf" frameborder="0"></iframe>
-                    </div>
-                </div>
+        <div class="container1">
+            <section class="content1">
+                <h2>Thông tin tuyển sinh trình độ đại học hình thức chính quy năm 2024 của Trường Đại học Kiến trúc Hà Nội</h2>
+                <h5><i>11/04/2024</i></h5>
+                <p>Thông tin tuyển sinh trình độ đại học hình thức chính quy năm 2024 của Trường Đại học Kiến trúc Hà Nội.</p>
+                <p class="contentp"><a href="https://drive.google.com/file/d/10eRRZGm71yeF_4j_n9eQH8tinB2EMJ_-/view" target="_blank"><i>Nội dung chi tiết của Thông tin xem tại đây.</i></a></p>
+                <p class="contentp"><a href="https://drive.google.com/file/d/11B53Nkale0ZFV73NSGMdCl-bMjj6wJKJ/view" target="_blank"><i>Hướng dẫn về Hồ sơ, thủ tục nộp hồ sơ và lệ phí ĐKDT/ĐKXT.</i></a></p>
+            </section>
+            <section class="contact1">
+                <h2>PHÒNG ĐÀO TẠO</h2>
+                <p><img src="../img/icondiachi.png" class="iconphongdaotao"> Địa chỉ: Phòng F216, F217, F218, tầng 2 nhà F, Trường Đại học Kiến trúc Hà Nội, Đường Trần Phú, phường Văn Quán, quận Hà Đông, TP. Hà Nội.</p>
+                <p><img src="../img/icondienthoai.png" class="iconphongdaotao"> Điện thoại: 024.385.423.91</p>
+                <p><img src="../img/iconhotline.png" class="iconphongdaotao"> Hotline: 0982.619.900</p>
+                <p><img src="../img/iconemali.png" class="iconphongdaotao"> Email: tuyensinh@hau.edu.vn</p>
+            </section>
+        </div>
+        
+        <div id="chatbox">
+            <div class="header">
+                <span><i class="shake"><img src="../img/chatbox.png" class="iconchatbox"></i> Hỗ trợ tư vấn tuyển sinh</span>
+                <button id="close-chat">✖</button>
+            </div>
+            <div class="content12" id="chat-content">
+                <p>Chào mừng bạn đã đến với website tư vấn tuyển sinh của Trường Đại học Kiến trúc Hà Nội.</p>
+                <p>Để tìm hiểu thông tin về tuyển sinh trình độ đại học hình thức chính quy năm 2024 của Trường Đại học Kiến trúc Hà Nội, bạn tham khảo tại địa chỉ sau:</p>
+                <a href="https://tuyensinh.hau.edu.vn/" target="_blank">https://tuyensinh.hau.edu.vn/</a>
+            </div>
+            <div class="input-container">
+                <input type="text" id="user-input" placeholder="Nhập nội dung...">
+                <button id="send-btn">Gửi</button>
             </div>
         </div>
+        <button id="open-chat">Chat</button>
     </main>
-
     <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
 
     <footer>

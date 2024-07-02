@@ -342,14 +342,30 @@ hr.dongke {
     display: flex;
 }
 
+hr.sidegach {
+    border: 0;
+    background-color: #004080;
+    height: 1px;
+}
+
+.right-container {
+    width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
+     /* Khoảng cách giữa right-container và cạnh trái của nó */
+}
 .sidebar {
-    background-color: #025ba1;
-    width: 25%;
-    color: white;
+    width: 320px; /* Đặt chiều rộng cố định */
+    height: auto; /* Chiều cao tự động dựa trên nội dung */
+    color: #025ba1;
+    background-color: #dce9f2fe;
+}
+
+/*.sidebar {
+    background-color: #dce9f2fe;
+    color: #004080;
     padding: 20px;
     margin-left: -17px;
     margin-bottom: 1350px;
-}
+}*/
 
 .sidebar ul {
     list-style-type: none;
@@ -362,10 +378,10 @@ hr.dongke {
 }
 
 .sidebar ul li.active {
-    background-color: #fff;
+    background-color: #025ba1;;
     padding-left: 15px;
     font-weight: bold;
-    color: #025ba1;
+    color: #fff;
 }
 
 .content {
@@ -457,17 +473,27 @@ hr.dongke {
     color: #025ba1;
 }
 
-.scroll-to-top {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background-color: #025ba1;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-    display: none; /* Ẩn nút cho đến khi cuộn xuống */
-    z-index: 1000;
+/*trượt thanh*/
+#scroll-to-top {
+    display: none; /* Ẩn nút ban đầu */
+    position: fixed; /* Định vị cố định ở góc dưới bên phải */
+    bottom: 80px; /* Khoảng cách từ dưới cùng của màn hình */
+    right: 20px; /* Khoảng cách từ bên phải của màn hình */
+    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+    border: none; /* Bỏ đường viền */
+    outline: none; /* Bỏ viền khi nhấn */
+    background-color: #025ba1; /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo tròn các góc */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+#scroll-to-top:hover {
+    background-color: #003366; /* Màu nền khi di chuột qua nút */
+}
+.iconchatbox {
+    width: 20px;
+    height: auto;
 }
