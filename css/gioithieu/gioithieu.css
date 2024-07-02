@@ -409,7 +409,7 @@ hr.dongke {
 
 .content {
     flex: 3; /* Sử dụng không gian còn lại cho nội dung */
-    padding: 0 20px;
+    padding: 0 10px 0 30px;
     width: 75%;
 }
 
