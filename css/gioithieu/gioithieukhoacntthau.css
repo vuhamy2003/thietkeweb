@@ -18,11 +18,26 @@
     margin: 5px 0 5px 0;
 }
 
-.content1, .content2, .content3, .content4, .content5, .content6, .content7 {
+.content1, .content2, .content3, .content4, .content5, .content6, .content7, .content8 {
     margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa các thẻ div */
     padding-bottom: 10px
 }
 
 hr{
     color: #025ba1;
+}
+
+.content2 a, .content8 a{
+    text-decoration: none;
+    color: black;
+}
+
+.content2 a:hover, .content8 a:hover{
+    text-decoration: underline;
+}
+
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    text-align: justify;
 }

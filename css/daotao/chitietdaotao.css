@@ -1,0 +1,35 @@
+
+.pdf-container {
+    display: none; /* Ẩn PDF ban đầu */
+    margin-top: 5px;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 800px; /* Chiều cao tùy ý */
+}
+
+.content h2 {
+    margin: 0 auto;
+    color:#025ba1;
+    text-transform: uppercase;
+}
+
+.content h3 {
+    margin-bottom: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color:#025ba1;
+}
+
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.content h3:hover{
+    text-decoration: underline;
+    color: #003366;
+}

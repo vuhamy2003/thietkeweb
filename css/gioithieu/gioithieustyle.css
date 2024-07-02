@@ -389,6 +389,8 @@ hr.dongke {
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-bottom: 1px solid #025ba1;
+    line-height: 24px;
+    align-items: center;
 }
 
 .sidebar-item ul li a:hover {
@@ -402,6 +404,7 @@ hr.dongke {
     background-color: #025ba1;
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 24px;
 }
 
 /*content*/
