@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Trang chủ Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội, Công nghệ thông tin, Công nghệ đa phương tiện">
+    <meta name="description" content="Trang chủ Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội">
+    <meta name="Author" content="Nhóm 3">
+    <meta name="copyright" content="Nhóm 3">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+    <title>Trang chủ - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
+    <link rel="stylesheet" type="text/css" href="../css/tuyensinh.css">  
+    <script src="../js/main.js"></script>
+    <script src="../js/tuyensinh.js"></script>    
+
+</head>
+<body>
+    <header class="header">
+        <div id="search-bar-container" class="search-bar-container">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Nhập từ khóa tìm kiếm...">
+            <button onclick="search()" class="search-button">Tìm kiếm</button>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo" class="ảnh">
+                <div class="title">
+                    <span class="line1">KHOA CÔNG NGHỆ THÔNG TIN</span><br>
+                    <span class="line2">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</span>
+                </div>
+            </div>          
+            
+            <nav class="navbar">
+                <div class="hotline">
+                    <a href="#" id="hotline-link" onclick="showHotline()"><img src="../img/Hotline.png" alt="Hotline" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="hotline-number" style="display: none;" onclick="showHotline()">024.3854.2391</span>
+                </div>
+                <div class="email">
+                    <a href="#" id="email-link" onclick="showEmail()"><img src="../img/Email.png" alt="Email" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="email-text" style="display: none;" onclick="showEmail()">khoacntt@hau.edu.vn</span>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/cntt.dhkt" target="_blank"><img src="../img/Facebook.png" alt="Facebook" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com/channel/UC1LQLaQng8hdIqcUhWKFbnw" target="_blank"><img src="../img/YouTube.png" alt="YouTube" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="search">
+                    <a href="#" id="search-link" onclick="showSearchBar()"><img src="../img/Search.png" alt="Search" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+            </nav>
+
+        </div>
+
+
+    <nav class="tieude">
+        <a href="../index.html" >TRANG CHỦ</a>
+         
+        <div class="dropdown">
+            <a href="../gioithieu/gioithieu.html">GIỚI THIỆU</a>
+            <div class="dropdown-content">
+                <a href="../gioithieu/gioithieukhoacntthau.html">GIỚI THIỆU KHOA CNTT HAU</a>
+                <a href="../gioithieu/tamnhin_nhiemvu.html">TẦM NHÌN - NHIỆM VỤ</a>
+                <a href="../gioithieu/doingugiangvien.html">ĐỘI NGŨ GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../tintuc/tintuc.html">TIN TỨC</a>
+            <div class="dropdown-content">
+                <a href="../tintuc/thongbao.html">THÔNG BÁO</a>
+                <a href="../tintuc/cntt.html">CÔNG NGHỆ THÔNG TIN</a>
+                <a href="../tintuc/congnghedaphuongtien.html">CÔNG NGHỆ ĐA PHƯƠNG TIỆN</a>
+                <a href="../tintuc/tinhocungdung.html">TIN HỌC ỨNG DỤNG</a>
+                <a href="../tintuc/khoahoccongnghe.html">KHOA HỌC CÔNG NGHỆ</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../daotao/daotao.html">ĐÀO TẠO</a>
+            <div class="dropdown-content">
+                <a href="../daotao/nam2022.html">NĂM 2022</a>
+                <a href="../daotao/nam2021.html">NĂM 2021</a>
+                <a href="../daotao/nam2020.html">NĂM 2020</a>
+                <a href="../daotao/nam2016.html">NĂM 2016</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../sinhvien/sinhvien.html">SINH VIÊN</a>
+            <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <a href="../sinhvien/sinhvienchuanbitotnghiep.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
+                    <div class="sub-dropdown-content">
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tuyendung.html">TUYỂN DỤNG</a>
+                    </div>
+                </div>
+                <a href="../sinhvien/cuusinhvien.html">CỰU SINH VIÊN</a>
+            </div>
+        </div>
+        
+
+        <div class="dropdown">
+            <a href ="../nckh/nghiencuukhoahoc.html">NGHIÊN CỨU KHOA HỌC</a>
+            <div class="dropdown-content">
+                <a href="../nckh/hoatdongnckhsinhvien.html">HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC SINH VIÊN</a>
+                <a href="../nckh/hoatdongnckhgiangvien.html">HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <a href="../tuyensinh/tuyensinh.html" id="selected">TUYỂN SINH</a> 
+        <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
+
+    </nav>
+    </header>
+ 
+        <div class="dau">
+            <h1><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a> > <a href="../tuyensinh/gioithieucntt.html">GIỚI THIỆU CHUYÊN NGÀNH CÔNG NGHỆ THÔNG TIN</a></h1>
+        </div>
+        <hr class="dongke">
+        <div class="baiviet">
+            <h2>CÔNG NGHỆ THÔNG TIN</h2>
+            <p class="baivietp">Mã chuyên ngành: 7480201</p>
+            <p class="baivietp">Thời gian đào tạo: 4,5 năm</p>
+            <p class="baivietp">Văn bằng: Kỹ sư</p>
+            <p class="baivietp">Tổ hợp môn xét tuyển 01: A00: Toán, Vật lý, Hóa học</p>
+            <p class="baivietp">Tổ hợp môn xét tuyển 02: A01: Toán, Vật lý, Anh văn</p>
+            <p class="baivietp">Tổ hợp môn xét tuyển 03: D01: Toán, Ngữ văn, Anh văn</p>
+            <p class="baivietp">Tổ hợp môn xét tuyển 04: D07: Toán, Hóa, Anh văn</p>
+            <p>Trong thời kỳ của cuộc cách mạng công nghiệp 4.0, Công nghệ thông tin là một trong những ngành mũi nhọn mang đến sự phát triển vượt bậc cho khoa học kỹ thuật và đời sống. Vì vậy, ngành Công nghệ thông tin luôn là một ngành học “hot” và thu hút rất nhiều bạn trẻ, đặc biệt là những bạn yêu thích máy tính và đam mê công nghệ. </p>
+            <p>Khoa Công nghệ thông tin được thành lập năm 2015 - tiền thân là Trung tâm tin học ứng dụng thuộc Trường Đại học Kiến trúc Hà Nội - là một trong những cơ sở hàng đầu đào tạo tin học ứng dụng và đưa các công nghệ tin học tiên tiến phục vụ cho ngành xây dựng từ 1995.</p>
+            <p>Hãy đến với chuyên ngành Công nghệ thông tin - Trường Đại học Kiến trúc Hà Nội để trở thành Kỹ sư Công nghệ thông tin có chuyên môn giỏi, kỹ năng làm việc bám sát thực tiễn, phẩm chất đạo đức tốt. Các bạn sẽ được học tập trong một môi trường năng động, sáng tạo, vui vẻ, hòa đồng với sự hướng dẫn tận tình của nhiều thầy cô có chuyên môn cao, có thâm niên nhiều năm giảng dạy trong ngành Công nghệ thông tin.</p>
+            <h3>Chuyên ngành Công nghệ thông tin học những gì?</h3>
+            <p>Mục tiêu của chương trình đào tạo Công nghệ thông tin của Trường Đại học Kiến trúc Hà Nội là: Đào tạo, cung cấp nguồn nhân lực trình độ đại học có chuyên môn cao trong lĩnh vực Công nghệ thông tin. </p>
+            <p>Đây là đội ngũ nhân lực phát triển toàn diện, có phẩm chất chính trị, đạo đức, có ý thức phục vụ cộng đồng; có khả năng tự học, kỹ năng giao tiếp và làm việc theo nhóm; có kiến thức và năng lực chuyên môn vững vàng; có trình độ ngoại ngữ tốt; có sức khỏe tốt đáp ứng yêu cầu trong lĩnh vực xây dựng, bảo vệ và phát triển đất nước trong giai đoạn hội nhập quốc tế; bắt nhịp tốt cùng cách mạng công nghiệp 4.0.</p>
+            <p>Khi là sinh viên Công nghệ thông tin của Trường Đại học Kiến trúc Hà Nội, bạn sẽ hiểu được các kiến thức cơ bản về khoa học tự nhiên, khoa học xã hội. Khả năng áp dụng kiến thức cơ bản về Toán học, Vật lý và các ứng dụng liên quan trong khoa học kỹ thuật và đời sống; vận dụng kiến thức để học tập và nghiên cứu các môn học của ngành công nghệ thông tin.</p>
+            <p>Bạn sẽ nắm vững và vận dụng các kiến thức cơ sở ngành Công nghệ thông tin như: Các nguyên lý lập trình cấu trúc và hướng đối tượng, cấu trúc dữ liệu và giải thuật, cơ sở dữ liệu, hệ thống máy tính, xử lý đa phương tiện, các công nghệ phát triển ứng dụng, an toàn thông tin.</p>
+            <p>Bạn sẽ nắm vững và vận dụng những kiến thức về thiết kế phát triển ứng dụng trên hệ thống mạng và hệ thống di động; thiết kế, triển khai và vận hành hệ thống mạng máy tính; xây dựng và triển khai các giải pháp an toàn hệ thống và bảo mật thông tin.</p>
+            <p>Bạn có kiến thức về quản lý nguồn tài nguyên; Khả năng xây dựng các hệ thống cơ sở dữ liệu, hệ thống thông minh, phân tích và khai thác dữ liệu.</p>
+            <p>Không những vậy, khi bạn là sinh viên Công nghệ thông tin của Trường ĐH Kiến trúc Hà Nội, bạn sẽ được trang bị khả năng giao tiếp; đọc; hiểu; viết tài liệu tiếng Anh, trình độ tương đương từ 450 điểm TOEIC cùng khả năng sử dụng tiếng Anh chuyên ngành Công nghệ thông tin.</p>
+            <h3>Học ngành Công nghệ thông tin ra trường làm gì?</h3>
+            <p>Hiện nay, hầu như mọi hoạt động trong cuộc sống đều liêu quan đến việc ứng dụng công nghệ thông tin. Học tập, làm việc, giao lưu, giải trí… đều trở nên dễ dàng hơn nhờ các thiết bị thông minh nhỏ gọn trong tầm tay được liên kết với dữ liệu đám mây của công nghệ số. </p>
+            <p>Chính vì vậy, theo dự báo của các chuyên gia thì nhu cầu nhân lực cho ngành công nghệ thông tin ngày càng có chiều hướng gia tăng với nhiều cơ hội việc làm hấp dẫn, có thu nhập cao.</p>
+            <p>Sinh viên tốt nghiệp ngành Công nghệ thông tin có khả năng tư vấn và có khả năng thực hiện nhiệm vụ với tư cách như một chuyên viên trong lĩnh vực Công nghệ thông tin, đáp ứng các yêu cầu về nghiên cứu và ứng dụng Công nghệ thông tin của xã hội. Các vị trí công tác có thể đảm nhận:</p>
+            <ul class="bold-list">
+                <li>Lập trình viên</li>
+                <li>Trưởng nhóm phát triển phần mềm</li>
+                <li>Quản lý dự án phần mềm</li>
+                <li>Chuyên gia nghiên cứu và phát triển về Máy tính và Công nghệ thông tin</li>
+                <li>Quản trị mạng</li>
+                <li>Chuyên viên thiết kế và xử lý nội dung số</li>
+                <li>Chuyên viên tư vấn dịch vụ công nghệ thông tin</li>
+                <li>Chuyên viên kiểm thử phần mềm</li>
+                <li>Chuyên viên phân tích và thiết kế hệ thống</li>
+                <li>Chuyên gia phát triển công nghệ Web</li>
+                <li>Chuyên gia về an ninh hệ thống</li>
+                <li>Giảng viên, nghiên cứu viên về nhóm ngành Máy tính và Công nghệ thông tin</li>
+                <li>Ngoài ra, sinh viên tốt nghiệp ra trường có thể tiếp tục học tập, nghiên cứu và phát triển ngành Công nghệ thông tin trong tương lai; có thể tiếp tục học tập lên các bậc cao hơn như thạc sĩ, tiến sĩ trong nước và ở nước ngoài.</li>
+            </ul>
+            <img src="../img/tuyensinh/gtcn1.png" class="anhgtcn">
+            <p id="ghichuanh">Trung tâm triển lãm nghệ thuật ứng dụng Art Gallery tại Trường Đại học Kiến Trúc Hà Nội vừa khai trương Triển lãm đầu tiên Chào Xuân Tân Sửu 2021</p>
+            <h3>Điểm sáng định hướng đào tạo</h3>
+            <ul class="bold-list">
+                <li>Tuân thủ qui định chuẩn đào tạo kỹ sư công nghệ thông tin của Bộ Giáo dục & Đào tạo.</li>
+                <li>Tham khảo các chương trình chuẩn đào tạo kỹ sư chuyên ngành công nghệ thông tin của Mỹ, Nhật Bản, Anh, Úc, Ấn Độ.</li>
+                <li>Thế mạnh về Tin học ứng dụng trong thị trường rộng lớn của ngành Xây dựng.</li>
+                <li>Được sự hỗ trợ mạnh mẽ của đội ngũ giảng viên các chuyên ngành khác nhau (Xây dựng, Kiến trúc, Quy hoạch, Kỹ thuật hạ tầng đô thị…) trong việc xây dựng, triển khai các ứng dụng tin học.</li>
+            </ul>
+            <h3>Học Công nghệ thông tin tại Trường ĐH Kiến trúc Hà Nội bạn có nhiều cơ hội đoạt giải tin học lớn</h3>
+            <p>Từ 1996 đến nay, Trường Đại học Kiến trúc Hà Nội nhiều năm liền đã tổ chức, bồi dưỡng các đoàn sinh viên của trường tham dự các kỳ thi Olympic Tin học sinh viên toàn quốc và đạt nhiều thứ hạng cao: </p>
+            <ul class="bold-list">
+                <li>Giải đồng đội: 2 giải Nhất; 3 giải Nhì; 1 giải Ba; 3 giải Khuyến khích (thi lập trình sinh viên quốc tế  Châu Á - Thái Bình Dương ACM/ICPC).</li>
+                <li>Tham khảo các chương trình chuẩn đào tạo kỹ sư chuyên ngành công nghệ thông tin của Mỹ, Nhật Bản, Anh, Úc, Ấn Độ.</li>
+                <p>Trong đó, năm học 2006-2007, đội tuyển Olympic Tin học sinh viên của Trường đã đạt: “Đội tuyển Việt Nam xuất sắc nhất khối không chuyên tin học, kỳ thi lập trình sinh viên quốc tế ACM/ICPC khu vực Châu Á năm 2007” và đã được Bộ trưởng Bộ GD&ĐT và Bộ trưởng Bộ TT&TT tặng Bằng khen.</p>
+                <li>Giải cá nhân: 6 giải Nhất; 8 giải Nhì; 11 giải Ba; 8 giải Khuyến khích.</li>
+                <p>Đặc biệt, năm 2013, trong kỳ thi OLYMPIC Tin học sinh viên toàn quốc, về cá nhân có 2 sinh viên đạt: 1 Vô địch khối chuyên tin và 1 Vô địch khối không chuyên tin. Năm 2014, về cá nhân có 1 sinh viên đạt giải Nhất khối Siêu cúp.</p>
+            </ul>
+            <p class="baivietp">Chúng tôi hoan nghênh và chào đón bạn trở thành thành viên  HAU! </p>
+            <p class="baivietp">Trường Đại học Kiến trúc Hà Nội – Nơi kiến tạo tương lai!</p>
+        </div>
+  
+
+    <button id="scroll-to-top" title="Go to top">↑</button>
+
+    <footer>
+        <div class="chantrangweb">
+            <div class="footer-column">
+                <h3>LIÊN KẾT</h3>
+                <div class="textwidget">
+                    <ul>
+                        <li><a href="https://hau.edu.vn/" target="_blank" class="special-link">Đại học Kiến trúc</a></li>
+                        <li><a href="https://moet.gov.vn/Pages/home.aspx" target="_blank" class="special-link">Bộ Giáo dục và Đào tạo</a></li>
+                        <li><a href="https://moc.gov.vn/vn/Pages/Trangchu.aspx" target="_blank" class="special-link">Bộ xây dựng</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>LIÊN HỆ</h3>
+                <div class="textwidget">
+                    <ul>
+                        <li>Địa chỉ: Tầng 7 Nhà I, Đại học Kiến trúc, P. Văn Quán, Hà Đông, Hà Nội</li>
+                        <li>Điện thoại: 024.3854.2391</li>
+                        <li>Email: khoacntt@hau.edu.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>BẢN ĐỒ</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14901.20506835429!2d105.7891549!3d20.9805574!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ade83ba9e115%3A0x6f4fdb5e1e9e39ed!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaeG6v24gdHLDumMgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1719037006419!5m2!1svi!2s" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>

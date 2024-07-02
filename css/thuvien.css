@@ -328,7 +328,7 @@ a {
 }
 
 h1  {
-    font-size: 18px; 
+    font-size: 16px; 
     color:#025ba1;
 }
 
@@ -336,6 +336,7 @@ hr.dongke {
     border: 0;
     height: 2px; /* Độ dày của dòng kẻ */
     background-color: #025ba1; /* Màu sắc của dòng kẻ */
+    margin: 0 0 20px 0 ;
 }
 
 .container1 {
