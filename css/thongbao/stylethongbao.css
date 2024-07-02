@@ -312,25 +312,41 @@ footer {
 .display-container {
     display: flex;
     align-items: center;
-    padding: 0;   
+    padding: 0;  
+    height: auto; 
+    height: 40px;
+    justify-content: space-between;
+}
+
+.iconchatbox {
+    width: 20px;
+    height: auto;
 }
 
 .display {
-    color: #025ba1; /* Màu chữ cho phần display */
-    flex: 1; /* Đảm bảo phần tử display sẽ chiếm hết không gian còn lại */
-    padding: 10px 10px 10px 20px;
-    margin: 0 140px 0 140px;
+    color: #025ba1;
+    padding: 0 20px;
+    display: flex;
+    margin-left: 148px; 
+    font-weight: bolder;
 }
 
-.display p {
-    margin: 0; /* Xóa margin mặc định của thẻ h3 */
+.display p{
+    color:#025ba1;
+    font-size: 16px;
 }
 
-.display p a {
+.display p a{
     color: inherit; /* Kế thừa màu chữ từ phần tử cha (.display) */
     text-decoration: none; /* Bỏ gạch chân cho đường liên kết */
     transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
-    font-weight: bolder;
+}
+
+hr.dongke {
+    border: 0;
+    height: 2px; /* Độ dày của dòng kẻ */
+    background-color: #025ba1; /* Màu sắc của dòng kẻ */
+    margin: 0 0 20px 0;
 }
 
 /*Side bar menu*/
@@ -343,10 +359,8 @@ footer {
 }
 
 .right-container {
-    flex: 1;
     width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
-     /* Khoảng cách giữa right-container và cạnh trái của nó */
-    margin-right: 20px;
+    padding: 0 0 0 10px /* Khoảng cách giữa right-container và cạnh trái của nó */
 }
 
 .sidebar {
@@ -375,6 +389,8 @@ footer {
     text-decoration: none;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     border-bottom: 1px solid #025ba1;
+    line-height: 24px;
+    align-items: center;
 }
 
 .sidebar-item ul li a:hover {
@@ -388,6 +404,7 @@ footer {
     background-color: #025ba1;
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 24px;
 }
 
 /*main-content*/
