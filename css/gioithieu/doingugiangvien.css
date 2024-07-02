@@ -4,6 +4,12 @@
     text-transform: uppercase;
 }
 
+.content h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
 .anhbia{
     display: flex;
     margin-bottom: 10px; /* Khoảng cách từ ảnh bìa đến phần nội dung */
@@ -38,27 +44,6 @@ figcaption{
     background-color: #6062668a(112, 112, 112, 0.541); /* Black w/ opacity */
 }
 
-/*Lectures list*/
-
-.lecturers {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
-    gap: 20px; /* Adjust spacing between items */
-}
-
-.lecturer {
-    text-align: center;
-    border: 1px solid #ddd;
-    padding: 10px;
-    border-radius: 5px;
-}
-
-.lecturer img {
-    max-width: 100%;
-    border-radius: 50%;
-    margin-bottom: 10px;
-}
-
 /* Modal content (image) */
 .modal-content {
     margin: 50px auto 50px auto;
@@ -84,3 +69,26 @@ figcaption{
     text-decoration: none;
     cursor: pointer;
 }
+
+/*Lectures list*/
+
+.lecturers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px 0;
+}
+
+.lecturer {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lecturer img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
