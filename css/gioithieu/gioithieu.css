@@ -409,7 +409,7 @@ hr.dongke {
 
 .content {
     flex: 3; /* Sử dụng không gian còn lại cho nội dung */
-    padding: 0 20px;
+    padding: 0 10px 0 30px;
     width: 75%;
 }
 
@@ -477,7 +477,7 @@ hr.dongke {
 
 .video iframe {
     width: 100%;
-    height: 244.969px;
+    height: 284px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
 }
 
