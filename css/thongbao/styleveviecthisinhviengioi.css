@@ -333,7 +333,6 @@ footer {
     font-weight: bolder;
 }
 
-
 /*Side bar menu*/
 
 .container1 {
@@ -344,10 +343,8 @@ footer {
 }
 
 .right-container {
-    flex: 1;
     width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
      /* Khoảng cách giữa right-container và cạnh trái của nó */
-    margin-right: 20px;
 }
 
 .sidebar {
@@ -391,83 +388,29 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/*main-content*/
-.main-content {
+/*content*/
+.pdf-container {
+    height: 800px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+}
+.content {
     flex: 3; /* Sử dụng không gian còn lại cho nội dung */
     padding: 0 20px;
     width: 75%;
-    margin-left: 20px;
 }
 
-.article {
-    margin-bottom: 50px;
-}
-.article-header-content h3 {
-    margin-bottom: 10px;
-}
-
-.article-header-content h3 a {
-    color: inherit;
-    text-decoration: none;
-}
-
-.article-header-content h3 a:hover {
-    color: inherit;
-}
-
-.article-header-content h3 a:visited {
-    color: inherit;
-}
-.main-content h2 {
-    margin-top: 0; /* Giảm khoảng cách trên của tiêu đề */
-    padding-bottom: 5px; /* Giảm khoảng cách dưới của tiêu đề */
-}
-.main-content h2 a {
-    color: #025ba1;
-    text-decoration: none;
-}
-
-.main-content h2 a:hover {
-    color: #025ba1;
-}
-
-.main-content h2 a:visited {
-    color: #025ba1;
-}
-.article-header {
-    display: block;
-}
-.article-header img {
-
-    margin: 10px 0;
-}
-.article-meta {
-    margin-top: 10px;
-    display: flex;
-    gap: 10px;
-    color: black;
-    font-size: 0.9em;
-}
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.content h2 {
+    margin: 0 auto;
+    color:#025ba1;
+    text-transform: uppercase;
+    margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa các thẻ div */
+    padding-bottom: 10px;
     border-bottom: 2px solid #025ba1;
-    padding-bottom: 1px; /* Giảm padding-bottom để giảm khoảng cách */
-    margin-bottom: 20px; /* Giảm margin-bottom để giảm khoảng cách */
-    height: auto; /* Đặt chiều cao để ngang bằng với sidebar */
-}
-.view-all-box {
-    border: 1px solid #dce9f2fe;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    background-color: #025ba1;
-    margin-top: -30px;
-}
-.side-image {
-    width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử mẹ */
-    height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ của ảnh */
-    max-width: none; /* Đảm bảo không có giới hạn chiều rộng tối đa */
 }

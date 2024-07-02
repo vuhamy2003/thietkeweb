@@ -317,10 +317,13 @@ body, h2, p, ul, li {
 }
 
 /* Container */
-.container {
-    width: 100%;
+.container1 {
     margin: 0 auto;
     padding: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
 }
 
 /* Row */

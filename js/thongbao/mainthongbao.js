@@ -68,15 +68,20 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
+const zoomImageOnHover = () => {
+    const sideImages = document.querySelectorAll('.side-image');
 
+    sideImages.forEach(img => {
+        img.addEventListener('mouseenter', () => {
+            img.style.transform = 'scale(1.05)'; 
+        });
 
-// Optional: You can add smooth scroll behavior
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
+        img.addEventListener('mouseleave', () => {
+            img.style.transform = 'scale(1)';
         });
     });
+};
+
+document.addEventListener('DOMContentLoaded', () => {
+    zoomImageOnHover();
 });
