@@ -312,11 +312,12 @@ footer {
 main {
     background-color: white;
     padding: 0px 0px;
+
 }
 
 .dau {
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     margin-left: 148px; 
