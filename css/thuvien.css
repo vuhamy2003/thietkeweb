@@ -358,7 +358,7 @@ hr.sidegach {
 }
 
 .sidebar {
-    width: 300px; /* Đặt chiều rộng cố định */
+    max-width: 320px; /* Đặt chiều rộng cố định */
     height: auto; /* Chiều cao tự động dựa trên nội dung */
     color: #025ba1;
     background-color: #dce9f2fe;
