@@ -309,6 +309,27 @@ footer {
     text-decoration: none; 
 }
 
+/*trượt thanh*/
+#scroll-to-top {
+    display: none; /* Ẩn nút ban đầu */
+    position: fixed; /* Định vị cố định ở góc dưới bên phải */
+    bottom: 80px; /* Khoảng cách từ dưới cùng của màn hình */
+    right: 20px; /* Khoảng cách từ bên phải của màn hình */
+    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+    border: none; /* Bỏ đường viền */
+    outline: none; /* Bỏ viền khi nhấn */
+    background-color: #025ba1; /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo tròn các góc */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+#scroll-to-top:hover {
+    background-color: #003366; /* Màu nền khi di chuột qua nút */
+}
+
 main {
     background-color: white;
     padding: 0px 0px;
@@ -337,7 +358,10 @@ hr.dongke {
     height: 2px; /* Độ dày của dòng kẻ */
     background-color: #025ba1; /* Màu sắc của dòng kẻ */
 }
-
+main {
+    background-color: white;
+    padding: 0px 0px;
+}
 .container1 {
     display: flex;
     align-items: flex-start;
@@ -408,7 +432,7 @@ hr.sidegach {
     border-bottom: 2px solid #91B8D6;
     display: inline-block;
     padding-bottom: 5px;
-    margin: 0 0 20px 0;
+    margin: 0;
 }
 
 .content p {
@@ -426,88 +450,7 @@ hr.sidegach {
     font-weight: bold;
     color:#025ba1;
 }
-.sidebar1 {
-    background-color: #025ba1;
-    width: 25%;
-    color: white;
-    padding: 20px;
-    margin-left: -17px;
-    margin-bottom: 470px;
-}
 
-.sidebar1 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar1 ul li {
-    padding: 10px 0;
-    cursor: pointer;
-}
-
-.sidebar1 ul li.active {
-    background-color: #fff;
-    padding-left: 15px;
-    font-weight: bold;
-    color: #025ba1;
-}
-
-.pdf-container {
-    height: 800px;
-    border: 1px solid #ccc;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.pdf-container iframe {
-    width: 100%;
-    height: 100%;
-}
-.sidebar2 {
-    background-color: #025ba1;
-    width: 25%;
-    color: white;
-    padding: 20px;
-    margin-left: -17px;
-    margin-bottom: 443px;
-}
-
-.sidebar2 ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sidebar2 ul li {
-    padding: 10px 0;
-    cursor: pointer;
-}
-
-.sidebar2 ul li.active {
-    background-color: #fff;
-    padding-left: 15px;
-    font-weight: bold;
-    color: #025ba1;
-}
-
-/*trượt thanh*/
-#scroll-to-top {
-    display: none; /* Ẩn nút ban đầu */
-    position: fixed; /* Định vị cố định ở góc dưới bên phải */
-    bottom: 80px; /* Khoảng cách từ dưới cùng của màn hình */
-    right: 20px; /* Khoảng cách từ bên phải của màn hình */
-    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
-    border: none; /* Bỏ đường viền */
-    outline: none; /* Bỏ viền khi nhấn */
-    background-color: #025ba1; /* Màu nền */
-    color: white; /* Màu chữ */
-    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
-    padding: 10px 15px; /* Khoảng cách bên trong nút */
-    border-radius: 5px; /* Bo tròn các góc */
-    font-size: 16px; /* Kích thước chữ */
-}
-
-#scroll-to-top:hover {
-    background-color: #003366; /* Màu nền khi di chuột qua nút */
-}
 .iconchatbox {
     width: 20px;
     height: auto;

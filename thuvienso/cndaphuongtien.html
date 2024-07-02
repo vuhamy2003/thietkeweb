@@ -11,7 +11,8 @@
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
     <title>Trang chủ - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
     <link rel="stylesheet" type="text/css" href="../css/thuvien.css">  
-    <script src="../js/main.js"></script>  
+    <script src="../js/main.js"></script>
+    <script src="../js/tuyensinh.js"></script>  
 
 </head>
 <body>
@@ -122,17 +123,36 @@
             <h1><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a> </h1>
         </div>
         <hr class="dongke">
-        <div class="dau"> 
-            <div class="container">
-                <div class="sidebar2">
-                    <ul>
-                        <li><a href="../thuvienso/thuvienso.html">Giới thiệu</a></li>
-                        <li><a href="../thuvienso/congnghe.html">Đề cương học phần chuyên ngành Công nghệ thông tin</a></li>
-                        <li class="active"><a href="../thuvienso/cndaphuongtien.html">Đề cương học phần chuyên ngành Công nghệ đa phương tiện</a></li>
-                        <li><a href="../thuvienso/giaotrinh.html">Giáo trình chuyên ngành</a></li>
-                        <li><a href="http://www.thuviendhkt.net/">Thư viện số Đại học Kiến trúc</a></li>
-                    </ul>
-                </div>
+        <div class="container1">
+                    <div class=".right-container">
+                        <div class="sidebar">
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="thuvienso.html">Giới thiệu</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="congnghe.html">Đề cương học phần chuyên ngành Công nghệ thông tin</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="cndaphuongtien.html" class="selected">Đề cương học phần chuyên ngành Công nghệ đa phương tiện</a></li>  
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="giaotrinh.html">Giáo trình chuyên ngành</a></li>  
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="http://www.thuviendhkt.net/" target="_blank">Thư viện số Đại học Kiến trúc</a></li>  
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
                 <div class="content">
                     <h2>ĐỀ CƯƠNG HỌC PHẦN CHUYÊN NGÀNH CÔNG NGHỆ ĐA PHƯƠNG TIỆN</h2>
                     <div class="pdf-container">
@@ -142,7 +162,9 @@
             </div>
         </div>
     </main>
-    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    
+    <button id="scroll-to-top" title="Go to top">↑</button>
+
     <footer>
         <div class="chantrangweb">
             <div class="footer-column">

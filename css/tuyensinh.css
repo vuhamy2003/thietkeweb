@@ -330,7 +330,7 @@ footer {
 }
 main {
     /*background-color: white;*/
-    padding: 10px 0;
+    padding: 0 0;
 }
 
 .dau {
@@ -347,9 +347,8 @@ a {
 }
 
 h1  {
-    font-size: 20px; 
-    color:#003366;
-    /*margin-left: 148px; */
+    font-size: 18px; 
+    color:#025ba1;
 }
 
 hr.dongke {
@@ -515,11 +514,6 @@ hr.dongke {
 .zoom:hover {
     transform: scale(1.1); /* Phóng to hình ảnh lên 1,2 lần kích thước ban đầu */
 }
-
-/*.bold-dot {
-    font-weight: bold;
-    font-size: 24px; /* Adjust size as needed 
-}*/
 
 .back1 {
     background-color: #fff;
