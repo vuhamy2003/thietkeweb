@@ -349,7 +349,7 @@ a {
 }
 
 h1  {
-    font-size: 18px; 
+    font-size: 16px; 
     color:#025ba1;
 }
 
@@ -357,6 +357,7 @@ hr.dongke {
     border: 0;
     height: 2px; /* Độ dày của dòng kẻ */
     background-color: #025ba1; /* Màu sắc của dòng kẻ */
+    margin: 0 0 20px 0 ;
 }
 main {
     background-color: white;
@@ -382,7 +383,7 @@ hr.sidegach {
 }
 
 .sidebar {
-    max-width: 320px; /* Đặt chiều rộng cố định */
+    width: 300px; /* Đặt chiều rộng cố định */
     height: auto; /* Chiều cao tự động dựa trên nội dung */
     color: #025ba1;
     background-color: #dce9f2fe;
@@ -422,6 +423,7 @@ hr.sidegach {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
+
 .content {
     flex: 3; /* Sử dụng không gian còn lại cho nội dung */
     padding: 0 10px 0 30px;
@@ -436,20 +438,14 @@ hr.sidegach {
     margin: 0;
 }
 
+.quydinh {
+    max-width: 648px;
+    height:auto;
+}
+
 .content p {
-    line-height: 1.6;
-    text-align: justify;
-    font-size: 16px;
-}
-.content h3 {
-    padding-bottom: 5px;
-    font-weight: bold;
-    font-size: 16px;
-    text-align: justify;
-}
-.taiday {
-    font-weight: bold;
-    color:#025ba1;
+    text-align: center;
+    margin:0;
 }
 
 .iconchatbox {
@@ -482,4 +478,14 @@ hr.sidegach {
 
 .active > .menu-title .arrow {
     transform: rotate(90deg);
+}
+
+/*diem chuan*/
+.diemthi {
+    width: 848px;
+    height:auto;
+}
+
+.diemthip {
+    font-size: 14px;
 }
