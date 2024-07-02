@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keyword" content="Trang chủ Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội, Công nghệ thông tin, Công nghệ đa phương tiện">
+    <meta name="description" content="Trang chủ Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội">
+    <meta name="Author" content="Nhóm 3">
+    <meta name="copyright" content="Nhóm 3">
+    <meta name="ROBOTS" content="INDEX, FOLLOW">
+    <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
+    <title>Trang chủ - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvien.css"> 
+    <script src="../js/main.js"></script>
+    <script src="../js/tuyensinh.js"></script>
+    <script src="../js/sinhvien.js"></script>  
+
+</head>
+<body>
+    <header class="header">
+        <div id="search-bar-container" class="search-bar-container">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Nhập từ khóa tìm kiếm...">
+            <button onclick="search()" class="search-button">Tìm kiếm</button>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo" class="ảnh">
+                <div class="title">
+                    <span class="line1">KHOA CÔNG NGHỆ THÔNG TIN</span><br>
+                    <span class="line2">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</span>
+                </div>
+            </div>          
+            
+            <nav class="navbar">
+                <div class="hotline">
+                    <a href="#" id="hotline-link" onclick="showHotline()"><img src="../img/Hotline.png" alt="Hotline" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="hotline-number" style="display: none;" onclick="showHotline()">024.3854.2391</span>
+                </div>
+                <div class="email">
+                    <a href="#" id="email-link" onclick="showEmail()"><img src="../img/Email.png" alt="Email" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="email-text" style="display: none;" onclick="showEmail()">khoacntt@hau.edu.vn</span>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/cntt.dhkt" target="_blank"><img src="../img/Facebook.png" alt="Facebook" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com/channel/UC1LQLaQng8hdIqcUhWKFbnw" target="_blank"><img src="../img/YouTube.png" alt="YouTube" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="search">
+                    <a href="#" id="search-link" onclick="showSearchBar()"><img src="../img/Search.png" alt="Search" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+            </nav>
+
+        </div>
+
+
+    <nav class="tieude">
+        <a href="../index.html" >TRANG CHỦ</a>
+         
+        <div class="dropdown">
+            <a href="../gioithieu/gioithieu.html">GIỚI THIỆU</a>
+            <div class="dropdown-content">
+                <a href="../gioithieu/gioithieukhoacntthau.html">GIỚI THIỆU KHOA CNTT HAU</a>
+                <a href="../gioithieu/tamnhin_nhiemvu.html">TẦM NHÌN - NHIỆM VỤ</a>
+                <a href="../gioithieu/doingugiangvien.html">ĐỘI NGŨ GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../tintuc/tintuc.html">TIN TỨC</a>
+            <div class="dropdown-content">
+                <a href="../tintuc/thongbao.html">THÔNG BÁO</a>
+                <a href="../tintuc/cntt.html">CÔNG NGHỆ THÔNG TIN</a>
+                <a href="../tintuc/congnghedaphuongtien.html">CÔNG NGHỆ ĐA PHƯƠNG TIỆN</a>
+                <a href="../tintuc/tinhocungdung.html">TIN HỌC ỨNG DỤNG</a>
+                <a href="../tintuc/khoahoccongnghe.html">KHOA HỌC CÔNG NGHỆ</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../daotao/daotao.html">ĐÀO TẠO</a>
+            <div class="dropdown-content">
+                <a href="../daotao/nam2022.html">NĂM 2022</a>
+                <a href="../daotao/nam2021.html">NĂM 2021</a>
+                <a href="../daotao/nam2020.html">NĂM 2020</a>
+                <a href="../daotao/nam2016.html">NĂM 2016</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
+            <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <a href="../sinhvien/sinhvienchuanbitotnghiep.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
+                    <div class="sub-dropdown-content">
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tuyendung.html">TUYỂN DỤNG</a>
+                    </div>
+                </div>
+                <a href="../sinhvien/cuusinhvien.html">CỰU SINH VIÊN</a>
+            </div>
+        </div>
+        
+
+        <div class="dropdown">
+            <a href ="../nckh/nghiencuukhoahoc.html">NGHIÊN CỨU KHOA HỌC</a>
+            <div class="dropdown-content">
+                <a href="../nckh/hoatdongnckhsinhvien.html">HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC SINH VIÊN</a>
+                <a href="../nckh/hoatdongnckhgiangvien.html">HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
+        <a href="../thuvienso/thuvienso.html" >THƯ VIỆN SỐ</a>
+
+    </nav>
+
+    <main>
+        <div class="dau">
+            <h1><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../sinhvien/sinhvien.html">SINH VIÊN</a> > <a href="../sinhvien/tailieuthamkhao.html">Tài liệu tham khảo</a> > <a href="../sinhvien/tailieuthamkhao1.html">Sinh viên</a></h1>
+        </div>
+        <hr class="dongke">
+
+        <div class="container1">
+            <div class="right-container">
+                <div class="sidebar">
+                    <div class="sidebar-item">
+                        <div class="menu-title" onclick="toggleMenu(this)">
+                            <span class="arrow">></span>
+                            <a href="sinhvienchuanbitotnghiep.html">Sinh viên chuẩn bị tốt nghiệp</a>
+                        </div>
+                        <div class="menu">
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="vanbanhuongdan.html">Văn bản hướng dẫn</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tailieuthamkhao.html">Tài liệu tham khảo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <ul>
+                            <li><a href="cuusinhvien.html">Cựu sinh viên</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+                <div class="content">
+                    <h2>GIỚI THIỆU</h2>
+                    <p>Trong bối cảnh của cuộc cách mạng công nghiệp 4.0, giáo dục và đào tạo, đặc biệt là giáo dục đại học, đang trải qua những biến đổi sâu sắc để đáp ứng yêu cầu của thời đại số. Trong quá trình này, tài nguyên thông tin số và tri thức số đã và đang đóng vai trò vô cùng quan trọng, trở thành một trong những nền tảng cốt lõi cho mô hình Đại học số. Những nguồn tài nguyên này không chỉ đáp ứng nhu cầu học tập, giảng dạy mà còn là công cụ thiết yếu cho nghiên cứu khoa học, góp phần nâng cao chất lượng và hiệu quả của giáo dục đại học.</p>
+                    <p>Đại học số không chỉ đơn giản là việc ứng dụng công nghệ thông tin vào giảng dạy và học tập mà còn là việc xây dựng một hệ sinh thái giáo dục toàn diện và liên kết, trong đó tài nguyên thông tin số và tri thức số là thành phần không thể thiếu. Những tài nguyên này bao gồm các cơ sở dữ liệu điện tử, sách giáo trình số, các bài báo khoa học trực tuyến, các khóa học trực tuyến mở rộng (MOOCs), và nhiều dạng tài liệu học thuật khác. Chúng mang lại lợi ích to lớn cho sinh viên và cán bộ giảng viên, không chỉ về mặt tiếp cận thông tin mà còn giúp tiết kiệm thời gian và chi phí.</p>
+                    <p>Hiện tại, khoa Công nghệ thông tin - Đại học Kiến trúc có những nguồn tài nguyên số sau: </p>
+                    <h3>1. Đề cương học phần chuyên ngành Công nghệ thông tin </h3>
+                    <p>Đề cương học phần chuyên ngành Công nghệ thông tin tại Đại học Kiến trúc là một tài liệu quan trọng, cung cấp thông tin chi tiết về các môn học trong chương trình đào tạo. Mỗi môn học được trình bày đầy đủ với tên, mã học phần, mục tiêu, chuẩn đầu ra, kế hoạch thực hiện và phương pháp đánh giá. Đề cương này giúp sinh viên nắm bắt được kiến thức cần thiết và kỹ năng chuyên môn, chuẩn bị tốt cho sự nghiệp tương lai.</p>
+                    <p>Tài liệu này không chỉ cung cấp một cái nhìn tổng quan về nội dung học tập mà còn định hướng rõ ràng về các mục tiêu và yêu cầu của từng môn học. Qua đó, sinh viên có thể chủ động xây dựng lộ trình học tập hiệu quả, nắm vững các kiến thức cơ bản và chuyên sâu, phát triển kỹ năng thực hành và tư duy logic. Đồng thời, đề cương cũng giúp sinh viên hiểu rõ các tiêu chí đánh giá, từ đó định hướng và điều chỉnh phương pháp học tập phù hợp, nâng cao khả năng đạt được các chuẩn đầu ra mong muốn.</p>
+                    <p>Link truy cập: <a href="../thuvienso/congnghe.html" class="taiday">TẠI ĐÂY</a></p>
+                    <h3>2. Đề cương học phần chuyên ngành Công nghệ đa phương tiện</h3>
+                    <p>Đề cương học phần chuyên ngành Công nghệ đa phương tiện tại Đại học Kiến trúc là một tài liệu quan trọng, cung cấp thông tin chi tiết về các môn học trong chương trình đào tạo. Mỗi môn học được trình bày đầy đủ với tên, mã học phần, mục tiêu, chuẩn đầu ra, kế hoạch thực hiện và phương pháp đánh giá. Đề cương này giúp sinh viên nắm bắt được kiến thức cần thiết và kỹ năng chuyên môn, chuẩn bị tốt cho sự nghiệp tương lai.</p>
+                    <p>Tài liệu này không chỉ cung cấp một cái nhìn tổng quan về nội dung học tập mà còn định hướng rõ ràng về các mục tiêu và yêu cầu của từng môn học. Qua đó, sinh viên có thể chủ động xây dựng lộ trình học tập hiệu quả, nắm vững các kiến thức cơ bản và chuyên sâu, phát triển kỹ năng thực hành và tư duy logic. Đồng thời, đề cương cũng giúp sinh viên hiểu rõ các tiêu chí đánh giá, từ đó định hướng và điều chỉnh phương pháp học tập phù hợp, nâng cao khả năng đạt được các chuẩn đầu ra mong muốn.</p>
+                    <p>Link truy cập: <a href="../thuvienso/cndaphuongtien.html" class="taiday">TẠI ĐÂY</a></p>
+                    <h3>3. Giáo trình chuyên ngành</h3>
+                    <p>Giáo trình số đóng vai trò quan trọng đối với cả giảng viên và sinh viên đại học. Đối với giảng viên, giáo trình số là công cụ hỗ trợ giảng dạy hiện đại. Giáo trình số cũng linh hoạt và dễ dàng cập nhật, cho phép giảng viên điều chỉnh nội dung theo các phát triển mới nhất trong lĩnh vực chuyên môn, đảm bảo thông tin luôn chính xác và phù hợp. Ngoài ra, giáo trình số giúp tiết kiệm thời gian và tài nguyên, giảm thiểu in ấn và bảo vệ môi trường. Đối với sinh viên, giáo trình số mang lại tiện ích lớn với khả năng truy cập mọi lúc, mọi nơi, chỉ cần có kết nối internet. Điều này tạo điều kiện học tập linh hoạt, giúp sinh viên dễ dàng nắm bắt kiến thức và phát triển kỹ năng tự học. Giáo trình số cũng cung cấp các nội dung đa phương tiện và bài tập tương tác, tăng cường sự hiểu biết và hứng thú học tập. Đồng thời, sinh viên có thể tiếp cận tài liệu mới nhất, đảm bảo kiến thức luôn được cập nhật, hỗ trợ tối đa cho quá trình học tập và nghiên cứu.</p>
+                    <p>Link truy cập: <a href="../thuvienso/giaotrinh.html" class="taiday">TẠI ĐÂY</a></p>
+                    <h3>4. Thư viện số Đại học Kiến trúc</h3>
+                    <p>Thư viện số Đại học Kiến trúc là một kho tài nguyên học thuật phong phú và đa dạng, được thiết kế nhằm đáp ứng nhu cầu học tập, giảng dạy và nghiên cứu của giảng viên và sinh viên. Với hàng ngàn tài liệu điện tử bao gồm sách, bài báo, tạp chí, và luận văn, thư viện số cung cấp một nguồn thông tin đáng tin cậy và dễ dàng truy cập mọi lúc, mọi nơi qua các thiết bị điện tử. Ngoài ra, thư viện số còn tích hợp các công cụ tìm kiếm thông minh và các tính năng hỗ trợ học tập như tài liệu tham khảo, nộp LA/LV và liên kết với các thư viện Đại học ây dựng ở các miền, giúp quá trình nghiên cứu và học tập của người dùng đạt hiệu quả nhất. Thư viện số Đại học Kiến trúc không chỉ là nơi lưu trữ kiến thức mà còn là một môi trường học thuật hiện đại, góp phần quan trọng vào việc nâng cao chất lượng giáo dục và nghiên cứu tại trường.</p>
+                    <p>Link truy cập: <a href="http://www.thuviendhkt.net/" class="taiday" target="_blank">TẠI ĐÂY</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <button id="scroll-to-top" title="Go to top">↑</button>
+    
+    <footer>
+        <div class="chantrangweb">
+            <div class="footer-column">
+                <h3>LIÊN KẾT</h3>
+                <div class="textwidget">
+                    <ul>
+                        <li><a href="https://hau.edu.vn/" target="_blank" class="special-link">Đại học Kiến trúc</a></li>
+                        <li><a href="https://moet.gov.vn/Pages/home.aspx" target="_blank" class="special-link">Bộ Giáo dục và Đào tạo</a></li>
+                        <li><a href="https://moc.gov.vn/vn/Pages/Trangchu.aspx" target="_blank" class="special-link">Bộ xây dựng</a></li> 
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>LIÊN HỆ</h3>
+                <div class="textwidget">
+                    <ul>
+                        <li>Địa chỉ: Tầng 7 Nhà I, Đại học Kiến trúc, P. Văn Quán, Hà Đông, Hà Nội</li>
+                        <li>Điện thoại: 024.3854.2391</li>
+                        <li>Email: khoacntt@hau.edu.vn</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>BẢN ĐỒ</h3>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14901.20506835429!2d105.7891549!3d20.9805574!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ade83ba9e115%3A0x6f4fdb5e1e9e39ed!2zVHLGsOG7nW5nIMSQ4bqhaSBo4buNYyBLaeG6v24gdHLDumMgSMOgIE7hu5lp!5e0!3m2!1svi!2s!4v1719037006419!5m2!1svi!2s" 
+                        width="600" 
+                        height="450" 
+                        style="border:0;" 
+                        allowfullscreen="" 
+                        loading="lazy" 
+                        referrerpolicy="no-referrer-when-downgrade"
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

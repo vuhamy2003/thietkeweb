@@ -7,7 +7,7 @@ body {
 
 .header {
     background-color: white;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
 }
 
 .logo {
@@ -311,12 +311,13 @@ footer {
 
 main {
     background-color: white;
-    padding: 10px 0;
+    padding: 0px 0px;
+
 }
 
 .dau {
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     margin-left: 148px; 
@@ -328,18 +329,22 @@ a {
 }
 
 h1  {
-    font-size: 20px; 
-    /*margin-left: 148px; */
+    font-size: 16px; 
+    color:#025ba1;
 }
 
 hr.dongke {
     border: 0;
     height: 2px; /* Độ dày của dòng kẻ */
     background-color: #025ba1; /* Màu sắc của dòng kẻ */
+    margin: 0 0 20px 0 ;
 }
 
-.container {
+.container1 {
     display: flex;
+    align-items: flex-start;
+    padding: 0 20px 0 20px;
+    margin: 20px 140px 20px 140px;
 }
 
 hr.sidegach {
@@ -351,42 +356,54 @@ hr.sidegach {
 .right-container {
     width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
      /* Khoảng cách giữa right-container và cạnh trái của nó */
+    padding: 0 0 0 10px;
 }
+
 .sidebar {
-    width: 320px; /* Đặt chiều rộng cố định */
+    max-width: 320px; /* Đặt chiều rộng cố định */
     height: auto; /* Chiều cao tự động dựa trên nội dung */
     color: #025ba1;
     background-color: #dce9f2fe;
 }
 
-/*.sidebar {
-    background-color: #dce9f2fe;
-    color: #004080;
-    padding: 20px;
-    margin-left: -17px;
-    margin-bottom: 1350px;
-}*/
-
-.sidebar ul {
+.sidebar-item ul {
     list-style-type: none;
     padding: 0;
+    margin: 0; /* Xóa khoảng cách mặc định của ul */
 }
 
-.sidebar ul li {
-    padding: 10px 0;
-    cursor: pointer;
+.sidebar-item ul li {
+    margin: 0;
 }
 
-.sidebar ul li.active {
-    background-color: #025ba1;;
-    padding-left: 15px;
+.sidebar-item ul li a {
+    display: block;
+    color: #025ba1;
+    padding: 14px 20px;
     font-weight: bold;
-    color: #fff;
+    text-align: left;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid #025ba1;
+}
+
+.sidebar-item ul li a:hover {
+    background-color: #025ba1;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-item ul li a.selected {
+    background-color: #025ba1;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .content {
+    flex: 3; /* Sử dụng không gian còn lại cho nội dung */
+    padding: 0 10px 0 30px;
     width: 75%;
-    padding:  0px 0px 0px 20px;
 }
 
 .content h2 {
@@ -394,6 +411,7 @@ hr.sidegach {
     border-bottom: 2px solid #91B8D6;
     display: inline-block;
     padding-bottom: 5px;
+    margin: 0 0 20px 0;
 }
 
 .content p {

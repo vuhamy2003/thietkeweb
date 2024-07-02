@@ -1,0 +1,94 @@
+.content h2 {
+    margin: 0 auto;
+    color:#025ba1;
+    text-transform: uppercase;
+}
+
+.content h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+
+.anhbia{
+    display: flex;
+    margin-bottom: 10px; /* Khoảng cách từ ảnh bìa đến phần nội dung */
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.anhbia:hover {
+    transform: scale(1.02); /* Phóng to ảnh khi hover */
+    opacity: 0.9; /* Thay đổi độ mờ khi hover */
+    cursor: pointer;
+}
+
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 0;
+}
+
+/* Modal (background) */
+.modal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    z-index: 1; /* Đảm bảo modal luôn trên cùng */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.452); /* Black w/ opacity */
+    background-color: #6062668a(112, 112, 112, 0.541); /* Black w/ opacity */
+}
+
+/* Modal content (image) */
+.modal-content {
+    margin: 50px auto 50px auto;
+    display: block;
+    width: 80%;
+    max-width: 1200px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*Lectures list*/
+
+.lecturers {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
+    gap: 20px; /* Adjust spacing between items */
+    padding: 20px 0;
+}
+
+.lecturer {
+    text-align: center;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.lecturer img {
+    max-width: 100%;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+

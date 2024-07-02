@@ -330,7 +330,7 @@ footer {
 }
 main {
     /*background-color: white;*/
-    padding: 10px 0;
+    padding: 0 0;
 }
 
 .dau {
@@ -347,15 +347,15 @@ a {
 }
 
 h1  {
-    font-size: 20px; 
-    color:#003366;
-    /*margin-left: 148px; */
+    font-size: 16px; 
+    color:#025ba1;
 }
 
 hr.dongke {
     border: 0;
     height: 2px; /* Độ dày của dòng kẻ */
     background-color: #025ba1;  /* Màu sắc của dòng kẻ */
+    margin: 0 0 20px 0 ;
 }
 
 .chananh {
@@ -516,16 +516,11 @@ hr.dongke {
     transform: scale(1.1); /* Phóng to hình ảnh lên 1,2 lần kích thước ban đầu */
 }
 
-/*.bold-dot {
-    font-weight: bold;
-    font-size: 24px; /* Adjust size as needed 
-}*/
-
 .back1 {
     background-color: #fff;
     margin-top: 81px;
     width: 100%;
-    height: 430px;
+    height: 440px;
 }
 .cndpt {
     display: flex;
@@ -755,4 +750,64 @@ hr.dongke {
 .message-content {
     max-width: 70%;
     word-wrap: break-word;
+}
+
+/*bài viết giới thiệu chuyên ngành*/
+.baiviet {
+    padding: 10px; /* Đặt khoảng cách bên trong khung chứa */
+    margin: 0 auto; /* Căn giữa khung chứa */
+    width: 1200px; /* Đặt độ rộng cho khung chứa */
+    box-sizing: border-box; /* Đảm bảo padding không ảnh hưởng đến độ rộng tổng thể */
+    
+}
+.baiviet h2 {
+    font-size: 26px; 
+    color:#003366;
+    text-align: center;
+    font-weight: bold; 
+}
+.baiviet h3 {
+    font-size: 20px; 
+    color:#004080;
+    text-align:justify;
+    font-style: italic;
+    font-weight: bold; 
+}
+
+.baiviet p {
+    font-size: 16px; 
+    color:#333;
+    text-align:justify;
+    line-height: 1.15; /* Khoảng cách giữa các dòng trong thẻ <p> */
+}
+
+.baivietp {
+    font-weight: bold; 
+    color:#004080;
+    font-style: italic;
+}
+
+.baiviet h2, .baiviet h3, .baiviet p {
+    margin-bottom: 5px; /* Khoảng cách giữa các phần tử */
+}
+/* dấu chấm*/
+.bold-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px; 
+    color:#333;
+}
+
+.anhgtcn {
+    width: 800px; /* Độ rộng mong muốn */
+    height: auto; /* Chiều cao tự điều chỉnh theo tỷ lệ */
+    display: block; /* Để ảnh hiển thị dạng block */
+    margin-left: auto; /* Căn lề trái tự động */
+    margin-right: auto; /* Căn lề phải tự động */
+}
+
+#ghichuanh {
+    font-size: 12px; 
+    text-align: center;
+    font-style: italic;
 }
