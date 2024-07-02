@@ -132,7 +132,7 @@ body {
     justify-content: space-between;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
+    padding: 0 20px 0 20px;
     transition: padding-top 0.5s ease;
 }
 .container.search-active {
@@ -240,12 +240,10 @@ body {
     display: block;
 }
 
-.image {
-    width: 100%;
-    height: auto;
-    display: block;
+.header{
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
-
 
 footer {
     background-color: #025ba1;
@@ -317,7 +315,7 @@ body, h2, p, ul, li {
 }
 
 /* Container */
-.container {
+.container1 {
     width: 100%;
     margin: 0 auto;
     padding: 15px;

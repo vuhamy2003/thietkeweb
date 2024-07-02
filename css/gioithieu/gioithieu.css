@@ -437,7 +437,7 @@ footer {
 }
 
 .video {
-    flex: 1; /* Video chiếm 2/3 */
+    flex: 1; /* Video chiếm 1/3 */
     margin-right: 10px; /* Khoảng cách giữa video và chứng nhận */
 }
 
@@ -459,8 +459,8 @@ footer {
 }
 
 .video iframe {
-    width: 410px; /* Video chiếm đủ 2/3 phần bên trái */
-    height: 290.075px;
+    width: 100%;
+    height: 244.969px;
     transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
 }
 
