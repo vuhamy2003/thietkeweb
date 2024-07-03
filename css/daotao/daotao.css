@@ -407,7 +407,7 @@ hr.dongke {
     background-color: #025ba1;
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    height: 24px;
+    height: auto;
 }
 
 /*content*/

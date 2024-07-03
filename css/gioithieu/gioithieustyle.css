@@ -363,7 +363,7 @@ hr.dongke {
 
 .right-container {
     width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
-    padding: 0 0 0 10px /* Khoảng cách giữa right-container và cạnh trái của nó */
+    padding: 0 0 0 10px;/* Khoảng cách giữa right-container và cạnh trái của nó */
 }
 
 .sidebar {
@@ -407,7 +407,7 @@ hr.dongke {
     background-color: #025ba1;
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    height: 24px;
+    height: auto;
 }
 
 /*content*/
@@ -454,3 +454,4 @@ hr.dongke {
     pointer-events: auto; /* Để cho phép tương tác khi header hiện */
 }
 
+/* Thiết lập các điều kiện cho iPhone 14 Pro Max (430px x 932px) */
