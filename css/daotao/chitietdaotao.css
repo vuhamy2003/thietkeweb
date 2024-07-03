@@ -1,13 +1,15 @@
 
 .pdf-container {
     display: none; /* Ẩn PDF ban đầu */
-    margin-top: 5px;
+    margin: 5px;
 }
 
 .pdf-container iframe {
     width: 100%;
     height: 800px; /* Chiều cao tùy ý */
     padding-top: 20px;
+    margin: 10px 0 10px 0;
+    border-top: 1px solid #ccc ;
 }
 
 .content h2 {
