@@ -9,6 +9,8 @@ body {
 .header {
     background-color: white;
     padding: 10px 0;
+    position: relative; /* Để đảm bảo sticky header hiển thị trên header chính */
+    z-index: 10;
 }
 
 .logo {
@@ -430,4 +432,22 @@ hr.dongke {
     padding: 10px 15px; /* Khoảng cách bên trong nút */
     border-radius: 5px; /* Bo tròn các góc */
     font-size: 16px; /* Kích thước chữ */
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1000; /* Để hiển thị trên các thành phần khác */
+    pointer-events: none; /* Để tránh tương tác khi header ẩn */
+}
+
+.sticky-header.show {
+    opacity: 1;
+    pointer-events: auto; /* Để cho phép tương tác khi header hiện */
 }
