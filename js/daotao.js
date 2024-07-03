@@ -1,13 +1,29 @@
-document.querySelectorAll('.toggle-pdf').forEach(function(toggleButton) {
-    toggleButton.addEventListener('click', function() {
-        var pdfContainer = this.nextElementSibling;
-        if (pdfContainer.style.display === "none" || pdfContainer.style.display === "") {
-            pdfContainer.style.display = "block";
+
+// $(document).ready(function() {
+//     $('.toggle-pdf').click(function() {
+//         var pdfContainer = $(this).next('.pdf-container');
+//         if (pdfContainer.is(':hidden')) {
+//             pdfContainer.slideDown('slow'); // Hiển thị PDF mượt mà với slideDown
+//         } else {
+//             pdfContainer.slideUp('slow'); // Ẩn PDF mượt mà với slideUp
+//         }
+//     });
+// });
+
+$(document).ready(function() {
+    $('.toggle-pdf').click(function() {
+        var pdfContainer = $(this).next('.pdf-container');
+        $(this).toggleClass('open'); // Thêm class khi click để xoay mũi tên
+        if (pdfContainer.is(':hidden')) {
+            pdfContainer.slideDown('slow');
         } else {
-            pdfContainer.style.display = "none";
+            pdfContainer.slideUp('slow');
         }
     });
 });
+
+
+
 
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM fully loaded and parsed");
