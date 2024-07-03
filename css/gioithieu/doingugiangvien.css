@@ -19,7 +19,6 @@
 
 .anhbia:hover {
     transform: scale(1.02); /* Phóng to ảnh khi hover */
-    opacity: 0.9; /* Thay đổi độ mờ khi hover */
     cursor: pointer;
 }
 
@@ -49,7 +48,7 @@ figcaption{
     margin: 50px auto 50px auto;
     display: block;
     width: 80%;
-    max-width: 1200px;
+    max-width: 1000px;
 }
 
 /* Close button */
@@ -90,5 +89,16 @@ figcaption{
     max-width: 100%;
     border-radius: 50%;
     margin-bottom: 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Center the last lecturer in the grid */
+.lecturers .lecturer:last-child {
+    grid-column: 2 / 3;
+}
+
+.lecturer img:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi hover */
+    cursor: pointer;
 }
 

@@ -7,7 +7,6 @@
 
 .anhbia:hover {
     transform: scale(1.02); /* Phóng to ảnh khi hover */
-    opacity: 0.9; /* Thay đổi độ mờ khi hover */
 }
 
 .content{
