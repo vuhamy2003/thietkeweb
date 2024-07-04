@@ -8,7 +8,9 @@ body {
 
 .header {
     background-color: white;
-    padding: 10px 0;
+    padding: 0;
+    position: relative; /* Để đảm bảo sticky header hiển thị trên header chính */
+    z-index: 10;
 }
 
 .logo {
@@ -336,12 +338,18 @@ main {
     padding: 0px 0px;
 }
 
-.dau {
-    max-width: 1200px;
-    padding: 0 20px;
+.display-container {
     display: flex;
+    align-items: center;
+    padding: 0;  
+    height: auto; 
+    height: 40px;
     justify-content: space-between;
-    margin-left: 148px; 
+}
+
+.iconchatbox {
+    width: 20px;
+    height: auto;
 }
 
 a {
@@ -489,4 +497,50 @@ hr.sidegach {
 
 .diemthip {
     font-size: 14px;
+}
+
+.display {
+    color: #025ba1;
+    padding: 0 20px;
+    display: flex;
+    margin-left: 148px; 
+    font-weight: bolder;
+}
+
+.display p{
+    color:#025ba1;
+    font-size: 16px;
+}
+
+.display p a{
+    color: inherit; /* Kế thừa màu chữ từ phần tử cha (.display) */
+    text-decoration: none; /* Bỏ gạch chân cho đường liên kết */
+    transition: transform 0.3s ease; /* Hiệu ứng chuyển đổi màu khi hover */
+}
+
+hr.dongke {
+    border: 0;
+    height: 2px; /* Độ dày của dòng kẻ */
+    background-color: #025ba1; /* Màu sắc của dòng kẻ */
+    margin: 0 0 20px 0;
+}
+
+/*Cuộn header*/
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1000; /* Để hiển thị trên các thành phần khác */
+    pointer-events: none; /* Để tránh tương tác khi header ẩn */
+}
+
+.sticky-header.show {
+    opacity: 1;
+    pointer-events: auto; /* Để cho phép tương tác khi header hiện */
 }

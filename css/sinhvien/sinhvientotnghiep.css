@@ -1,0 +1,78 @@
+.xemchitiet {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.bold-list {
+    list-style-type: disc;
+    margin-left: 20px;
+    font-size: 16px; 
+    color:#333;
+}
+
+.article h3 {
+    font-size: 16px;
+    color:#004080;
+    font-style: italic;
+}
+
+.article p {
+    font-size: 16px;
+    line-height: 1.5; 
+    text-align:justify;
+}
+.article ul {
+    line-height: 1.5; 
+    text-align:justify;
+}
+
+.anhtuyendung {
+    width: 840px; /* Độ rộng mong muốn */
+    height: auto; /* Chiều cao tự điều chỉnh theo tỷ lệ */
+    display: block; /* Để ảnh hiển thị dạng block */
+    margin-left: auto; /* Căn lề trái tự động */
+    margin-right: auto; /* Căn lề phải tự động */
+}
+
+.comment-section {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.comment-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#comments-container {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.comment-input {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#comment-text {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+}
+
+#post-comment {
+    padding: 10px 20px;
+}
