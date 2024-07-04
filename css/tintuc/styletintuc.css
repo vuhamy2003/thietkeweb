@@ -349,152 +349,105 @@ hr.dongke {
     margin: 0 0 20px 0;
 }
 
-/*Side bar menu*/
+/* Định dạng cho thẻ main */
+main {
+    padding: 0;
+}
 
-.container1 {
+a {
+    text-decoration: none; 
+    color: inherit; 
+}
+
+/* Định dạng cho các phần tử chứa nội dung */
+.back, .back1 {
+    width: 100%;
+    height: 440px;
+}
+
+.back {
+    background-color: #fff;
+}
+
+.back1 {
+    background-color: rgba(214, 235, 248, 0.445);
+}
+
+.thongbao, .congnghethongtin, .congnghedaphuongtien, .tinhocungdung, .khoahoccongnghe {
     display: flex;
-    align-items: flex-start;
-    padding: 0 20px 0 20px;
-    margin: 0 140px 20px 140px;
+    justify-content: space-between; /* Căn các phần tử con sang hai bên của khung */
+    align-items: flex-start; /* Căn các phần tử con theo trục dọc, bắt đầu từ đầu */
+    padding: 10px; /* Đặt khoảng cách bên trong khung chứa */
+    margin: 0 auto;
+    width: 1200px;
 }
 
-.right-container {
-    width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
-    padding: 0 0 0 10px /* Khoảng cách giữa right-container và cạnh trái của nó */
+.anh_thongbao, .anh_cntt, .anh_cndpt, .anh_tinhocungdung, .anh_khoahoccongnghe {
+    flex: 1;
+    margin: 13px;
+    position: relative; /* Đảm bảo hình ảnh nằm trong vùng chứa của nó */
+    overflow: hidden; /* Đảm bảo hình ảnh không tràn ra ngoài vùng chứa */
+    border-radius: 10px;
 }
 
-.sidebar {
-    max-width: 320px; /* Đặt chiều rộng cố định */
-    height: auto; /* Chiều cao tự động dựa trên nội dung */
+.noidung, .noidung1 {
+    flex: 1;
+    margin: 10px;
+    max-width: 600px;
+}
+
+.anh_thongbao img, 
+.anh_cntt img, 
+.anh_cndpt img, 
+.anh_tinhocungdung img, 
+.anh_khoahoccongnghe img {
+    width: 100%; /* Đảm bảo hình ảnh bao phủ toàn bộ vùng chứa */
+    height: auto;
+    transition: transform 0.4s ease-in-out; /* Hiệu ứng chuyển tiếp mượt mà */
+}
+
+.zoom:hover {
+    transform: scale(1.1); /* Phóng to hình ảnh lên 1,1 lần kích thước ban đầu */
+}
+
+/* Định dạng cho các tiêu đề */
+.noidung h2, .noidung1 h2 { 
+    color: #004080;
+    font-size: 28px;
+}
+
+.noidung h2:hover, .noidung1 h2:hover { 
+    text-decoration: underline;
     color: #025ba1;
-    background-color: #dce9f2fe;
 }
 
-.sidebar-item ul {
+/* Định dạng cho các danh sách */
+.noidung ul, .noidung1 ul {
     list-style-type: none;
     padding: 0;
-    margin: 0; /* Xóa khoảng cách mặc định của ul */
+    list-style-type: disc; /* Dấu chấm trước mỗi mục */
+    padding-left: 40px; /* Khoảng cách giữa dấu chấm và viền trái */
 }
 
-.sidebar-item ul li {
-    margin: 0;
-}
-
-.sidebar-item ul li a {
-    display: block;
-    color: #025ba1;
-    padding: 14px 20px;
-    font-weight: bold;
-    text-align: left;
-    text-decoration: none;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    border-bottom: 1px solid #025ba1;
-    line-height: 24px;
-    align-items: center;
-}
-
-.sidebar-item ul li a:hover {
-    background-color: #025ba1;
-    color: white;
-    transform: translateY(-3px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-.sidebar-item ul li a.selected {
-    background-color: #025ba1;
-    color: #ffffff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    height: 24px;
-}
-
-
-/*main-content*/
-.main-content {
-    flex: 3; /* Sử dụng không gian còn lại cho nội dung */
-    padding: 0 20px;
-    width: 75%;
-    margin-left: 20px;
-}
-
-.article {
-    margin-bottom: 20px;
-    border-bottom: 1px solid #025ba1;
-}
-
-.article-header-content h3 {
+.noidung ul li, .noidung1 ul li {
     margin-bottom: 10px;
-    margin-top: 5px;
+    color: #004080;
+    font-weight: bold;
+    font-size: 17px;
 }
 
-.article-header-content h3 a {
-    color: inherit;
-    text-decoration: none;
+/* Định dạng cho các nút bấm */
+.button {
+    padding: 10px 20px;
+    color: #004080; /* Chữ xanh */
+    font-weight: bold;
+    border: 2px solid #004080; /* Viền xanh */
+    border-radius: 10px; /* Bo góc nút */
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu */
 }
 
-.article-header-content h3 a:hover {
-    color: inherit;
-}
-
-.article-header-content h3 a:visited {
-    color: inherit;
-}
-.main-content h2 {
-    margin-top: 0; /* Giảm khoảng cách trên của tiêu đề */
-    padding-bottom: 5px; /* Giảm khoảng cách dưới của tiêu đề */
-}
-.main-content h2 a {
-    color: #025ba1;
-    text-decoration: none;
-}
-
-.main-content h2 a:hover {
-    color: #025ba1;
-}
-
-.main-content h2 a:visited {
-    color: #025ba1;
-}
-.article-header {
-    display: block;
-}
-.article-header img {
-
-    margin: 10px 0;
-}
-.article-meta {
-    margin-bottom: 20px;
-    display: flex;
-    color: #636363;
-    font-size: 0.9em;
-}
-.article-meta .date {
-    margin-left: 5px;
-    margin-right: 20px;
-}
-
-.article-meta .views {
-    margin-left: 5px;
-}
-.section-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
-    padding-bottom: 0; /* Giảm padding-bottom để giảm khoảng cách */
-    margin-bottom: -10px; /* Giảm margin-bottom để giảm khoảng cách */
-    height: auto; /* Đặt chiều cao để ngang bằng với sidebar */
-}
-.view-all-box {
-    border: 1px solid #dce9f2fe;
-    padding: 5px 10px;
-    border-radius: 5px;
-    text-decoration: none;
-    color: white;
-    background-color: #025ba1;
-    margin-top: -30px;
-}
-.side-image {
-    width: 100%; /* Chiếm toàn bộ chiều rộng của phần tử mẹ */
-    height: auto; /* Chiều cao tự động điều chỉnh theo tỷ lệ của ảnh */
-    max-width: none; /* Đảm bảo không có giới hạn chiều rộng tối đa */
+.button:hover {
+    background-color: #025ba1; /* Nền xanh khi ấn vào */
+    color: white; /* Chữ trắng khi ấn vào */
 }
