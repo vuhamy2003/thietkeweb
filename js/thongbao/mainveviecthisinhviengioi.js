@@ -67,3 +67,17 @@ document.addEventListener('DOMContentLoaded', function() {
         dropdownContent.style.display = 'none';
     });
 });
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    var stickyHeader = document.getElementById('sticky-header');
+    var showStickyHeaderAfter = 60; // Số pixel cuộn qua để hiển thị sticky header
+
+    window.addEventListener('scroll', function() {
+        if (window.pageYOffset > showStickyHeaderAfter) {
+            stickyHeader.classList.add('show');
+        } else {
+            stickyHeader.classList.remove('show');
+        }
+    });
+});
