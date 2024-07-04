@@ -431,6 +431,7 @@ a {
     padding: 0;
     list-style-type: disc; /* Dấu chấm trước mỗi mục */
     padding-left: 40px; /* Khoảng cách giữa dấu chấm và viền trái */
+    margin-bottom: 30px;
 }
 
 .noidung ul li, .noidung1 ul li {
