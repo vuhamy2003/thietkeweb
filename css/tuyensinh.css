@@ -330,13 +330,12 @@ footer {
     background-color: #003366; /* Màu nền khi di chuột qua nút */
 }
 main {
-    /*background-color: white;*/
     padding: 0 0;
 }
 
 .dau {
     max-width: 1200px;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
     justify-content: space-between;
     margin-left: 148px; 
@@ -366,7 +365,7 @@ hr.dongke {
     height: 200px;
     background-size: cover; /* Ensures the image covers the entire background */
     background-position: center; /* Centers the image */
-    background-repeat: no-repeat; /
+    background-repeat: no-repeat; 
 }
 
 .chananh1 {
