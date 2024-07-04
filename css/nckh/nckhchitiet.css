@@ -1,0 +1,61 @@
+.content h2 {
+    margin: 0 auto;
+    color:#025ba1;
+    text-transform: uppercase;
+}
+
+.content h3 {
+    text-transform: uppercase;
+    margin-bottom: 0;
+}
+
+.content p, li, ul {
+    text-align: justify;
+    line-height: 24px;
+    font-weight: 400;
+    word-wrap: break-word;
+    margin: 5px 0 5px 0;
+}
+
+.content p{
+    text-indent: 0.5in;
+}
+
+hr{
+    color: #025ba1;
+}
+
+.article-meta {
+    display: flex;
+    color: #636363;
+    font-size: 0.9em;
+    margin-bottom: 10px; 
+    margin-top: 5px;/* Thêm khoảng cách giữa h3 và meta info */
+}
+
+.article-meta .date {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.article-meta .views {
+    margin-left: 5px;
+}
+
+.anhminhhoa{
+    width: 100%;
+    height: auto;
+
+}
+
+.video iframe{
+    width: 560px;
+    height: 315px;
+    text-align: center;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
