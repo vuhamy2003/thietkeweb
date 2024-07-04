@@ -8,7 +8,7 @@ body {
 
 .header {
     background-color: white;
-    padding: 0;
+    padding: 10px 0 0 0;
     position: relative; /* Để đảm bảo sticky header hiển thị trên header chính */
     z-index: 10;
 }
@@ -553,4 +553,16 @@ hr.dongke {
 .pdf-container iframe {
     width: 100%;
     height: 100%;
+}
+
+.anhbia{
+    display: flex;
+    margin-top: 20px; 
+    margin-bottom: 20px;
+    width: 100%;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.anhbia:hover {
+    transform: scale(1.02); /* Phóng to ảnh khi hover */
 }
