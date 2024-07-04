@@ -3,11 +3,12 @@ body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
+    transition: opacity 0.3s ease;
 }
 
 .header {
     background-color: white;
-    padding: 10px 0;
+    padding: 10px 0 0 0;
 }
 
 .logo {

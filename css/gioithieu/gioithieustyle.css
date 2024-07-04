@@ -3,11 +3,14 @@ body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
+    transition: opacity 0.3s ease;
 }
 
 .header {
     background-color: white;
     padding: 10px 0;
+    position: relative; /* Để đảm bảo sticky header hiển thị trên header chính */
+    z-index: 10;
 }
 
 .logo {
@@ -360,7 +363,7 @@ hr.dongke {
 
 .right-container {
     width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
-    padding: 0 0 0 10px /* Khoảng cách giữa right-container và cạnh trái của nó */
+    padding: 0 0 0 10px;/* Khoảng cách giữa right-container và cạnh trái của nó */
 }
 
 .sidebar {
@@ -404,7 +407,7 @@ hr.dongke {
     background-color: #025ba1;
     color: #ffffff;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
-    height: 24px;
+    height: auto;
 }
 
 /*content*/
@@ -414,3 +417,41 @@ hr.dongke {
     padding: 0 10px 0 30px;
     width: 75%;
 }
+
+#scroll-to-top {
+    display: none; /* Ẩn nút ban đầu */
+    position: fixed; /* Định vị cố định ở góc dưới bên phải */
+    bottom: 80px; /* Khoảng cách từ dưới cùng của màn hình */
+    right: 20px; /* Khoảng cách từ bên phải của màn hình */
+    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+    border: none; /* Bỏ đường viền */
+    outline: none; /* Bỏ viền khi nhấn */
+    background-color: #025ba1; /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo tròn các góc */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+/*Cuộn header*/
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1000; /* Để hiển thị trên các thành phần khác */
+    pointer-events: none; /* Để tránh tương tác khi header ẩn */
+}
+
+.sticky-header.show {
+    opacity: 1;
+    pointer-events: auto; /* Để cho phép tương tác khi header hiện */
+}
+
+/* Thiết lập các điều kiện cho iPhone 14 Pro Max (430px x 932px) */

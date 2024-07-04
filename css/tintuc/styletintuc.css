@@ -3,6 +3,7 @@ body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
+    transition: opacity 0.3s ease;
 }
 
 .header {
