@@ -8,7 +8,9 @@ body {
 
 .header {
     background-color: white;
-    padding: 10px 0 0 0;
+    padding: 0;
+    position: relative; /* Để đảm bảo sticky header hiển thị trên header chính */
+    z-index: 10;
 }
 
 .logo {
@@ -436,10 +438,11 @@ hr.sidegach {
     flex: 3; /* Sử dụng không gian còn lại cho nội dung */
     padding: 0 10px 0 30px;
     width: 75%;
+    margin: 0 auto;
 }
 
 .content h2 {
-    margin: 0 auto;
+    margin: 0 ;
     color:#025ba1;
     text-transform: uppercase;
 }
@@ -489,6 +492,7 @@ hr.sidegach {
     height: 800px;
     border: 1px solid #ccc;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 .pdf-container iframe {
@@ -540,4 +544,54 @@ hr.sidegach {
 
 #scroll-to-top:hover {
     background-color: #003366; /* Màu nền khi di chuột qua nút */
+}
+
+/*Cuộn header*/
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1000; /* Để hiển thị trên các thành phần khác */
+    pointer-events: none; /* Để tránh tương tác khi header ẩn */
+}
+
+.sticky-header.show {
+    opacity: 1;
+    pointer-events: auto; /* Để cho phép tương tác khi header hiện */
+}
+
+.giaotrinh {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+    color: #025ba1;
+}
+
+.giaotrinh1 {
+    text-align: center;
+    transition: transform 0.3s; /* Thêm hiệu ứng chuyển đổi mượt mà */
+}
+
+.giaotrinh1:hover {
+    transform: scale(1.1); /* Phóng to khi di chuột qua */
+}
+
+.anhgiaotrinh {
+    width: 150px;
+    height: auto;
+    /*margin-bottom: 10px;*/
+    margin-top: 0;
+}
+
+.tengiaotrinh {
+    margin: 5px 0;
+    font-size: 1.1em;
+    font-weight: bold;
 }

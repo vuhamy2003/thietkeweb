@@ -9,15 +9,19 @@
     <meta name="copyright" content="Nhóm 3">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <title>Trang chủ - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title> 
+    <title>Sinh viên - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvientotnghiep.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/thongbao/stylethongbao.css"> 
     <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvien.css"> 
     <script src="../js/main.js"></script>
     <script src="../js/tuyensinh.js"></script>
     <script src="../js/sinhvien.js"></script>  
+    <script src="../js/thongbao/mainthongbao.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="main-header">
         <div id="search-bar-container" class="search-bar-container">
             <input type="text" id="search-bar" class="search-bar" placeholder="Nhập từ khóa tìm kiếm...">
             <button onclick="search()" class="search-button">Tìm kiếm</button>
@@ -115,10 +119,113 @@
         <a href="../thuvienso/thuvienso.html" >THƯ VIỆN SỐ</a>
 
     </nav>
+    </header>
+
+    <header class="header sticky-header" id="sticky-header">
+        <div id="search-bar-container" class="search-bar-container">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Nhập từ khóa tìm kiếm...">
+            <button onclick="search()" class="search-button">Tìm kiếm</button>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="../img/logo.png" alt="Logo" class="ảnh">
+                <div class="title">
+                    <span class="line1">KHOA CÔNG NGHỆ THÔNG TIN</span><br>
+                    <span class="line2">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</span>
+                </div>
+            </div>          
+            
+            <nav class="navbar">
+                <div class="hotline">
+                    <a href="#" id="hotline-link" onclick="showHotline()"><img src="../img/Hotline.png" alt="Hotline" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="hotline-number" style="display: none;" onclick="showHotline()">024.3854.2391</span>
+                </div>
+                <div class="email">
+                    <a href="#" id="email-link" onclick="showEmail()"><img src="../img/Email.png" alt="Email" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="email-text" style="display: none;" onclick="showEmail()">khoacntt@hau.edu.vn</span>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/cntt.dhkt" target="_blank"><img src="../img/Facebook.png" alt="Facebook" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com/channel/UC1LQLaQng8hdIqcUhWKFbnw" target="_blank"><img src="../img/YouTube.png" alt="YouTube" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="search">
+                    <a href="#" id="search-link" onclick="showSearchBar()"><img src="../img/Search.png" alt="Search" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+            </nav>
+
+        </div>
+
+
+    <nav class="tieude">
+        <a href="../index.html" >TRANG CHỦ</a>
+         
+        <div class="dropdown">
+            <a href="../gioithieu/gioithieu.html">GIỚI THIỆU</a>
+            <div class="dropdown-content">
+                <a href="../gioithieu/gioithieukhoacntthau.html">GIỚI THIỆU KHOA CNTT HAU</a>
+                <a href="../gioithieu/tamnhin_nhiemvu.html">TẦM NHÌN - NHIỆM VỤ</a>
+                <a href="../gioithieu/doingugiangvien.html">ĐỘI NGŨ GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../tintuc/tintuc.html">TIN TỨC</a>
+            <div class="dropdown-content">
+                <a href="../tintuc/thongbao.html">THÔNG BÁO</a>
+                <a href="../tintuc/cntt.html">CÔNG NGHỆ THÔNG TIN</a>
+                <a href="../tintuc/congnghedaphuongtien.html">CÔNG NGHỆ ĐA PHƯƠNG TIỆN</a>
+                <a href="../tintuc/tinhocungdung.html">TIN HỌC ỨNG DỤNG</a>
+                <a href="../tintuc/khoahoccongnghe.html">KHOA HỌC CÔNG NGHỆ</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../daotao/daotao.html">ĐÀO TẠO</a>
+            <div class="dropdown-content">
+                <a href="../daotao/nam2022.html">NĂM 2022</a>
+                <a href="../daotao/nam2021.html">NĂM 2021</a>
+                <a href="../daotao/nam2020.html">NĂM 2020</a>
+                <a href="../daotao/nam2016.html">NĂM 2016</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
+            <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <a href="../sinhvien/sinhvienchuanbitotnghiep.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
+                    <div class="sub-dropdown-content">
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tuyendung.html">TUYỂN DỤNG</a>
+                    </div>
+                </div>
+                <a href="../sinhvien/cuusinhvien.html">CỰU SINH VIÊN</a>
+            </div>
+        </div>
+        
+
+        <div class="dropdown">
+            <a href ="../nckh/nghiencuukhoahoc.html">NGHIÊN CỨU KHOA HỌC</a>
+            <div class="dropdown-content">
+                <a href="../nckh/hoatdongnckhsinhvien.html">HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC SINH VIÊN</a>
+                <a href="../nckh/hoatdongnckhgiangvien.html">HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
+        <a href="../thuvienso/thuvienso.html" >THƯ VIỆN SỐ</a>
+
+    </nav>
+    </header>
 
     <main>
-        <div class="dau">
-            <h1><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../sinhvien/sinhvien.html">SINH VIÊN</a> > <a href="../sinhvien/tailieuthamkhao.html">Tài liệu tham khảo</a> > <a href="../sinhvien/tailieuthamkhao1.html">Sinh viên</a></h1>
+        <div class="display">
+            <div class="display-container">
+                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../sinhvien/sinhvien.html">SINH VIÊN</a> > <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a> > <a href="../sinhvien/tuyendung1.html">TUYỂN DỤNG VINCOMMERCE</a></p>
+            </div>
         </div>
         <hr class="dongke">
 
@@ -138,12 +245,12 @@
                             </div>
                             <div class="sidebar-item">
                                 <ul>
-                                    <li><a href="tailieuthamkhao.html">Tài liệu tham khảo</a></li>
+                                    <li><a href="tailieuthamkhao.html" class="selected">Tài liệu tham khảo</a></li>
                                 </ul>
                             </div>
                             <div class="sidebar-item">
                                 <ul>
-                                    <li><a href="tuyendung.html">Tuyển dụng</a></li>
+                                    <li><a href="tuyendung.html" >Tuyển dụng</a></li>
                                 </ul>
                             </div>
                             
@@ -156,25 +263,39 @@
                     </div>
                 </div>
             </div>
-                <div class="content">
-                    <h2>GIỚI THIỆU</h2>
-                    <p>Trong bối cảnh của cuộc cách mạng công nghiệp 4.0, giáo dục và đào tạo, đặc biệt là giáo dục đại học, đang trải qua những biến đổi sâu sắc để đáp ứng yêu cầu của thời đại số. Trong quá trình này, tài nguyên thông tin số và tri thức số đã và đang đóng vai trò vô cùng quan trọng, trở thành một trong những nền tảng cốt lõi cho mô hình Đại học số. Những nguồn tài nguyên này không chỉ đáp ứng nhu cầu học tập, giảng dạy mà còn là công cụ thiết yếu cho nghiên cứu khoa học, góp phần nâng cao chất lượng và hiệu quả của giáo dục đại học.</p>
-                    <p>Đại học số không chỉ đơn giản là việc ứng dụng công nghệ thông tin vào giảng dạy và học tập mà còn là việc xây dựng một hệ sinh thái giáo dục toàn diện và liên kết, trong đó tài nguyên thông tin số và tri thức số là thành phần không thể thiếu. Những tài nguyên này bao gồm các cơ sở dữ liệu điện tử, sách giáo trình số, các bài báo khoa học trực tuyến, các khóa học trực tuyến mở rộng (MOOCs), và nhiều dạng tài liệu học thuật khác. Chúng mang lại lợi ích to lớn cho sinh viên và cán bộ giảng viên, không chỉ về mặt tiếp cận thông tin mà còn giúp tiết kiệm thời gian và chi phí.</p>
-                    <p>Hiện tại, khoa Công nghệ thông tin - Đại học Kiến trúc có những nguồn tài nguyên số sau: </p>
-                    <h3>1. Đề cương học phần chuyên ngành Công nghệ thông tin </h3>
-                    <p>Đề cương học phần chuyên ngành Công nghệ thông tin tại Đại học Kiến trúc là một tài liệu quan trọng, cung cấp thông tin chi tiết về các môn học trong chương trình đào tạo. Mỗi môn học được trình bày đầy đủ với tên, mã học phần, mục tiêu, chuẩn đầu ra, kế hoạch thực hiện và phương pháp đánh giá. Đề cương này giúp sinh viên nắm bắt được kiến thức cần thiết và kỹ năng chuyên môn, chuẩn bị tốt cho sự nghiệp tương lai.</p>
-                    <p>Tài liệu này không chỉ cung cấp một cái nhìn tổng quan về nội dung học tập mà còn định hướng rõ ràng về các mục tiêu và yêu cầu của từng môn học. Qua đó, sinh viên có thể chủ động xây dựng lộ trình học tập hiệu quả, nắm vững các kiến thức cơ bản và chuyên sâu, phát triển kỹ năng thực hành và tư duy logic. Đồng thời, đề cương cũng giúp sinh viên hiểu rõ các tiêu chí đánh giá, từ đó định hướng và điều chỉnh phương pháp học tập phù hợp, nâng cao khả năng đạt được các chuẩn đầu ra mong muốn.</p>
-                    <p>Link truy cập: <a href="../thuvienso/congnghe.html" class="taiday">TẠI ĐÂY</a></p>
-                    <h3>2. Đề cương học phần chuyên ngành Công nghệ đa phương tiện</h3>
-                    <p>Đề cương học phần chuyên ngành Công nghệ đa phương tiện tại Đại học Kiến trúc là một tài liệu quan trọng, cung cấp thông tin chi tiết về các môn học trong chương trình đào tạo. Mỗi môn học được trình bày đầy đủ với tên, mã học phần, mục tiêu, chuẩn đầu ra, kế hoạch thực hiện và phương pháp đánh giá. Đề cương này giúp sinh viên nắm bắt được kiến thức cần thiết và kỹ năng chuyên môn, chuẩn bị tốt cho sự nghiệp tương lai.</p>
-                    <p>Tài liệu này không chỉ cung cấp một cái nhìn tổng quan về nội dung học tập mà còn định hướng rõ ràng về các mục tiêu và yêu cầu của từng môn học. Qua đó, sinh viên có thể chủ động xây dựng lộ trình học tập hiệu quả, nắm vững các kiến thức cơ bản và chuyên sâu, phát triển kỹ năng thực hành và tư duy logic. Đồng thời, đề cương cũng giúp sinh viên hiểu rõ các tiêu chí đánh giá, từ đó định hướng và điều chỉnh phương pháp học tập phù hợp, nâng cao khả năng đạt được các chuẩn đầu ra mong muốn.</p>
-                    <p>Link truy cập: <a href="../thuvienso/cndaphuongtien.html" class="taiday">TẠI ĐÂY</a></p>
-                    <h3>3. Giáo trình chuyên ngành</h3>
-                    <p>Giáo trình số đóng vai trò quan trọng đối với cả giảng viên và sinh viên đại học. Đối với giảng viên, giáo trình số là công cụ hỗ trợ giảng dạy hiện đại. Giáo trình số cũng linh hoạt và dễ dàng cập nhật, cho phép giảng viên điều chỉnh nội dung theo các phát triển mới nhất trong lĩnh vực chuyên môn, đảm bảo thông tin luôn chính xác và phù hợp. Ngoài ra, giáo trình số giúp tiết kiệm thời gian và tài nguyên, giảm thiểu in ấn và bảo vệ môi trường. Đối với sinh viên, giáo trình số mang lại tiện ích lớn với khả năng truy cập mọi lúc, mọi nơi, chỉ cần có kết nối internet. Điều này tạo điều kiện học tập linh hoạt, giúp sinh viên dễ dàng nắm bắt kiến thức và phát triển kỹ năng tự học. Giáo trình số cũng cung cấp các nội dung đa phương tiện và bài tập tương tác, tăng cường sự hiểu biết và hứng thú học tập. Đồng thời, sinh viên có thể tiếp cận tài liệu mới nhất, đảm bảo kiến thức luôn được cập nhật, hỗ trợ tối đa cho quá trình học tập và nghiên cứu.</p>
-                    <p>Link truy cập: <a href="../thuvienso/giaotrinh.html" class="taiday">TẠI ĐÂY</a></p>
-                    <h3>4. Thư viện số Đại học Kiến trúc</h3>
-                    <p>Thư viện số Đại học Kiến trúc là một kho tài nguyên học thuật phong phú và đa dạng, được thiết kế nhằm đáp ứng nhu cầu học tập, giảng dạy và nghiên cứu của giảng viên và sinh viên. Với hàng ngàn tài liệu điện tử bao gồm sách, bài báo, tạp chí, và luận văn, thư viện số cung cấp một nguồn thông tin đáng tin cậy và dễ dàng truy cập mọi lúc, mọi nơi qua các thiết bị điện tử. Ngoài ra, thư viện số còn tích hợp các công cụ tìm kiếm thông minh và các tính năng hỗ trợ học tập như tài liệu tham khảo, nộp LA/LV và liên kết với các thư viện Đại học ây dựng ở các miền, giúp quá trình nghiên cứu và học tập của người dùng đạt hiệu quả nhất. Thư viện số Đại học Kiến trúc không chỉ là nơi lưu trữ kiến thức mà còn là một môi trường học thuật hiện đại, góp phần quan trọng vào việc nâng cao chất lượng giáo dục và nghiên cứu tại trường.</p>
-                    <p>Link truy cập: <a href="http://www.thuviendhkt.net/" class="taiday" target="_blank">TẠI ĐÂY</a></p>
+            <div class="main-content">
+                <div class="article">
+                    <h2>Đồ án tốt nghiệp của sinh viên khoa CNTT với chuyển đổi số</h2>
+                    <div class="article-meta">
+                        <i class="fa fa-clock"></i> <span class="date">14/05/2024</span>
+                        <i class="fa fa-eye"></i> <span class="views">276</span>
+                    </div>
+                    <p><b>Để hòa nhịp với thời đại công nghệ phát triển 4.0, Khoa CNTT - Trường ĐH Kiến trúc Hà Nội đã và đang chuyển đổi một cách mạnh mẽ trong công tác đào tạo, trong đó chú trọng đổi mới sáng tạo và chuyển đổi số ngay tạiKhoa và Nhà trường.</b></p>
+                    <p>Trong những năm gần đây Khoa CNTT đã có những thay đổi tích cực phương pháp đào tạo bằng cách áp dụng phương pháp dạyhọc theo dự án (project). Để thích ứng với phương pháp này, sinh viên phải thay đổi thói quen theo cách học truyền thống và được khuyến khích sự sáng tạo, khám phá, trình bày và vận dụng lý thuyết vào thực tiễn.Đồ án tốt nghiệp không phải ngoại lệ, đây được coi là học phần cuối cùng trong chương trình đào tạo được giảng viên và sinh viên trong và ngoài trường quan tâm. Đồ án tốt nghiệp cũng chính là lần tổng quyệt đầy đủ nhất về kiến thức và kỹ năng của sinh viên sau 4,5 năm học tại trường. </p>
+                    <p>Ngày 10/4/2021 trên website của Khoa CNTT, Thầy Nguyễn Huy Thịnh – Phó Trưởng Khoa đã có bài viết với nội dung: <b><i>“Khoa CNTT đồng hành cùng chuyển đổi số”</i></b>, trong đó thầy có nhấn mạnh về việc: “Xây dựng các nhiệm vụ đồ án môn học, thực tập chuyên môn, đồ án tốt nghiệp liên quan đến chuyển đổi số, an toàn thông tin”. Sau 2 năm phát động, năm nay một số Đồ án tốt nghiệp của sinh viên Khóa 18 Khoa CNTT đã thực hiện được điều đó. Đặc biệt hơn nữa là dưới sự hướng dẫn của các giảng viên trong khoa thì nội dung của một số Đồ án tốt nghiệp đã áp dụng ngay tại Khoa CNTT nói riêng và một số đơn vị trong Trường Đại học Kiến trúc Hà Nội nói chung.</p>
+                    <p>Dưới đây là một số đồ án đã được áp dụng chuyển đổi số ngay tại Khoa và một số đơn vị trong trường, các sản phẩm đều được hội đồng đánh giá với mức điểm khá cao.</p>
+                    <p><b>1. Mô phỏng khuôn viên trường đại học Kiến trúc Hà Nội sử dụng công cụ thực tại ảo Google Virtual Reality.</b></p>
+                    <p>Xuất phát từ niềm đam mê với AR/VR, bạn <b>Nguyễn Văn Dũng 18CN2</b> đã lấy đó làm chủ đề để thực hiện đồ án và tạo nên một ứng dụng thực tại ảo về ngôi trường Đại học mà bản thân đã gắn bó 4,5 năm quavới tên gọi <b>HAU VR Cardboard</b>.</p>
+                    <p>Đề tài không chỉ mang đến sự mới mẻ, độc đáo mà còn có tiềm năng trở thành phương tiện truyền thông, quảng bá và nâng cao hình ảnh của Trường Đại học Kiến trúc Hà Nội trong thời đại của Metaverse, của AR/VR.</p>
+                    <p><b>2. Xây dựng phần mềm quản lý đề tài đồ án, khoá luận tốt nghiệp cho Khoa Công nghệ thông tin - Đại học Kiến Trúc Hà Nội.</b></p>
+                    <p>Trong thời gian học tập tại Trường, nhận biết được sự khó khăn trong việc quản lý và lưu trữ đồ án tốt nghiệp sinh viên của Khoa, bạn Nguyễn Viết Kết - 18CN3 đã thực hiện đề tài: <i>“Quản lý đề tài đồ án, khóa luận tốt nghiệp cho Khoa CNTT – Đại học Kiến Trúc HN” </i>với mong muốn hỗ trợ công tác quản lý và lưu trữ đồ án tốt nghiệp sinh viên Khoa được dễ dàng và chính xác hơn, đồng thời sẽ là tài liệu tham khảo cho các bạn sinh viên khóa sau.</p>
+                    <p>Đồ án này miêu tả tổng thể bài toán quản lý, các yêu cầu về hệ thống, tài liệu phân tích thiết kế hệ thống. Cập nhật, lưu trữ thông tin đồ án sinh viên khoa CNTT.</p>
+                    <p><b>3. Xây dựng Website quản lý Đoàn viên bằng ngôn ngữ PHP sử dụng Framework CodeIgniter.</b></p>
+                    <p>Bạn Phạm Tiến Doanh - 18CN1 là một sinh viên hoạt động năng nổ trong các công tác Đoàn và phong trào thanh niên. Doanh tham gia hầu hết các chương trình Đoàn các cấp và với kinh niệm gần 4 năm trong các nhiệm vụ về quản lý Đoàn viên từ cấp chi Đoàn đến Liên chi Đoàn bạn nhận thấy hồ sơ Đoàn viên là một trong những thông tin rất quan trọng đối với thanh niên ngày nay.Tuy nhiên việc lưu trữ tại các cơ sở Đoản vẫn còn gặp nhiều bất cập do vẫn còn quản lý theo mô hình truyền thống, rất phức tạp mà thông tin của mỗi Đoàn viên lại quá nhiều dẫn đến tình trạng lẫn lộn hay thất lạc thông tin,... Dựa trên ý tưởng đó bạn đã lựa chọn tên đồ án của mình là: <i>Xây dựng Website quản lý Đoàn viên bằng ngôn ngữ PHP sử dụng Framework CodeIgniter</i>. Website này giúp cho việc lưu trữ hồ sơ của Đoàn viên tại cơ sở được chặt chẽ hơn, chính xác hơn, giảm thiểu tối đa tình trạng mất mát dữ liệu và không gian lưu trữ vì toàn bộ dữ liệu đều được số hoá chứ không còn phải lưu trên giấy tờ như trước - vừa tốn không gian, vừa dễ hư hao, thất lạc. Bên cạnh đó nếu Đoàn viên có nhu cầu trích lục hồ sơ thì việc tìm kiếm trên máy tính sẽ dễ dàng hơn nhiều so với việc tìm kiếm một hồ sơ trong hàng trăm, hàng ngàn hồ sơ lưu trữ giấy, tiết kiệm thời gian hơn nhiều. Ngoài ra cũng có thể tích hợp vào website các chức năng đăng bài viết, các chương trình, sự kiện nổi bật trong trường để biến website này không chỉ là một chương trình quản lý mà vừa có thể trở thành một trang thông tin cho sinh viên trong trường vừa thành một trang truyền thông cho các hoạt động sinh viên Kiến trúc.</p>
+                    <p><b>4. Xây dựng hệ thống quản lý ký túc xá và cổng đăng ký ở ký túc xá cho sinh viên.</b></p>
+                    <p>Nói đến chuyển đổi số, không thể không nhắc đến việc ứng dụng xu hướng này trong các trường đại học. Hiện nay, công tác quản lý ký túc xá tại Đại học Kiến Trúc vẫn được thực hiện theo phương pháp truyền thống chưa có hệ thống thông tin quản lý Ký túc xá do đó dữ liệu thông tin vẫn được lưu trữ trên giấy tờ, điều này khiến dữ liệu bị phân mảnh, không đồng nhất. Bên cạnh đó, còn gây ra các vấn đề sai sót, thất lạc giấy tờ sinh viên.</p>
+                    <p>Xuất phát từ những khó khăn đó, việc xây dựng một hệ thống quản lý ký túc xá tích hợp vào hệ thống sinh thái chung của Trường là vô cùng thiết yếu. Do đó, bạn Lê Duy Khánh 18CN3 quyết định thực hiện xây dựng đề tài: <i>“Xây dựng hệ thống quản lý ký túc xá và cổng đăng ký ở ký túc xá cho sinh viên”</i> nhằm mục đích cải thiện, mang lại hiệu quả trong quản lý, xây dựng hệ thống xử lý chính xác nhanh gọn, giảm thiểu thời gian chi phí cho thầy cô quản lý.</p>
+                    <p><b>5. Xây dựng phần mềm quản lý quan hệ hợp tác quốc tế Trường Đại học Kiến trúc Hà Nội.</b></p>
+                    <p>Phần mềm quản lý hợp tác quốc tế là giải pháp tổng thể được thiết kế và xây dựng áp dụng cho các trường học. Giúp cho các đơn vị trường học theo dõi quá trình phát triển của các dự án hợp tác trong và ngoài nước, các hoạt động trao đổi, hợp tác, giao lưu. Hệ thống giúp các đơn vị quản lý hợp tác quốc tế hiệu quả, giảm thời gian, công sức và thuận tiện trong việc theo dõi hoạt động của các cá nhân, đoàn thể có liên quan đến công tác hợp tác. Dựa trên ý tưởng đó, bạn Bùi Lê Vy đã xây dựng đề tài <b>“Xây dựng phần mềm quản lý quan hệ hợp tác quốc tế trường Đại học Kiến trúc Hà Nội”</b> làm đồ án của mình. Hệ thống của bạn đã:</p>
+                    <ul class="bold-list">
+                        <li>Giúp việc tìm kiếm và thống kê thông tin về dự án, đối tác, đoàn và sự kiện sẽ dễ dàng và nhanh chóng hơn. </li>
+                        <li>Việc lưu trữ sẽ đơn giản và chính xác hơn.</li>
+                        <li>Giảm lược bớt công việc giấy tờ liên quan tới các thông tin trên.</li>
+                    </ul>
+                    <p><b>6. Tìm hiểu, xây dựng hệ thống quản lý máy tính áp dụng cho Trường ĐH Kiến trúc Hà Nội.</b></p>
+                    <p>Với đề tài này mục đích của bạn Nguyễn Quốc Công 18CN2 là đưa hệ thống sử dụng quản lý phòng máy tính cho Trường Đại Học Kiến Trúc Hà Nội. Qua hệ thống được xây dựng người dùng sẽ có thể dễ dàng hơn cho việc mượn phòng máy tính, mượn các đồ dùng phục vụ cho giảng dạy như mượn máy tính, dây kết nối máy chiếu,… và dễ dàng kiểm soát được mình đã trả thiết bị hay chưa. Hơn nữa có thể giúp người quản lý dễ dàng hơn trong việc kiểm soát phòng máy và kiểm soát máy tính và các thiết bị dụng cụ liên quan đến máy tính và kiểm soátđược quá trình mượn trả thiết bị.</p>
+                    <p><b>7. Xây dựng ứng dụng quản lý hồ sơ sinh viên Khoa Công nghệ thông tin - Đại học Kiến Trúc Hà Nội dựa trên công nghệ Blockchain.</b></p>
+                    <p>Bạn Đinh Hải Linh 18CN3 cho rằng, ứng dụng công nghệ Blockchain trong quản lý toàn bộ dữ liệu sinh viên bao gồm văn bằng, chứng chỉ, bảng điểm,... sẽ đảm bảo công khai minh bạch cho tất cả các bên liên quan, gồm sinh viên, giảng viên cũng như cho các phòng, ban chức năng của cơ sở đào tạo. Nhờ vào cơ chế bảo vệ dữ liệu của công nghệ Blockchain nên việc tự ý chỉnh sửa điểm của sinh viên là gần như không thể xảy ra. Xuất phát từ điều này, bạn đã lựa chọn chủ đề quản lý thông tin sinh viên dựa trên công nghệ blockchain để thực hiện đồ án tốt nghiệp của mình. Trong phạm vi của đồ án, ứng dụng blockchain chủ yếu vào lưu trữ một số thông tin của sinh viên khoa công nghệ thông tin trường Đại học kiến trúc Hà Nội.</p>
                 </div>
             </div>
         </div>
