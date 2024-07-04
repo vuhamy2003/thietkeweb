@@ -72,6 +72,7 @@ const zoomImageOnHover = () => {
     const sideImages = document.querySelectorAll('.side-image');
 
     sideImages.forEach(img => {
+        img.style.transition = 'transform 0.3s ease'; //Thêm transition cho ảnh//
         img.addEventListener('mouseenter', () => {
             img.style.transform = 'scale(1.05)'; 
         });
@@ -95,6 +96,69 @@ document.addEventListener('DOMContentLoaded', function() {
             stickyHeader.classList.add('show');
         } else {
             stickyHeader.classList.remove('show');
+        }
+    });
+});
+
+
+document.addEventListener("DOMContentLoaded", function() {
+    const articles = document.querySelectorAll(".article");
+    const articlesPerPage = 2; // Số bài viết hiển thị mỗi trang
+    let currentPage = 1; // Trang hiện tại
+
+    // Hiển thị số trang và tính toán số lượng trang
+    function displayPagination() {
+        const totalArticles = articles.length;
+        const totalPages = Math.ceil(totalArticles / articlesPerPage);
+        const pageNumbers = document.querySelector(".page-numbers");
+
+        pageNumbers.textContent = `Page ${currentPage} of ${totalPages}`;
+
+        // Hiển thị các bài viết của trang hiện tại
+        articles.forEach((article, index) => {
+            if (index < (currentPage - 1) * articlesPerPage || index >= currentPage * articlesPerPage) {
+                article.style.display = "none";
+            } else {
+                article.style.display = "block";
+            }
+        });
+
+        // Ẩn/hiển thị nút Previous và Next
+        const prevBtn = document.querySelector(".prev-btn");
+        const nextBtn = document.querySelector(".next-btn");
+
+        if (currentPage === 1) {
+            prevBtn.disabled = true;
+        } else {
+            prevBtn.disabled = false;
+        }
+
+        if (currentPage === totalPages) {
+            nextBtn.disabled = true;
+        } else {
+            nextBtn.disabled = false;
+        }
+    }
+
+    // Khi tải trang, hiển thị trang đầu tiên
+    displayPagination();
+
+    // Sự kiện khi nhấn nút Previous
+    document.querySelector(".prev-btn").addEventListener("click", function() {
+        if (currentPage > 1) {
+            currentPage--;
+            displayPagination();
+        }
+    });
+
+    // Sự kiện khi nhấn nút Next
+    document.querySelector(".next-btn").addEventListener("click", function() {
+        const totalArticles = articles.length;
+        const totalPages = Math.ceil(totalArticles / articlesPerPage);
+
+        if (currentPage < totalPages) {
+            currentPage++;
+            displayPagination();
         }
     });
 });
