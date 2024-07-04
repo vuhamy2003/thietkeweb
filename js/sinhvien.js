@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function() {
             const commentElement = document.createElement('div');
             commentElement.className = 'comment';
             commentElement.innerHTML = `
-                <img src="default_avatar.png" alt="Avatar" class="avatar">
+                <img src="../img/avt.jpg" alt="Avatar" class="avatar">
                 <div class="comment-details">
                     <span class="comment-date">${new Date(comment.timestamp).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}</span>
                     <p>${comment.text}</p>

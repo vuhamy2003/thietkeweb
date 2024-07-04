@@ -59,6 +59,7 @@ a {
 
 .zoom:hover {
     transform: scale(1.1); /* Phóng to hình ảnh lên 1,1 lần kích thước ban đầu */
+    cursor: pointer;
 }
 
 /* Định dạng cho các tiêu đề */
