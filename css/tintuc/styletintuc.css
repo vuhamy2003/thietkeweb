@@ -397,6 +397,7 @@ a {
     flex: 1;
     margin: 10px;
     max-width: 600px;
+    padding: 20px;
 }
 
 .anh_thongbao img, 
@@ -430,6 +431,7 @@ a {
     padding: 0;
     list-style-type: disc; /* Dấu chấm trước mỗi mục */
     padding-left: 40px; /* Khoảng cách giữa dấu chấm và viền trái */
+    margin-bottom: 30px;
 }
 
 .noidung ul li, .noidung1 ul li {
@@ -453,4 +455,24 @@ a {
 .button:hover {
     background-color: #025ba1; /* Nền xanh khi ấn vào */
     color: white; /* Chữ trắng khi ấn vào */
+}
+
+/*Cuộn header*/
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transition: opacity 0.5s;
+    z-index: 1000; /* Để hiển thị trên các thành phần khác */
+    pointer-events: none; /* Để tránh tương tác khi header ẩn */
+}
+
+.sticky-header.show {
+    opacity: 1;
+    pointer-events: auto; /* Để cho phép tương tác khi header hiện */
 }
