@@ -9,7 +9,7 @@ body {
 .header {
     background-color: white;
     padding: 10px 0;
-    position: relative; /* Để đảm bảo sticky header hiển thị trên header chính */
+    position: relative; 
     z-index: 10;
 }
 
