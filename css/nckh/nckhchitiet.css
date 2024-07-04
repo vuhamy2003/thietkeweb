@@ -2,6 +2,7 @@
     margin: 0 auto;
     color:#025ba1;
     text-transform: uppercase;
+    text-align: justify;
 }
 
 .content h3 {
@@ -42,7 +43,7 @@ hr{
     margin-left: 5px;
 }
 
-.anhminhhoa{
+img{
     width: 100%;
     height: auto;
 
@@ -58,4 +59,17 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    padding-top: 10px;
 }
