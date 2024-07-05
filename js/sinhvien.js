@@ -235,3 +235,9 @@ document.addEventListener('DOMContentLoaded', function() {
     renderComments1();
     updateCommentCount1();
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const commentCountDisplay = document.getElementById('comment-count-display1');
+    const comments = JSON.parse(localStorage.getItem('comments1')) || [];
+    commentCountDisplay.textContent = comments.length;
+});
