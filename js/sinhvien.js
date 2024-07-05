@@ -120,3 +120,118 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+/*bình luận bài đăng chia sẻ*/
+document.addEventListener('DOMContentLoaded', function() {
+    console.log("DOM fully loaded and parsed.");
+
+    // Hàm lấy bình luận từ localStorage
+    function loadCommentsFromLocalStorage() {
+        const storedComments = localStorage.getItem('comments1');
+        return storedComments ? JSON.parse(storedComments) : [];
+    }
+
+    // Hàm lưu bình luận vào localStorage
+    function saveCommentsToLocalStorage(comments) {
+        localStorage.setItem('comments1', JSON.stringify(comments));
+    }
+
+    // Mảng để lưu trữ bình luận, lấy từ localStorage
+    let comments1 = loadCommentsFromLocalStorage();
+
+    // Hàm xử lý việc đăng bình luận
+    function postComment1() {
+        const commentText1 = document.getElementById('comment-text').value;
+        if (commentText1.trim() !== "") {
+            // Lấy thời gian hiện tại
+            const now = new Date();
+            const timestamp = now.getTime(); // Lưu trữ thời gian dưới dạng milliseconds từ ngày 1/1/1970
+
+            // Tạo một đối tượng bình luận mới
+            const newComment1 = {
+                text: commentText1,
+                timestamp: timestamp
+            };
+
+            // Thêm bình luận mới vào mảng
+            comments1.push(newComment1);
+
+            // Lưu bình luận vào localStorage
+            saveCommentsToLocalStorage(comments1);
+
+            // Sắp xếp và hiển thị bình luận theo thứ tự hiện tại
+            renderComments1();
+
+            // Xóa nội dung trong trường nhập liệu
+            document.getElementById('comment-text').value = '';
+
+            // Cập nhật số lượng bình luận
+            updateCommentCount1();
+        } else {
+            console.log("Comment text is empty.");
+        }
+    }
+
+    // Hàm hiển thị bình luận theo thứ tự hiện tại
+    function renderComments1() {
+        const commentsContainer1 = document.getElementById('comments-container1');
+        commentsContainer1.innerHTML = ''; // Xóa các bình luận hiện có
+
+        // Sắp xếp bình luận theo giá trị sortBy1 hiện tại
+        if (sortBy1 === 'oldest') {
+            comments1.sort((a, b) => a.timestamp - b.timestamp);
+        } else if (sortBy1 === 'newest') {
+            comments1.sort((a, b) => b.timestamp - a.timestamp);
+        }
+
+        // Hiển thị bình luận đã sắp xếp
+        comments1.forEach(comment1 => {
+            const commentElement1 = document.createElement('div');
+            commentElement1.className = 'comment1';
+            commentElement1.innerHTML = `
+                <img src="../img/avt.jpg" alt="Avatar" class="avatar">
+                <div class="comment-details1">
+                    <span class="comment-date1">${new Date(comment1.timestamp).toLocaleString('vi-VN', { dateStyle: 'medium', timeStyle: 'short' })}</span>
+                    <p>${comment1.text}</p>
+                </div>
+            `;
+            commentsContainer1.appendChild(commentElement1);
+        });
+    }
+
+    // Hàm cập nhật số lượng bình luận
+    function updateCommentCount1() {
+        const commentCountElement1 = document.getElementById('comment-count1');
+        const commentCountElement2 = document.getElementById('comment-count2');
+        const count = comments1.length;
+        commentCountElement1.textContent = `${count} bình luận`;
+        commentCountElement2.textContent = count;
+    }
+
+    // Lắng nghe sự kiện click vào nút "Gửi"
+    document.getElementById('post-comment').addEventListener('click', postComment1);
+
+    // Lắng nghe sự kiện nhấn phím Enter trong trường nhập liệu bình luận
+    document.getElementById('comment-text').addEventListener('keydown', function(event) {
+        if (event.key === 'Enter') {
+            event.preventDefault(); // Ngăn chặn hành động mặc định của phím Enter (thường là gửi form)
+            postComment1(); // Gọi hàm postComment để xử lý đăng bình luận
+        }
+    });
+
+    // Lắng nghe sự kiện click vào nút "Sắp xếp"
+    let sortBy1 = 'newest'; // Mặc định sắp xếp theo mới nhất
+    document.getElementById('sort-comments1').addEventListener('click', function() {
+        if (sortBy1 === 'newest') {
+            sortBy1 = 'oldest';
+        } else {
+            sortBy1 = 'newest';
+        }
+        // Hiển thị lại bình luận theo thứ tự mới
+        renderComments1();
+    });
+
+    // Hiển thị ban đầu của bình luận
+    renderComments1();
+    updateCommentCount1();
+});
