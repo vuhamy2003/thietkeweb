@@ -337,220 +337,159 @@ footer {
 }
 
 
-
-
-
-
+/* CSS cho .container1 */
 .container1 {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-wrap: wrap;
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
 
-.hero-section {
-    position: relative;
-    height: 500px;
-    background: url('campus.jpg') no-repeat center center/cover;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.item {
+    flex: 1 1 calc(33.333% - 40px); /* Tính toán kích thước dựa trên 3 cột và khoảng cách giữa các cột */
+    box-sizing: border-box;
+    margin: 10px;
     text-align: center;
-}
-
-.hero-section h1 {
-    font-size: 3em;
-    margin-bottom: 20px;
-}
-
-.hero-section p {
-    font-size: 1.2em;
-}
-
-.hero-section .cta-button {
-    margin-top: 20px;
+    background-color: #f9f9f9;
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    min-height: 420px; /* Đặt chiều cao tối thiểu cho các item */
 }
 
-.section {
-    margin-bottom: 40px;
+.item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
 }
 
-.section h2 {
-    text-align: center;
-    margin-bottom: 20px;
+.item p {
+    margin-top: 10px;
+    font-size: 16px;
     color: #333;
+    font-size: 16px;
+    line-height: 1.5; 
+    text-align: justify;
 }
 
-.ticker-wrap {
-    overflow: hidden;
-    background-color: #333;
-    color: white;
-    border-radius: 4px;
-    margin-bottom: 20px;
-    padding: 10px 0;
-}
-
-.ticker {
-    display: flex;
-    animation: ticker 15s linear infinite;
-}
-
-.ticker-item {
-    flex: 0 0 auto;
-    padding: 10px 20px;
-}
-
-@keyframes ticker {
-    0% { transform: translateX(100%); }
-    100% { transform: translateX(-100%); }
-}
-
-.calendar {
-    text-align: left;
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.calendar h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.calendar table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 20px;
-}
-
-.calendar th, .calendar td {
-    border: 1px solid #ddd;
-    padding: 8px;
-}
-
-.calendar th {
-    background-color: #f2f2f2;
-    text-align: left;
-}
-
-.calendar tr:hover {
-    background-color: #f1f1f1;
-    cursor: pointer;
-}
-
-.spotlights, .news-events {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-.spotlight, .news-event {
-    flex: 1 1 calc(33.333% - 20px);
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
-}
-
-.spotlight img, .news-event img {
-    width: 100%;
-    border-radius: 4px;
+h2{
+    font-size: 20px;
     margin-bottom: 15px;
+    font-family: Arial, sans-serif;
+    display: flex;
+    color: #003366;
+    padding: 5px 20px;
+    justify-content: center;
 }
 
-.spotlight h3, .news-event h3 {
-    margin-bottom: 10px;
-    color: #007bff;
+.post--img {
+    display: flex;
+    align-items: center; /* Căn các phần tử con theo chiều dọc */
 }
 
-.spotlight p, .news-event p {
-    margin-bottom: 15px;
+.post--info, .title {
+    flex: 1; /* Chia đều không gian cho các phần tử */
+    text-align: right; /* Căn chỉnh văn bản sang phải */
 }
 
-.spotlight a, .news-event a {
-    color: #007bff;
-    text-decoration: none;
+.thumb img {
+    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của phần tử cha */
 }
 
-.virtual-tour {
-    text-align: center;
-    padding: 20px;
-    background-color: #007bff;
-    color: white;
-    border-radius: 8px;
-    margin-top: 40px;
+.post--item {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
-.virtual-tour a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2em;
+.post--item.active {
+    opacity: 1;
+    transform: translateY(0);
 }
 
-.popup {
-    display: none;
+
+
+/* Popup Form Styles */
+.popup-form {
+    display: none; /* Mặc định ẩn popup */
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-    z-index: 9999;
-    justify-content: center;
-    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ trong suốt */
+    z-index: 1000; /* Đảm bảo popup hiển thị trên cùng */
+    overflow: auto;
 }
 
 .popup-content {
-    background-color: #fff;
+    background-color: #fff; /* Màu nền của nội dung popup */
+    margin: 10% auto; /* Canh giữa popup trên màn hình */
     padding: 20px;
-    max-width: 400px;
-    margin: 20px;
-    border-radius: 8px;
+    border: 1px solid #888;
+    width: 80%; /* Chiều rộng của popup */
+    max-width: 600px; /* Giới hạn chiều rộng tối đa */
     position: relative;
+    text-align: center;
 }
 
-.close {
+.popup-content img {
+    width: 100%;
+    height: auto;
+}
+
+.close-btn {
     position: absolute;
     top: 10px;
-    right: 10px;
+    right: 15px;
+    font-size: 30px;
     cursor: pointer;
-    font-size: 24px;
-    color: #888;
+    color: #aaa;
 }
 
-form {
-    display: flex;
-    flex-direction: column;
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-label {
-    margin-bottom: 10px;
+.popup-button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
-input[type="text"],
-input[type="email"],
-button {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+.popup-button:hover {
+    background-color: #004080;
 }
 
-button {
-    background-color: #007bff;
-    color: #fff;
+.special-offer-btn {
+    position: fixed;
+    bottom: 10px;
+    left: 20px; /* Hoặc right: 20px; tùy theo vị trí mong muốn */
+    background-color: #003366;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    padding: 10px 20px;
     border: none;
+    border-radius: 5px;
     cursor: pointer;
+    z-index: 1001; /* Đảm bảo nút hiển thị trên cùng */
 }
 
-button:hover {
-    background-color: #0056b3;
+.special-offer-btn:hover {
+    background-color: #004080;
 }
+
+
