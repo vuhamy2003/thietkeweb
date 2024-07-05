@@ -349,7 +349,7 @@ footer {
 }
 
 .item {
-    flex: 1 1 calc(33.333% - 40px); /* Tính toán kích thước dựa trên 3 cột và khoảng cách giữa các cột */
+    flex: 1 1 calc(33.333% - 40px);
     box-sizing: border-box;
     margin: 10px;
     text-align: center;
@@ -357,7 +357,7 @@ footer {
     padding: 10px 20px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    min-height: 420px; /* Đặt chiều cao tối thiểu cho các item */
+    min-height: 420px;
 }
 
 .item img {
@@ -375,7 +375,7 @@ footer {
     text-align: justify;
 }
 
-h2{
+h2 {
     font-size: 20px;
     margin-bottom: 15px;
     font-family: Arial, sans-serif;
@@ -385,30 +385,70 @@ h2{
     justify-content: center;
 }
 
-.post--img {
+.news-container {
+    width: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    position: relative;
+}
+
+.news-wrapper {
+    display: block; /* Thay vì flex */
+    overflow-y: auto; /* Sử dụng overflow-y để cho phép cuộn dọc */
+    flex-direction: column;
+    animation: scrollNews 20s linear infinite;
+}
+
+.news-item {
     display: flex;
-    align-items: center; /* Căn các phần tử con theo chiều dọc */
+    margin-bottom: 20px;
 }
 
-.post--info, .title {
-    flex: 1; /* Chia đều không gian cho các phần tử */
-    text-align: right; /* Căn chỉnh văn bản sang phải */
+.news-item img {
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
 }
 
-.thumb img {
-    max-width: 100%; /* Đảm bảo ảnh không vượt quá kích thước của phần tử cha */
+.news-info {
+    display: flex;
+    flex-direction: column;
 }
 
-.post--item {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+.news-category {
+    font-size: 12px;
+    color: #555;
 }
 
-.post--item.active {
-    opacity: 1;
-    transform: translateY(0);
+.news-date {
+    font-size: 10px;
+    color: #999;
 }
+
+.news-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #000;
+    text-decoration: none;
+}
+
+.news-item.spacer {
+    height: 300px; /* Adjust this value to be the same as the max-height of the news container */
+}
+
+@keyframes scrollNews {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+
 
 
 
