@@ -9,11 +9,15 @@
     <meta name="copyright" content="Nhóm 3">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <title>Trang chủ - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
-    <link rel="stylesheet" type="text/css" href="../css/tuyensinh.css">  
-    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvien.css">  
+    <title>Sinh viên - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvientotnghiep.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/thongbao/stylethongbao.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvien.css"> 
     <script src="../js/main.js"></script>
-    <script src="../js/tuyensinh.js"></script>  
+    <script src="../js/tuyensinh.js"></script>
+    <script src="../js/sinhvien.js"></script>  
+    <script src="../js/thongbao/mainthongbao.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
 <body>
@@ -88,7 +92,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="../sinhvien/sinhvien.html">SINH VIÊN</a>
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
                     <a href="../sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
@@ -112,38 +116,10 @@
             </div>
         </div>
 
-        <a href="../tuyensinh/tuyensinh.html" id="selected">TUYỂN SINH</a> 
+        <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
         <a href="../thuvienso/thuvienso.html" >THƯ VIỆN SỐ</a>
 
     </nav>
-
-    <img src="../img/anh_sukien.png" alt="Back" class="image">
-    
-    <div class="chananh">
-        <div class="chananh1">
-            <div class="chananh2">
-                <a href="../tuyensinh/tuvantuyensinh.html"><img src="../img/tuvan.png" class="icon"> </a>
-                <div class="text1">TƯ VẤN TUYỂN SINH TRỰC TIẾP</div>
-            </div>
-            <div class="chananh2">
-                <img src="../img/dangky.png" class="icon" id="openPopupDiv"> 
-                <div class="text1" id="openPopupDiv">ĐĂNG KÝ TUYỂN SINH</div>
-            </div>
-
-            <div class="chananh2">
-                <a href="../tuyensinh/diemchuan.html"><img src="../img/diem.png" class="icon"></a>
-                <div class="text1"><b>ĐIỂM TUYỂN SINH CÁC NĂM</b></div>
-            </div>
-        </div>   
-        <div id="popup" class="popup">
-            <div class="popup-content">
-                <span class="close-btn">&times;</span>
-                <div class="warning-icon">⚠️</div>
-                <p>Cảm ơn bạn đã lựa chọn khoa CNTT Đại học HAU! Các thí sinh đăng ký xét học bạ vui lòng nộp hồ sơ và lệ phí từ ngày 25/4/2024 đến hết ngày 12/6/2024.</p>
-                <p><b><i>Lưu ý: </i></b>Thời gian có thể thay đổi tùy thuộc vào kế hoạch tuyển sinh của Bộ GDĐT. Do vậy, thí sinh cần thường xuyên theo dõi thông tin.</p>
-            </div>
-        </div>
-    </div>
     </header>
 
     <header class="header sticky-header" id="sticky-header">
@@ -217,7 +193,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="../sinhvien/sinhvien.html">SINH VIÊN</a>
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
@@ -241,7 +217,7 @@
             </div>
         </div>
 
-        <a href="../tuyensinh/tuyensinh.html" id="selected">TUYỂN SINH</a> 
+        <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
         <a href="../thuvienso/thuvienso.html" >THƯ VIỆN SỐ</a>
 
     </nav>
@@ -250,71 +226,76 @@
     <main>
         <div class="display">
             <div class="display-container">
-                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a></p>
+                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../sinhvien/sinhvien.html">SINH VIÊN</a> > <a href="../sinhvien/sinhvien.html">SV CHUẨN BỊ TỐT NGHIỆP</a> > <a href="../sinhvien/thongbao.html">THÔNG BÁO</a> > <a href="../sinhvien/thongbao3.html">CÔNG NHẬN TỐT NGHIỆP 2022-2023</a></p>
             </div>
         </div>
         <hr class="dongke">
 
-        <div class = "back">
-            <div class="cntt">
-                <div class="anhhau">
-                    <img src="../img/tuyensinh/tuyensinh1.png" class="zoom">
-                </div>
-                <div class="text28">
-                    <h2>CÔNG NGHỆ THÔNG TIN</h2>
-                    <ul>
-                        <li class="bold"><a href="../tuyensinh/gioithieucntt.html">Giới thiệu chuyên ngành Công nghệ thông tin</a></li>
-                        <li class="bold"><a href="../tuyensinh/thongtintuyensinh.html">Thông tin tuyển sinh</a></li>
-                        <li class="bold"><a href="../tuyensinh/deantuyensinh.html">Đề án tuyển sinh</a></li>
-                        <li class="bold"><a href="../tuyensinh/quyche.html">Quy chế tuyển sinh</a></li>
-                    </ul>
+        <div class="container1">
+            <div class="right-container">
+                <div class="sidebar">
+                    <div class="sidebar-item">
+                        <div class="menu-title" onclick="toggleMenu(this)">
+                            <span class="arrow">></span>
+                            <a href="sinhvien.html">Sinh viên chuẩn bị tốt nghiệp</a>
+                        </div>
+                        <div class="menu">
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="thongbao.html" class="selected" >Thông báo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="vanbanhuongdan.html">Văn bản hướng dẫn</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tailieuthamkhao.html">Tài liệu tham khảo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tuyendung.html" >Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="sidebar-item">
+                        <ul>
+                            <li><a href="cuusinhvien.html">Cựu sinh viên</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>  
-
-        <div class="chananh">
-            <img src="../img/tuyensinh/giuatrang.png" class="anhgiuatrang">
-                <div class="chananh1">
-                    <div class="chananh2">
-                        <img src="../img/coso.png" class="icon1"> 
-                        <div class="text2">CƠ SỞ VẬT CHẤT</div>
-                        <div class="text2">TIÊN TIẾN HIỆN ĐẠI</div>
+            <div class="main-content">
+                <div class="article">
+                    <h2>Thông báo công nhận tốt nghiệp và cấp bằng tốt nghiệp Đại học hình thức chính quy cho SV K18CNTT và các trường hợp khác đợt 1 năm học 2022-2023</h2>
+                    <div class="article-meta1">
+                        <i class="fa fa-clock"></i> <span class="date">21/07/2023</span>
+                        <i class="fa fa-eye"></i> <span class="views">563</span>
                     </div>
-                    <div class="chananh2">
-                        <img src="../img/lichsu.png" class="icon1"> 
-                        <div class="text2">BỀ DÀY LỊCH SỬ</div>
-                        <div class="text2">VÀ TRUYỀN THỐNG LÂU ĐỜI</div>
+                    <hr>
+                    <p>THÔNG BÁO CÔNG NHẬN TỐT NGHIỆP VÀ CẤP BẰNG TỐT NGHIỆP ĐẠI HỌC HÌNH THỨC CHÍNH QUY CHO SV K18CNTT VÀ CÁC TRƯỜNG HỢP KHÁC ĐỢT 1 NĂM HỌC 2022-2023</p>
+                    <img src="../img/sinhvien/anhthongbao3.png" class="diemthi">
+                    
+                </div>
+                <div class="comment-section">
+                    <div class="comment-header">
+                        <span id="comment-count">0 bình luận</span>
+                        <button id="sort-comments">Sắp xếp</button>
                     </div>
-                    <div class="chananh2">
-                        <img src="../img/chatluong.png" class="icon1"> 
-                        <div class="text2">CHẤT LƯỢNG ĐÀO TẠO</div>
-                        <div class="text2">HÀNG ĐẦU</div>
-                    </div>
-                    <div class="chananh2">
-                        <img src="../img/giangvien.png" class="icon1"> 
-                        <div class="text2">GIẢNG VIÊN ĐẠT TRÌNH ĐỘ</div>
-                        <div class="text2">CHUYÊN MÔN CAO</div>
+                    <div id="comments-container"></div>
+                    <div class="comment-input">
+                        <img id="user-avatar" src="../img/avt.jpg" alt="Avatar" class="avatar">
+                        <input type="text" id="comment-text" placeholder="Viết bình luận...">
+                        <button id="post-comment">Gửi</button>
                     </div>
                 </div>
-        </div>
-        
-        <div class="back1">
-            <div class="cndpt">
-                <div class="text29">
-                    <h2>CÔNG NGHỆ ĐA PHƯƠNG TIỆN</h2>
-                    <ul>
-                        <li class="bold"><a href="../tuyensinh/gioithieucndpt.html">Giới thiệu chuyên ngành Công nghệ đa phương tiện</a></li>
-                        <li class="bold"><a href="../tuyensinh/thongtintuyensinh.html">Thông tin tuyển sinh</a></li>
-                        <li class="bold"><a href="../tuyensinh/deantuyensinh.html">Đề án tuyển sinh</a></li>
-                        <li class="bold"><a href="../tuyensinh/quyche.html">Quy chế tuyển sinh</a></li>
-                    </ul>
-                </div>
-                <div class="anhhau1">
-                    <img src="../img/tuyensinh/tuyensinh2.png" alt="Sinh viên" class="zoom">
-                </div> 
             </div>
         </div>
-       
     </main>
 
     <button id="scroll-to-top" title="Go to top">↑</button>
