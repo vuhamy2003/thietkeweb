@@ -115,3 +115,12 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 3000); // 3000 milliseconds = 3 seconds
 });
 
+(document).ready(function() {
+    var wrapperHeight = $('.news-wrapper').height();
+    var containerHeight = $('.news-container').height();
+
+    if (wrapperHeight > containerHeight) {
+        var scrollDuration = wrapperHeight / 50;
+        $('.news-wrapper').css('animation', 'scrollNews ' + scrollDuration + 's linear infinite');
+    }
+});
