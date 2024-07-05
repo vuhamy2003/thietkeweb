@@ -98,3 +98,19 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+document.addEventListener('DOMContentLoaded', function() {
+    const rows = document.querySelectorAll('.calendar tbody tr');
+    
+    rows.forEach(row => {
+        row.addEventListener('click', function() {
+            alert(`Chi tiết sự kiện: ${this.children[1].textContent}`);
+        });
+    });
+});
+
+function togglePopup() {
+    const popup = document.getElementById('signup-popup');
+    popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+}
+

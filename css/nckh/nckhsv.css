@@ -55,3 +55,34 @@
     margin-left: 5px;
 }
 
+/*Trang*/
+.pagination {
+    text-align: right; /* Căn giữa nút phân trang */
+    margin: 20px 0; /* Khoảng cách với phần nội dung chính */
+}
+
+.pagination button {
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer; /* Thay đổi con trỏ khi hover */
+    font-size: 18px; /* Điều chỉnh kích thước phù hợp */
+    border-radius: 50%; /* Làm tròn góc */
+    border: 2px solid #004080;
+    background-color: white; 
+    color: #333; /* Màu sắc mặc định */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển đổi mềm mại */
+}
+
+.pagination button:hover {
+    background-color: #025ba1;
+    border-radius: 50%; /* Làm tròn góc */
+}
+
+.prev-btn {
+    margin-right: 10px; /* Khoảng cách với nút tiếp theo */
+}
+
+.next-btn {
+    margin-left: 10px; /* Khoảng cách với nút trước đó */
+}
+
