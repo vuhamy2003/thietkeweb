@@ -9,8 +9,6 @@ body {
 .header {
     background-color: white;
     padding: 10px 0;
-    position: relative; 
-    z-index: 10;
 }
 
 .logo {
@@ -352,109 +350,128 @@ hr.dongke {
     margin: 0 0 20px 0;
 }
 
-/* Định dạng cho thẻ main */
-main {
-    padding: 0;
-}
+/*Side bar menu*/
 
-a {
-    text-decoration: none; 
-    color: inherit; 
-}
-
-/* Định dạng cho các phần tử chứa nội dung */
-.back, .back1 {
-    width: 100%;
-    height: 440px;
-}
-
-.back {
-    background-color: #fff;
-}
-
-.back1 {
-    background-color: rgba(214, 235, 248, 0.445);
-}
-
-.thongbao, .congnghethongtin, .congnghedaphuongtien, .tinhocungdung, .khoahoccongnghe {
+.container1 {
     display: flex;
-    justify-content: space-between; /* Căn các phần tử con sang hai bên của khung */
-    align-items: flex-start; /* Căn các phần tử con theo trục dọc, bắt đầu từ đầu */
-    padding: 10px; /* Đặt khoảng cách bên trong khung chứa */
-    margin: 0 auto;
-    width: 1200px;
+    align-items: flex-start;
+    padding: 0 20px 0 20px;
+    margin: 0 140px 20px 140px;
 }
 
-.anh_thongbao, .anh_cntt, .anh_cndpt, .anh_tinhocungdung, .anh_khoahoccongnghe {
-    flex: 1;
-    margin: 13px;
-    position: relative; /* Đảm bảo hình ảnh nằm trong vùng chứa của nó */
-    overflow: hidden; /* Đảm bảo hình ảnh không tràn ra ngoài vùng chứa */
-    border-radius: 10px;
+.right-container {
+    width: 25%; /* Chiếm 1/4 chiều rộng của container1 */
+    padding: 0 0 0 10px /* Khoảng cách giữa right-container và cạnh trái của nó */
 }
 
-.noidung, .noidung1 {
-    flex: 1;
-    margin: 10px;
-    max-width: 600px;
-   
-}
-
-.anh_thongbao img, 
-.anh_cntt img, 
-.anh_cndpt img, 
-.anh_tinhocungdung img, 
-.anh_khoahoccongnghe img {
-    width: 100%; /* Đảm bảo hình ảnh bao phủ toàn bộ vùng chứa */
-    height: auto;
-    transition: transform 0.4s ease-in-out; /* Hiệu ứng chuyển tiếp mượt mà */
-}
-
-.zoom:hover {
-    transform: scale(1.1); /* Phóng to hình ảnh lên 1,1 lần kích thước ban đầu */
-}
-
-/* Định dạng cho các tiêu đề */
-.noidung h2, .noidung1 h2 { 
-    color: #004080;
-    font-size: 28px;
-}
-
-.noidung h2:hover, .noidung1 h2:hover { 
-    text-decoration: underline;
+.sidebar {
+    max-width: 320px; /* Đặt chiều rộng cố định */
+    height: auto; /* Chiều cao tự động dựa trên nội dung */
     color: #025ba1;
+    background-color: #dce9f2fe;
 }
 
-/* Định dạng cho các danh sách */
-.noidung ul, .noidung1 ul {
+.sidebar-item ul {
     list-style-type: none;
     padding: 0;
-    list-style-type: disc; /* Dấu chấm trước mỗi mục */
-    padding-left: 40px; /* Khoảng cách giữa dấu chấm và viền trái */
-    margin-bottom: 30px;
+    margin: 0; /* Xóa khoảng cách mặc định của ul */
 }
 
-.noidung ul li, .noidung1 ul li {
-    margin-bottom: 10px;
-    color: #004080;
+.sidebar-item ul li {
+    margin: 0;
+}
+
+.sidebar-item ul li a {
+    display: block;
+    color: #025ba1;
+    padding: 14px 20px;
     font-weight: bold;
-    font-size: 17px;
+    text-align: left;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-bottom: 1px solid #025ba1;
+    line-height: 24px;
+    align-items: center;
 }
 
-/* Định dạng cho các nút bấm */
-.button {
-    padding: 10px 20px;
-    color: #004080; /* Chữ xanh */
-    font-weight: bold;
-    border: 2px solid #004080; /* Viền xanh */
-    border-radius: 10px; /* Bo góc nút */
-    cursor: pointer; /* Thay đổi con trỏ khi hover */
-    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng chuyển màu */
+.sidebar-item ul li a:hover {
+    background-color: #025ba1;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-.button:hover {
-    background-color: #025ba1; /* Nền xanh khi ấn vào */
-    color: white; /* Chữ trắng khi ấn vào */
+.sidebar-item ul li a.selected {
+    background-color: #025ba1;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    height: 24px;
+}
+
+/*content*/
+.pdf-container {
+    height: 800px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+.pdf-container iframe {
+    width: 100%;
+    height: 100%;
+}
+.content {
+    flex: 3; /* Sử dụng không gian còn lại cho nội dung */
+    padding: 0 20px;
+    width: 75%;
+}
+
+.content h2 {
+    margin: 0 auto;
+    color:#025ba1;
+    text-transform: uppercase;
+    margin-bottom: 0; /* Điều chỉnh khoảng cách giữa các thẻ div */
+    padding-bottom: 10px;
+}
+.article-meta {
+    display: flex;
+    color: #636363;
+    font-size: 0.9em;
+    margin-top: 0; /* Thêm khoảng cách giữa h2 và meta info */
+}
+
+.article-meta .date {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.article-meta .views {
+    margin-left: 5px;
+}
+
+.content p {
+    font-size: 16px;
+    line-height: 1.5; 
+    text-align: justify;
+}
+
+figcaption{
+    font-size: 14px;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+.content ul li {
+    font-size: 16px;
+    line-height: 1.5; 
+    text-align: justify;
+}
+
+.anhminhhoa {
+    width: 100%;
+    height: auto;
+    display: flex;
 }
 
 /*Cuộn header*/
@@ -475,4 +492,17 @@ a {
 .sticky-header.show {
     opacity: 1;
     pointer-events: auto; /* Để cho phép tương tác khi header hiện */
+}
+
+.linkthamkhao {
+    color: #025ba1; 
+    text-decoration: none;
+}
+.linkthamkhao:hover {
+    color: #025ba1; 
+    text-decoration: underline;
+}
+.thamkhao {
+    color: #025ba1; 
+    text-decoration: none;
 }

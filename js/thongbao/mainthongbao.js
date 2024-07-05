@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.addEventListener("DOMContentLoaded", function() {
     const articles = document.querySelectorAll(".article");
-    const articlesPerPage = 2; // Số bài viết hiển thị mỗi trang
+    const articlesPerPage = 4; // Số bài viết hiển thị mỗi trang
     let currentPage = 1; // Trang hiện tại
 
     // Hiển thị số trang và tính toán số lượng trang

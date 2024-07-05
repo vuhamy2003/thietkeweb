@@ -9,8 +9,6 @@ body {
 .header {
     background-color: white;
     padding: 10px 0;
-    position: relative; /* Để đảm bảo sticky header hiển thị trên header chính */
-    z-index: 10;
 }
 
 .logo {
@@ -432,9 +430,24 @@ hr.dongke {
     margin: 0 auto;
     color:#025ba1;
     text-transform: uppercase;
-    margin-bottom: 10px; /* Điều chỉnh khoảng cách giữa các thẻ div */
+    margin-bottom: 0; /* Điều chỉnh khoảng cách giữa các thẻ div */
     padding-bottom: 10px;
+}
 
+.article-meta {
+    display: flex;
+    color: #636363;
+    font-size: 0.9em;
+    margin-top: 0; /* Thêm khoảng cách giữa h2 và meta info */
+}
+
+.article-meta .date {
+    margin-left: 5px;
+    margin-right: 20px;
+}
+
+.article-meta .views {
+    margin-left: 5px;
 }
 
 /*Cuộn header*/
