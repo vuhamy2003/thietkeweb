@@ -11,6 +11,7 @@
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
     <title>Trang chủ - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
     <link rel="stylesheet" type="text/css" href="../css/tuyensinh.css">  
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvien.css"> 
     <script src="../js/main.js"></script>
     <script src="../js/tuyensinh.js"></script>   
 
@@ -90,11 +91,11 @@
             <a href="../sinhvien/sinhvien.html">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
-                    <a href="../sinhvien/sinhvienchuanbitotnghiep.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
+                    <a href="../sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
                     <div class="sub-dropdown-content">
-                        <a href="../sinhvien/sinhvienchuanbitotnghiep/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
-                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
-                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tuyendung.html">TUYỂN DỤNG</a>
+                        <a href="../sinhvien/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
+                        <a href="../sinhvien/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
+                        <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a>
                     </div>
                 </div>
                 <a href="../sinhvien/cuusinhvien.html">CỰU SINH VIÊN</a>
@@ -122,14 +123,22 @@
                 <div class="text1">TƯ VẤN TUYỂN SINH TRỰC TIẾP</div>
             </div>
             <div class="chananh2">
-                <img src="../img/dangky.png" class="icon"> 
-                <div class="text1">ĐĂNG KÝ TUYỂN SINH</div>
+                <img src="../img/dangky.png" class="icon" id="openPopupDiv"> 
+                <div class="text1" id="openPopupDiv">ĐĂNG KÝ TUYỂN SINH</div>
             </div>
             <div class="chananh2">
                 <img src="../img/diem.png" class="icon"> 
                 <div class="text1">ĐIỂM TUYỂN SINH CÁC NĂM</div>
             </div>
-        </div>   
+        </div> 
+        <div id="popup" class="popup">
+            <div class="popup-content">
+                <span class="close-btn">&times;</span>
+                <div class="warning-icon">⚠️</div>
+                <p>Cảm ơn bạn đã lựa chọn khoa CNTT Đại học HAU! Các thí sinh đăng ký xét học bạ vui lòng nộp hồ sơ và lệ phí từ ngày 25/4/2024 đến hết ngày 12/6/2024.</p>
+                <p><b><i>Lưu ý: </i></b>Thời gian có thể thay đổi tùy thuộc vào kế hoạch tuyển sinh của Bộ GDĐT. Do vậy, thí sinh cần thường xuyên theo dõi thông tin.</p>
+            </div>
+        </div>  
     </div>
     </header>
 
@@ -207,11 +216,11 @@
             <a href="../sinhvien/sinhvien.html" >SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
-                    <a href="../sinhvien/sinhvienchuanbitotnghiep.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
+                    <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
                     <div class="sub-dropdown-content">
-                        <a href="../sinhvien/sinhvienchuanbitotnghiep/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
-                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
-                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tuyendung.html">TUYỂN DỤNG</a>
+                        <a href="../sinhvien/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
+                        <a href="../sinhvien/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
+                        <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a>
                     </div>
                 </div>
                 <a href="../sinhvien/cuusinhvien.html">CỰU SINH VIÊN</a>
@@ -234,8 +243,10 @@
     </header>
 
     <main>
-        <div class="dau">
-            <h1><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a> </h1>
+        <div class="display">
+            <div class="display-container">
+                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a> > <a href="../tuyensinh/tuvantuyensinh.html">TƯ VẤN TUYỂN SINH</a></p>
+            </div>
         </div>
         <hr class="dongke">
 
@@ -247,10 +258,10 @@
                 <div class="text28">
                     <h2>CÔNG NGHỆ THÔNG TIN</h2>
                     <ul>
+                        <li class="bold"><a href="../tuyensinh/gioithieucntt.html">Giới thiệu chuyên ngành Công nghệ thông tin</a></li>
                         <li class="bold"><a href="../tuyensinh/thongtintuyensinh.html">Thông tin tuyển sinh</a></li>
                         <li class="bold"><a href="../tuyensinh/deantuyensinh.html">Đề án tuyển sinh</a></li>
                         <li class="bold"><a href="../tuyensinh/quyche.html">Quy chế tuyển sinh</a></li>
-                        <li class="bold"><a href="../tuyensinh/dienchuan.html">Điểm chuẩn tuyển sinh các năm</a></li>
                     </ul>
                 </div>
             </div>
@@ -287,10 +298,10 @@
                 <div class="text29">
                     <h2>CÔNG NGHỆ ĐA PHƯƠNG TIỆN</h2>
                     <ul>
+                        <li class="bold"><a href="../tuyensinh/gioithieucndpt.html">Giới thiệu chuyên ngành Công nghệ đa phương tiện</a></li>
                         <li class="bold"><a href="../tuyensinh/thongtintuyensinh.html">Thông tin tuyển sinh</a></li>
                         <li class="bold"><a href="../tuyensinh/deantuyensinh.html">Đề án tuyển sinh</a></li>
                         <li class="bold"><a href="../tuyensinh/quyche.html">Quy chế tuyển sinh</a></li>
-                        <li class="bold"><a href="../tuyensinh/diemchuan.html">Điểm chuẩn tuyển sinh các năm</a></li>
                     </ul>
                 </div>
                 <div class="anhhau1">

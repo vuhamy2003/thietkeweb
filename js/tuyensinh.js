@@ -131,3 +131,24 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+/*tạo popup*/
+document.addEventListener('DOMContentLoaded', function() {
+    var openPopupDiv = document.getElementById('openPopupDiv');
+    var popup = document.getElementById('popup');
+    var closeBtn = document.querySelector('.close-btn');
+
+    openPopupDiv.addEventListener('click', function() {
+        popup.style.display = 'flex';
+    });
+
+    closeBtn.addEventListener('click', function() {
+        popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', function(event) {
+        if (event.target === popup) {
+            popup.style.display = 'none';
+        }
+    });
+});
