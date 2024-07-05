@@ -518,3 +518,66 @@
     padding: 5px;
     border-radius: 5px;
 }
+
+/*ảnh cv*/
+.cvmau {
+    flex: 1; /* Chứng nhận chiếm 1/3 */
+    margin-left: 10px;
+}
+
+.anhcv {
+    width: 100%; /* Đảm bảo hình ảnh chứng nhận chiếm đủ 1/3 phần bên phải */
+    height: auto;
+    cursor: pointer; /* Thêm con trỏ khi hover vào ảnh */
+    transition: transform 0.3s ease, opacity 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+}
+
+.anhcv:hover {
+    transform: scale(1.05); /* Phóng to ảnh khi hover */
+    opacity: 0.8; /* Thay đổi độ mờ khi hover */
+}
+.cvtrantrungkien {
+    display: flex;
+    padding: 0 10px;
+    margin-bottom: 20px;
+}
+
+/* Modal (background) */
+.modal {
+    display: none; /* Ẩn modal mặc định */
+    position: fixed;
+    z-index: 1001; /* Đảm bảo modal luôn trên cùng */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.452); /* Black w/ opacity */
+    background-color: #6062668a(112, 112, 112, 0.541); /* Black w/ opacity */
+}
+
+/* Modal content (image) */
+.modal-content {
+    margin: 50px auto 50px auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Close button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
