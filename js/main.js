@@ -99,18 +99,19 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-document.addEventListener('DOMContentLoaded', function() {
-    const rows = document.querySelectorAll('.calendar tbody tr');
-    
-    rows.forEach(row => {
-        row.addEventListener('click', function() {
-            alert(`Chi tiết sự kiện: ${this.children[1].textContent}`);
-        });
-    });
-});
 
-function togglePopup() {
-    const popup = document.getElementById('signup-popup');
-    popup.style.display = popup.style.display === 'flex' ? 'none' : 'flex';
+function openPopup() {
+    document.getElementById('popupForm').style.display = 'block';
 }
+
+function closePopup() {
+    document.getElementById('popupForm').style.display = 'none';
+}
+
+document.addEventListener("DOMContentLoaded", function() {
+    // Mở popup sau 3 giây khi tải trang
+    setTimeout(function() {
+        openPopup();
+    }, 3000); // 3000 milliseconds = 3 seconds
+});
 
