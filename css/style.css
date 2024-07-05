@@ -474,16 +474,12 @@ h2 {
     max-width: 600px; /* Giới hạn chiều rộng tối đa */
     position: relative;
     text-align: center;
-}
-
-.popup-content img {
-    width: 100%;
-    height: auto;
+    border-radius: 10px;
 }
 
 .close-btn {
     position: absolute;
-    top: 10px;
+    top: 15px;
     right: 15px;
     font-size: 30px;
     cursor: pointer;
@@ -497,19 +493,46 @@ h2 {
     cursor: pointer;
 }
 
-.popup-button {
-    display: inline-block;
-    padding: 10px 20px;
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
     margin-top: 10px;
-    background-color: #003366;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+}
+
+input, select {
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+
+button[type="submit"] {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #025ba1;
     color: white;
     font-weight: bold;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
+    cursor: pointer;
     font-size: 16px;
 }
 
-.popup-button:hover {
+button[type="submit"]:hover {
     background-color: #004080;
 }
 
@@ -531,5 +554,32 @@ h2 {
 .special-offer-btn:hover {
     background-color: #004080;
 }
+
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    flex: 0 0 150px; /* Độ rộng của label */
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.form-group input {
+    flex: 1; /* Input mở rộng để lấp đầy phần còn lại của hàng */
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+
+
+
 
 
