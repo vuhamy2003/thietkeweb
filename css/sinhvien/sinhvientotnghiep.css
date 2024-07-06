@@ -385,6 +385,7 @@
 }
 
 /*Mục comment*/
+
 .comment-section {
     width: 100%;
     margin: 50px 0;
@@ -411,11 +412,34 @@
     margin-top: 10px;
 }
 
+.comment {
+    display: flex;
+    align-items: center;
+    background-color: #e6f7ff; /* Nền màu xanh nhạt */
+    border: 1px solid #b3d7ff;
+    border-radius: 6px; /* Bo góc 6px */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-date {
+    margin-bottom: 10px;
+    align-self: flex-start; /* Canh ngày ở đầu */
+}
+
+.comment p {
+    margin: 0;
+}
+
 .avatar {
     width: 40px;
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.comment-details p {
+    text-align: justify;
 }
 
 #comment-text {
@@ -427,15 +451,15 @@
 
 #post-comment {
     padding: 10px 20px;
-    color:white;
+    color: white;
     background-color: #025ba1;
     border-color: #025ba1;
     cursor: pointer;
     border-style: none;
 }
 
-#sort-comments{
-    color:white;
+#sort-comments {
+    color: white;
     background-color: #025ba1;
     border-color: #025ba1;
     cursor: pointer;
@@ -443,7 +467,8 @@
     padding: 5px;
     border-radius: 5px;
 }
-/*comment 3*/
+
+/*baì chia sẻ comment 3*/
 .comment-section3 {
     width: 100%;
     margin: 50px 0;
@@ -581,3 +606,4 @@
     text-decoration: none;
     cursor: pointer;
 }
+

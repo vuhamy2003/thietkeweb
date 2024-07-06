@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
         openChatButton.style.display = 'none'; // Hide the open chat button
     });
 });
-
+/*CHAT-BOX*/
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM fully loaded and parsed");
 
@@ -91,6 +91,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
     });
 });
 
+/*trượt thanh*/
+
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log("DOM fully loaded and parsed");
 
@@ -152,3 +154,4 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+

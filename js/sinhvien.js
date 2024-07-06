@@ -17,8 +17,19 @@ function toggleMenu(element) {
 document.addEventListener('DOMContentLoaded', function() {
     console.log("DOM fully loaded and parsed.");
 
-    // Array to store comments
-    let comments = [];
+    // Function to load comments from LocalStorage
+    function loadCommentsFromLocalStorage() {
+        const storedComments = localStorage.getItem('comments');
+        return storedComments ? JSON.parse(storedComments) : [];
+    }
+
+    // Function to save comments to LocalStorage
+    function saveCommentsToLocalStorage(comments) {
+        localStorage.setItem('comments', JSON.stringify(comments));
+    }
+
+    // Array to store comments, load from LocalStorage
+    let comments = loadCommentsFromLocalStorage();
 
     // Function to handle posting comments
     function postComment() {
@@ -36,6 +47,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
             // Add the new comment to the array
             comments.push(newComment);
+
+            // Save comments to LocalStorage
+            saveCommentsToLocalStorage(comments);
 
             // Sort and render comments based on current sort order
             renderComments();
@@ -69,7 +83,7 @@ document.addEventListener('DOMContentLoaded', function() {
             commentElement.innerHTML = `
                 <img src="../img/avt.jpg" alt="Avatar" class="avatar">
                 <div class="comment-details">
-                    <span class="comment-date">${new Date(comment.timestamp).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}</span>
+                    <span class="comment-date">${new Date(comment.timestamp).toLocaleString('vi-VN', { dateStyle: 'medium', timeStyle: 'short' })}</span>
                     <p>${comment.text}</p>
                 </div>
             `;
@@ -80,8 +94,8 @@ document.addEventListener('DOMContentLoaded', function() {
     // Function to update the comment count
     function updateCommentCount() {
         const commentCountElement = document.getElementById('comment-count');
-        const currentCount = parseInt(commentCountElement.textContent);
-        commentCountElement.textContent = `${currentCount + 1} bình luận`;
+        const count = comments.length;
+        commentCountElement.textContent = `${count} bình luận`;
     }
 
     // Event listener for the "Gửi" button click
@@ -106,6 +120,9 @@ document.addEventListener('DOMContentLoaded', function() {
         renderComments(); // Re-render comments based on the new sort order
     });
 
+    // Initial render of comments
+    renderComments();
+    updateCommentCount();
 });
 
 document.addEventListener('DOMContentLoaded', function() {
@@ -120,6 +137,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
 
 /*bình luận bài đăng chia sẻ*/
 document.addEventListener('DOMContentLoaded', function() {
@@ -241,3 +259,4 @@ document.addEventListener('DOMContentLoaded', function() {
     const comments = JSON.parse(localStorage.getItem('comments1')) || [];
     commentCountDisplay.textContent = comments.length;
 });
+

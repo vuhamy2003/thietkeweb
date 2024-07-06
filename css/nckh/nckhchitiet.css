@@ -72,30 +72,49 @@ figcaption{
 }
 
 /*Mục comment*/
-.comment-section {
+.comment-sectionkh {
     width: 100%;
     margin: 50px 0;
 }
 
-.comment-header {
+.comment-headerkh {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10px;
 }
 
-#comments-container {
+#comments-containerkh {
     border: 1px solid #ccc;
     padding: 10px;
     max-height: 400px;
     overflow-y: auto;
 }
 
-.comment-input {
+.comment-inputkh {
     display: flex;
     width: 100%;
     align-items: center;
     margin-top: 10px;
+}
+
+.commentkh {
+    display: flex;
+    align-items: center;
+    background-color: #e6f7ff; /* Nền màu xanh nhạt */
+    border: 1px solid #b3d7ff;
+    border-radius: 6px; /* Bo góc 6px */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-datekh {
+    margin-bottom: 10px;
+    align-self: flex-start; /* Canh ngày ở đầu */
+}
+
+.commentkh p {
+    margin: 0;
 }
 
 .avatar {
@@ -105,24 +124,28 @@ figcaption{
     margin-right: 10px;
 }
 
-#comment-text {
+.comment-detailskh p {
+    text-align: justify;
+}
+
+#comment-textkh {
     flex-grow: 1;
     padding: 10px;
     margin-right: 10px;
     border: 1px solid #ccc;
 }
 
-#post-comment {
+#post-commentkh {
     padding: 10px 20px;
-    color:white;
+    color: white;
     background-color: #025ba1;
     border-color: #025ba1;
     cursor: pointer;
     border-style: none;
 }
 
-#sort-comments{
-    color:white;
+#sort-commentskh {
+    color: white;
     background-color: #025ba1;
     border-color: #025ba1;
     cursor: pointer;
