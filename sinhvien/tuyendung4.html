@@ -9,10 +9,18 @@
     <meta name="copyright" content="Nhóm 3">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <title>Thư viện số - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
-    <link rel="stylesheet" type="text/css" href="../css/thuvien.css">  
+    <title>Sinh viên - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvientotnghiep.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/thongbao/stylethongbao.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvien.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/nckh/nckhchitiet.css">
     <script src="../js/main.js"></script>
-    <script src="../js/tuyensinh.js"></script>    
+    <script src="../js/tuyensinh.js"></script>
+    <script src="../js/sinhvien.js"></script>  
+    <script src="../js/thongbao/mainthongbao.js"></script> 
+    <script src="../js/gioithieu/gioithieu.js"></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 </head>
 <body>
@@ -87,7 +95,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="../sinhvien/sinhvien.html">SINH VIÊN</a>
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
@@ -111,9 +119,9 @@
             </div>
         </div>
 
-        <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a> 
+        <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
         <div class="dropdown">
-            <a href="../thuvienso/thuvienso.html"  id="selected">THƯ VIỆN SỐ</a>
+            <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
             <div class="dropdown-content">
                 <a href="../thuvienso/thuvienso.html">GIỚI THIỆU</a>
                 <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CNTT</a>
@@ -124,7 +132,6 @@
         </div>
 
     </nav>
-
     </header>
 
     <header class="header sticky-header" id="sticky-header">
@@ -198,7 +205,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="../sinhvien/sinhvien.html" >SINH VIÊN</a>
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
@@ -224,7 +231,7 @@
 
         <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
         <div class="dropdown">
-            <a href="../thuvienso/thuvienso.html"  id="selected">THƯ VIỆN SỐ</a>
+            <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
             <div class="dropdown-content">
                 <a href="../thuvienso/thuvienso.html">GIỚI THIỆU</a>
                 <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CNTT</a>
@@ -240,45 +247,74 @@
     <main>
         <div class="display">
             <div class="display-container">
-                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a> > <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CHUYÊN NGÀNH CNTT</a></p>
+                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../sinhvien/sinhvien.html">SINH VIÊN</a> > <a href="../sinhvien/sinhvien.html">SV CHUẨN BỊ TỐT NGHIỆP</a> > <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a> > <a href="../sinhvien/tuyendung1.html">TUYỂN DỤNG THỊ TRƯỜNG IT</a></p>
             </div>
         </div>
         <hr class="dongke">
-            <div class="container1">
-                <div class="right-container">
-                    <div class="sidebar">
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="thuvienso.html">Giới thiệu</a></li>
-                            </ul>
+
+        <div class="container1">
+            <div class="right-container">
+                <div class="sidebar">
+                    <div class="sidebar-item">
+                        <div class="menu-title" onclick="toggleMenu(this)">
+                            <span class="arrow">></span>
+                            <a href="sinhvien.html">Sinh viên chuẩn bị tốt nghiệp</a>
                         </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="congnghe.html" class="selected">Đề cương học phần chuyên ngành Công nghệ thông tin</a></li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="cndaphuongtien.html" >Đề cương học phần chuyên ngành Công nghệ đa phương tiện</a></li>  
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="giaotrinh.html">Giáo trình chuyên ngành</a></li>  
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="http://www.thuviendhkt.net/" target="_blank">Thư viện số Đại học Kiến trúc</a></li>  
-                            </ul>
+                        <div class="menu">
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="thongbao.html" >Thông báo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="vanbanhuongdan.html">Văn bản hướng dẫn</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tailieuthamkhao.html" >Tài liệu tham khảo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tuyendung.html" class="selected">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                            
                         </div>
                     </div>
+                    <div class="sidebar-item">
+                        <ul>
+                            <li><a href="cuusinhvien.html">Cựu sinh viên</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="content">
-                    <h2>ĐỀ CƯƠNG HỌC PHẦN CHUYÊN NGÀNH CÔNG NGHỆ THÔNG TIN</h2>
+            </div>
+            <div class="main-content">
+                <div class="article">
+                    <h2>Lương kỹ sư IT Việt</h2>
+                    <div class="article-meta1">
+                        <i class="fa fa-clock"></i> <span class="date">25/08/2021</span>
+                        <i class="fa fa-eye"></i> <span class="views">5496</span>
+                    </div>
                     <hr>
-                    <div class="pdf-container">
-                        <iframe src="../tailieu/congnghe.pdf" frameborder="0"></iframe>
+                    <p>Theo Jobstreet.com, công nghệ thông tin (CNTT) đang nằm trong top 10 những ngành nghề có mức lương cao nhất tại Việt Nam. Tuy nhiên, những người làm trong lĩnh vực IT có thu nhập hàng trăm tỷ mỗi năm vẫn là hiện tượng hiếm.</p>
+                    <p>Dải lương phổ biến của ngành CNTT là từ 8,4 triệu đồng đến 27,4 triệu đồng. Tùy theo chính sách ở các doanh nghiệp khác nhau, con số này có thể thay đổi. Với những sinh viên mới tốt nghiệp chuyên ngành CNTT, lương cơ bản nằm trong khoảng 7 - 10 triệu đồng/tháng. Những người 1 - 2 năm kinh nghiệm sẽ nhận lương mỗi tháng khoảng 10 - 15 triệu đồng. Con số này có thể lên hơn 20 triệu đồng nếu có tối thiểu 3 năm kinh nghiệm và kỹ năng chuyên sâu, đa dạng.</p>
+                    <img src="../img/sinhvien/td41.png"  class="anhtuyendung">
+                    <p>Một thống kê của TopDev về thị trường IT Việt Nam tính đến quý II/2021 cho thấy kỹ sư trí tuệ nhân tạo (AI) và học máy (machine learning) có mức lương trung bình tháng cao nhất, khoảng 70 triệu đồng. Mức này cao gấp đôi lương kỹ sư dữ liệu lớn (Big Data) và kỹ sư Backend hay lập trình viên (trung bình 30 triệu đồng mỗi tháng). 6 trong số 10 vị trí IT có lương tháng cao nhất thuộc về các cấp quản lý và kiến trúc sư công nghệ. Vị trí có lương trung bình tháng cao nhất hiện nay là CTO, CIO, khoảng 5.776 USD (khoảng 132 triệu đồng).</p>
+                    <p>"Bảng hướng dẫn lương 2021" của công ty giải pháp nhân sự Adecco Việt Nam, cho biết, vị trí giám đốc công nghệ (CTO) và giám đốc công nghệ thông tin (CIO) trên 5 năm kinh nghiệm có thể nhận mức lương từ 250 đến 400 triệu đồng mỗi tháng tại TP HCM và 120 đến 250 triệu đồng mỗi tháng tại Hà Nội. Một số vị trí có kinh nghiệm từ 5 năm như kiến trúc sư phần mềm/giải pháp; kỹ sư phần mềm; kỹ sư dữ liệu... có thể nhận được mức lương cao nhất, lần lượt là 160 triệu, 120 triệu và 80 triệu đồng mỗi tháng.</p>
+                </div>
+                <div class="comment-sectionkh">
+                    <div class="comment-headerkh">
+                        <span id="comment-countkh">0 bình luận</span>
+                        <button id="sort-commentskh">Sắp xếp</button>
+                    </div>
+                    <div id="comments-containerkh"></div>
+                    <div class="comment-inputkh">
+                        <img id="user-avatar" src="../img/avt.jpg" alt="Avatar" class="avatar">
+                        <input type="text" id="comment-textkh" placeholder="Viết bình luận...">
+                        <button id="post-commentkh">Gửi</button>
                     </div>
                 </div>
             </div>
@@ -286,7 +322,7 @@
     </main>
 
     <button id="scroll-to-top" title="Go to top">↑</button>
-
+    
     <footer>
         <div class="chantrangweb">
             <div class="footer-column">
@@ -325,3 +361,6 @@
             </div>
         </div>
     </footer>
+
+</body>
+</html>

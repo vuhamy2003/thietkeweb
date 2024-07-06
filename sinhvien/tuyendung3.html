@@ -9,10 +9,18 @@
     <meta name="copyright" content="Nhóm 3">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <title>Thư viện số - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
-    <link rel="stylesheet" type="text/css" href="../css/thuvien.css">  
+    <title>Sinh viên - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvientotnghiep.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/thongbao/stylethongbao.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvien.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/nckh/nckhchitiet.css">
     <script src="../js/main.js"></script>
-    <script src="../js/tuyensinh.js"></script>    
+    <script src="../js/tuyensinh.js"></script>
+    <script src="../js/sinhvien.js"></script>  
+    <script src="../js/thongbao/mainthongbao.js"></script> 
+    <script src="../js/gioithieu/gioithieu.js"></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 </head>
 <body>
@@ -87,7 +95,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="../sinhvien/sinhvien.html">SINH VIÊN</a>
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
@@ -111,9 +119,9 @@
             </div>
         </div>
 
-        <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a> 
+        <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
         <div class="dropdown">
-            <a href="../thuvienso/thuvienso.html"  id="selected">THƯ VIỆN SỐ</a>
+            <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
             <div class="dropdown-content">
                 <a href="../thuvienso/thuvienso.html">GIỚI THIỆU</a>
                 <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CNTT</a>
@@ -124,7 +132,6 @@
         </div>
 
     </nav>
-
     </header>
 
     <header class="header sticky-header" id="sticky-header">
@@ -198,7 +205,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="../sinhvien/sinhvien.html" >SINH VIÊN</a>
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
@@ -224,7 +231,7 @@
 
         <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
         <div class="dropdown">
-            <a href="../thuvienso/thuvienso.html"  id="selected">THƯ VIỆN SỐ</a>
+            <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
             <div class="dropdown-content">
                 <a href="../thuvienso/thuvienso.html">GIỚI THIỆU</a>
                 <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CNTT</a>
@@ -240,45 +247,124 @@
     <main>
         <div class="display">
             <div class="display-container">
-                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a> > <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CHUYÊN NGÀNH CNTT</a></p>
+                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../sinhvien/sinhvien.html">SINH VIÊN</a> > <a href="../sinhvien/sinhvien.html">SV CHUẨN BỊ TỐT NGHIỆP</a> > <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a> > <a href="../sinhvien/tuyendung1.html">TUYỂN DỤNG THỊ TRƯỜNG IT</a></p>
             </div>
         </div>
         <hr class="dongke">
-            <div class="container1">
-                <div class="right-container">
-                    <div class="sidebar">
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="thuvienso.html">Giới thiệu</a></li>
-                            </ul>
+
+        <div class="container1">
+            <div class="right-container">
+                <div class="sidebar">
+                    <div class="sidebar-item">
+                        <div class="menu-title" onclick="toggleMenu(this)">
+                            <span class="arrow">></span>
+                            <a href="sinhvien.html">Sinh viên chuẩn bị tốt nghiệp</a>
                         </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="congnghe.html" class="selected">Đề cương học phần chuyên ngành Công nghệ thông tin</a></li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="cndaphuongtien.html" >Đề cương học phần chuyên ngành Công nghệ đa phương tiện</a></li>  
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="giaotrinh.html">Giáo trình chuyên ngành</a></li>  
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="http://www.thuviendhkt.net/" target="_blank">Thư viện số Đại học Kiến trúc</a></li>  
-                            </ul>
+                        <div class="menu">
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="thongbao.html" >Thông báo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="vanbanhuongdan.html">Văn bản hướng dẫn</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tailieuthamkhao.html" >Tài liệu tham khảo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tuyendung.html" class="selected">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                            
                         </div>
                     </div>
+                    <div class="sidebar-item">
+                        <ul>
+                            <li><a href="cuusinhvien.html">Cựu sinh viên</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="content">
-                    <h2>ĐỀ CƯƠNG HỌC PHẦN CHUYÊN NGÀNH CÔNG NGHỆ THÔNG TIN</h2>
+            </div>
+            <div class="main-content">
+                <div class="article">
+                    <h2>Top 5 vị trí công việc có mức lương ngành Công nghệ thông tin cao nhất</h2>
+                    <div class="article-meta1">
+                        <i class="fa fa-clock"></i> <span class="date">25/08/2021</span>
+                        <i class="fa fa-eye"></i> <span class="views">1490</span>
+                    </div>
                     <hr>
-                    <div class="pdf-container">
-                        <iframe src="../tailieu/congnghe.pdf" frameborder="0"></iframe>
+                    <h3>Mức lương trung bình ngành Công nghệ thông tin</h3>
+                    <p>Hiện tại, theo một số thống kê từ các công ty tuyển dụng trực tuyến lớn của Việt Nam, mức lương trung bình ngành công nghệ thông tin khá cao, đạt top 10 ngành nghề có mức lương cao nhất nước ta hiện nay. </p>
+                    <p>Mức lương của các bạn IT mới ra trường, hoặc đang thực tập, mức lương các bạn sẽ dao động trong khoảng  7-10 triệu vnđ/tháng</p>
+                    <p>Với nhân viên IT có kinh nghiệm từ 1-4 năm, có thể nhận mức lương dao động trong khoảng 10-25 triệu vnđ/tháng</p>
+                    <p>Với các vị trí quản lý hay giám đốc, mức lương mà nhân sự ngành công nghệ thông tin có thể nhận lên tới 30-66 triệu vnđ/tháng</p>
+                    <p>Mức lương phổ biến của ngành Công Nghệ thông tin  dao động trong khoảng 8,4-27,4 triệu vnđ/tháng. Mức lương ngành này phụ thuộc hay dao động theo chính sách, cơ chế đãi ngộ khác nhau, tuy nhiên, lương ngành công nghệ thông tin chỉ đứng sau mức lương trung bình của 2 ngành y tế và trợ lý/thư ký điều hành. </p>
+                    <h3>5 vị trí có mức lương cao nhất ngành Công nghệ thông tin</h3>
+                    <p><b>Lập trình ứng dụng điện thoại</b></p>
+                    <ul class="bold-list">
+                        <li>Dự đoán tăng trưởng trong 10 năm: tăng 26%</li>
+                        <li>Số lượng việc làm trong 10 năm: 241,500 việc làm mới</li>
+                        <li>Lương trung bình: 109,000 USD</li>
+                    </ul>
+                    <p>Lập trình ứng dụng điện thoại là một trong những lĩnh vực có tốc độ phát triển nhanh nhất trên thế giới và có nhu cầu tuyển dụng ngày càng cao. Nếu các kỹ sư lập trình ứng dụng điện thoại có kinh nghiệm, có khả năng làm việc trong các công ty lớn, mức lương dành cho vị trí này rất tốt và có nhiều cơ hội thăng tiến xa hơn trong công việc. </p>
+                    <br>
+                    <p><b>Quản trị cơ sở dữ liệu – bảo mật thông tin</b></p>
+                    <ul class="bold-list">
+                        <li>Dự đoán tăng trưởng trong 10 năm: tăng 32%</li>
+                        <li>Số lượng việc làm trong 10 năm: 35,500 việc làm</li>
+                        <li>Lương trung bình: 118,000 USD</li>
+                    </ul>
+                    <p>Quản trị cơ sở dữ liệu – bảo mật thông tin là mối quan tâm hàng đầu của các doanh nghiệp cũng như các nhà quản lý công nghệ thông tin khi tần suất, phạm vi của các cuộc tấn công mạng ngày càng nhiều nên việc tăng cường các nhà bảo mật, quản trị dữ liệu giỏi là điều cần thiết – tạo nhiều cơ hội việc làm cũng như mức thu nhập cao cho các kỹ sư bảo mật công nghệ thông tin. </p>
+                    <img src="../img/sinhvien/td31.png"  class="anhtuyendung">
+                    <p><b>Kỹ sư phần mềm</b></p>
+                    <ul class="bold-list">
+                        <li>Dự đoán tăng trưởng trong 10 năm: tăng 21%</li>
+                        <li>Số lượng việc làm trong 10 năm: 284,100 việc làm mới</li>
+                        <li>Lương trung bình: 106,000 USD</li>
+                    </ul>
+                    <p>Công nghệ, kỹ thuật, khoa học ngày càng phát triển sẽ kéo theo nhu cầu về tuyển dụng việc làm các kỹ sư phần mềm cũng tăng theo nhanh chóng. Các kỹ sư phần mềm sẽ giúp các doanh nghiệp, tổ chức nhanh chóng phát triển các hệ thống máy tính, các công việc của các ngành khoa học kỹ thuật khác, công nghiệp hoá… </p>
+                    <br>
+                    <p><b>Thiết kế Game</b></p>
+                    <ul class="bold-list">
+                        <li>Dự đoán tăng trưởng trong 10 năm: tăng 26%</li>
+                        <li>Số lượng việc làm trong 10 năm: 241,500 việc làm mới</li>
+                        <li>Lương trung bình: 80,000 USD</li>
+                    </ul>
+                    <p>Công nghiệp Game mang tới cho các doanh nghiệp nguồn thu khá lớn, từ đó mở ra nhiều cơ hội việc làm cho các kỹ sư công nghệ thông tin với mức thu nhập khá cao trong ngành này. </p>
+                    <img src="../img/sinhvien/td32.png">
+                    <br>
+                    <p><b>Phát triển và thiết kế website</b></p>
+                    <ul class="bold-list">
+                        <li>Dự đoán tăng trưởng trong 10 năm: tăng 13%</li>
+                        <li>– Số lượng việc làm trong 10 năm: 20,900 việc làm</li>
+                        <li>Lương trung bình: 73,000 USD</li>
+                    </ul>
+                    <p>Các doanh nghiệp, công ty to hay nhỏ hiện nay đều cần có hệ thống website phục vụ nhu cầu bán hàng hay cung cấp thông tin tới khách hàng. Do đó, nhu cầu về kỹ sư phát triển và thiết kế website sẽ rất lớn và tỷ lệ thuận với sự phát triển, gia tăng con số về các tổ chức hay doanh nghiệp hiện nay. </p>
+                    <h3>Các yếu tố ảnh hưởng tới mức lương ngành Công nghệ thông tin</h3>
+                    <p><b>Kinh nghiệm</b></p>
+                    <p>Kinh nghiệm chính là yếu tố đánh giá năng lực của các kỹ sư công nghệ thông tin trong vị trí công việc mà các bạn muốn ứng tuyển. Tuỳ vào các vị trí chuyên môn ở cấp độ nào, thực tập, nhân viên hay quản lý,… sẽ có mức lương khởi điểm khác nhau nên kinh nghiệm của ứng viên sẽ quyết định mức lương của mình. Ứng viên chịu nhiều trách nhiệm và tham gia nhiều dự án sẽ mức lương cao cũng như các cơ hội về thu nhập khác tốt hơn. </p>
+                    <img src="../img/sinhvien/td33.png">
+                    <p><b>Nơi làm việc</b></p>
+                    <p>Mức lương công nghệ thông tin còn phụ thuộc vào nơi bạn sinh sống và làm việc. Tại các thành phố lớn như thủ đô Hà Nội, TP. Hồ Chí Minh sẽ có chế độ lương bổng cho các kỹ sư công nghệ thông tin cao hơn so với ở các địa phương. Mặt bằng chung cho lương của ngành công nghệ thông tin tại Hà Nội và Hồ Chí Minh không có sự chênh lệch quá nhiều và có nhiều cơ hội phát triển nghề nghiệp cho các bạn kỹ sư công nghệ thông tin. </p>
+                    <p><b>Nhu cầu tuyển dụng </b></p>
+                    <p>Mặt khác, mức lương của các kỹ sư công nghệ thông tin còn phụ thuộc vào nhu cầu tuyển dụng của các doanh nghiệp, tổ chức. Tùy từng thời điểm khác nhau, nếu doanh nghiệp đang cần gấp kỹ sư IT sẽ chịu có nhiều khả năng chi ra cho nhân sự IT mức lương cao hơn so với mặt bằng chung hoặc ngược lại.</p>
+                </div>
+                <div class="comment-sectionkh">
+                    <div class="comment-headerkh">
+                        <span id="comment-countkh">0 bình luận</span>
+                        <button id="sort-commentskh">Sắp xếp</button>
+                    </div>
+                    <div id="comments-containerkh"></div>
+                    <div class="comment-inputkh">
+                        <img id="user-avatar" src="../img/avt.jpg" alt="Avatar" class="avatar">
+                        <input type="text" id="comment-textkh" placeholder="Viết bình luận...">
+                        <button id="post-commentkh">Gửi</button>
                     </div>
                 </div>
             </div>
@@ -286,7 +372,7 @@
     </main>
 
     <button id="scroll-to-top" title="Go to top">↑</button>
-
+    
     <footer>
         <div class="chantrangweb">
             <div class="footer-column">
@@ -325,3 +411,6 @@
             </div>
         </div>
     </footer>
+
+</body>
+</html>

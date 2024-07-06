@@ -9,10 +9,18 @@
     <meta name="copyright" content="Nhóm 3">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../img/logo.ico" type="image/x-icon">
-    <title>Thư viện số - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
-    <link rel="stylesheet" type="text/css" href="../css/thuvien.css">  
+    <title>Sinh viên - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvientotnghiep.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/thongbao/stylethongbao.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/sinhvien/sinhvien.css"> 
+    <link rel="stylesheet" type="text/css" href="../css/nckh/nckhchitiet.css">
     <script src="../js/main.js"></script>
-    <script src="../js/tuyensinh.js"></script>    
+    <script src="../js/tuyensinh.js"></script>
+    <script src="../js/sinhvien.js"></script>  
+    <script src="../js/thongbao/mainthongbao.js"></script> 
+    <script src="../js/gioithieu/gioithieu.js"></script>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
 
 </head>
 <body>
@@ -87,7 +95,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="../sinhvien/sinhvien.html">SINH VIÊN</a>
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
@@ -111,9 +119,9 @@
             </div>
         </div>
 
-        <a href="../tuyensinh/tuyensinh.html">TUYỂN SINH</a> 
+        <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
         <div class="dropdown">
-            <a href="../thuvienso/thuvienso.html"  id="selected">THƯ VIỆN SỐ</a>
+            <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
             <div class="dropdown-content">
                 <a href="../thuvienso/thuvienso.html">GIỚI THIỆU</a>
                 <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CNTT</a>
@@ -124,7 +132,6 @@
         </div>
 
     </nav>
-
     </header>
 
     <header class="header sticky-header" id="sticky-header">
@@ -198,7 +205,7 @@
         </div>
 
         <div class="dropdown">
-            <a href="../sinhvien/sinhvien.html" >SINH VIÊN</a>
+            <a href="../sinhvien/sinhvien.html" id="selected">SINH VIÊN</a>
             <div class="dropdown-content">
                 <div class="sub-dropdown">
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
@@ -224,7 +231,7 @@
 
         <a href="../tuyensinh/tuyensinh.html" >TUYỂN SINH</a> 
         <div class="dropdown">
-            <a href="../thuvienso/thuvienso.html"  id="selected">THƯ VIỆN SỐ</a>
+            <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
             <div class="dropdown-content">
                 <a href="../thuvienso/thuvienso.html">GIỚI THIỆU</a>
                 <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CNTT</a>
@@ -240,45 +247,77 @@
     <main>
         <div class="display">
             <div class="display-container">
-                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a> > <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CHUYÊN NGÀNH CNTT</a></p>
+                <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"> </a> > <a href="../sinhvien/sinhvien.html">SINH VIÊN</a> > <a href="../sinhvien/sinhvien.html">SV CHUẨN BỊ TỐT NGHIỆP</a> > <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a> > <a href="../sinhvien/tuyendung1.html">TUYỂN DỤNG THỊ TRƯỜNG IT</a></p>
             </div>
         </div>
         <hr class="dongke">
-            <div class="container1">
-                <div class="right-container">
-                    <div class="sidebar">
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="thuvienso.html">Giới thiệu</a></li>
-                            </ul>
+
+        <div class="container1">
+            <div class="right-container">
+                <div class="sidebar">
+                    <div class="sidebar-item">
+                        <div class="menu-title" onclick="toggleMenu(this)">
+                            <span class="arrow">></span>
+                            <a href="sinhvien.html">Sinh viên chuẩn bị tốt nghiệp</a>
                         </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="congnghe.html" class="selected">Đề cương học phần chuyên ngành Công nghệ thông tin</a></li>
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="cndaphuongtien.html" >Đề cương học phần chuyên ngành Công nghệ đa phương tiện</a></li>  
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="giaotrinh.html">Giáo trình chuyên ngành</a></li>  
-                            </ul>
-                        </div>
-                        <div class="sidebar-item">
-                            <ul>
-                                <li><a href="http://www.thuviendhkt.net/" target="_blank">Thư viện số Đại học Kiến trúc</a></li>  
-                            </ul>
+                        <div class="menu">
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="thongbao.html" >Thông báo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="vanbanhuongdan.html">Văn bản hướng dẫn</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tailieuthamkhao.html" >Tài liệu tham khảo</a></li>
+                                </ul>
+                            </div>
+                            <div class="sidebar-item">
+                                <ul>
+                                    <li><a href="tuyendung.html" class="selected">Tuyển dụng</a></li>
+                                </ul>
+                            </div>
+                            
                         </div>
                     </div>
+                    <div class="sidebar-item">
+                        <ul>
+                            <li><a href="cuusinhvien.html">Cựu sinh viên</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="content">
-                    <h2>ĐỀ CƯƠNG HỌC PHẦN CHUYÊN NGÀNH CÔNG NGHỆ THÔNG TIN</h2>
+            </div>
+            <div class="main-content">
+                <div class="article">
+                    <h2>Hé lộ mức lương cực "khủng" của ngành Công nghệ thông tin</h2>
+                    <div class="article-meta1">
+                        <i class="fa fa-clock"></i> <span class="date">25/08/2021</span>
+                        <i class="fa fa-eye"></i> <span class="views">836</span>
+                    </div>
                     <hr>
-                    <div class="pdf-container">
-                        <iframe src="../tailieu/congnghe.pdf" frameborder="0"></iframe>
+                    <p>Trong bối cảnh thị trường công nghệ Việt Nam đang tăng trưởng rất nhanh như hiện nay, có rất nhiều công ty hàng đầu trong lĩnh vực này đã đang và sẽ có ý định xâm nhập. Báo cáo của TopDev cho biết, tính đến quý II/2018, lượng việc làm IT đã tăng đến 74% so với năm 2012 và tăng 24% so với cùng kỳ năm ngoái. Theo đó, Việt Nam sẽ cần đến 350.000 – 500.000 nhân lực IT đến trước cuối năm 2021. Tình trạng thiếu hụt lập trình viên có năng lực khiến nghề này càng trở nên “có giá” hơn bao giờ hết. Tuy nhiên, công nghệ thông tin là ngành có tốc độ thay đổi chóng mặt, điều này đòi hỏi ứng viên phải luôn cập nhật, học hỏi và tiếp thu cái mới để không bao giờ bị thụt lùi.</p>
+                    <h3>Mức lương của ngành công nghệ thông tin bao nhiêu là hợp lý?</h3>
+                    <p>Hiện tại, lương trung bình của lập trình viên tại Việt Nam dao động 10 – 25 triệu đồng mỗi tháng. Trong đó, ở phân khúc lập trình web, các lập trình viên có mức lương 8 – 13 triệu đồng cho lập trình viên front-end và 11 – 15 triệu đồng cho lập trình viên back-end. Trong khi đó, các vị trí quản lý có mức lương cao dao động 30 – 66 triệu đồng và xu hướng vẫn sẽ tiếp tục tăng trong thời gian tới.</p>
+                    <p>Nếu lập trình viên có kiến thức và kinh nghiệm về blockchain thì mức lương trung bình có thể sẽ tăng gấp 3 lần do nhu cầu tuyển dụng lớn. Tuy nhiên, nhóm nhân sự này rất khan hiếm, chỉ chiếm 2 – 5% toàn thị trường.</p>
+                    <p>Tuy nhiên, bạn cũng có thể đạt mức lương 12 triệu đồng hoặc hơn thế nữa nếu còn một thời sinh viên “bi tráng”, chăm chỉ “lăn xả” để dắt túi được ít kinh nghiệm và có vốn ngoại ngữ để tham gia các công ty nước ngoài. Vì vậy, sự “hợp lý” trong mức lương của lập trình viên phải dựa trên vốn có của chính bản thân họ.</p>
+                    <h3>Làm gì để cải thiện mức lương từ ngay nhưng từ khi khởi điểm?</h3>
+                    <p>Khi mới ra trường, phần lớn chúng ta ít ai đặt mức lương là yếu tố hàng đầu khi xin việc. Tuy nhiên, không có thể phủ nhận rằng, một mức lương cao sẽ có tác dụng tạo động lực rất nhiều cho người lao động khi làm việc, dù nó không phải tất cả. Vậy tại sao không “tối đa hóa” mức lương trong khả năng của bản thân mình?</p>
+                    <p>Với một lập trình viên front-end và lập trình viên back-end cần học những gì để có mức lương khởi điểm 8 đến 15 triệu? Một lập trình viên front-end cần thành thạo 3 ngôn ngữ chính: HTML, CSS, và ngôn ngữ lập trình JavaScript.  Ngoài việc thông thạo các ngôn ngữ đó, các lập trình viên front-end cần phải làm quen với các framework như Bootstrap, Foundation, Backbone, AngularJS, và EmberJS, để đảm bảo nội dung luôn hiển thị tốt trên mọi thiết bị khác nhau, và các thư viện như jQuery và LESS, đóng gói code vào trong một hình thức giúp tiết kiệm thời gian và hữu dụng hơn. Còn các lập trình viên back-end sử dụng các ngôn ngữ server-side như PHP, Ruby, Python, Java, và Net để xây dựng một ứng dụng, và các công cụ như MySQL, Oracle, và SQL Server để tìm kiếm, lưu trữ, hoặc thay đổi dữ liệu và phục vụ trở lại tới người dùng trong phần front-end. Vậy ở đâu đào tạo chuẩn kiến thức để trở thành lập một trình viên front-end và lập trình viên back-end giỏi?</p>
+                </div>
+                <div class="comment-sectionkh">
+                    <div class="comment-headerkh">
+                        <span id="comment-countkh">0 bình luận</span>
+                        <button id="sort-commentskh">Sắp xếp</button>
+                    </div>
+                    <div id="comments-containerkh"></div>
+                    <div class="comment-inputkh">
+                        <img id="user-avatar" src="../img/avt.jpg" alt="Avatar" class="avatar">
+                        <input type="text" id="comment-textkh" placeholder="Viết bình luận...">
+                        <button id="post-commentkh">Gửi</button>
                     </div>
                 </div>
             </div>
@@ -286,7 +325,7 @@
     </main>
 
     <button id="scroll-to-top" title="Go to top">↑</button>
-
+    
     <footer>
         <div class="chantrangweb">
             <div class="footer-column">
@@ -325,3 +364,6 @@
             </div>
         </div>
     </footer>
+
+</body>
+</html>
