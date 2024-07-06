@@ -1,0 +1,104 @@
+/*trượt thanh*/
+#scroll-to-top {
+    display: none; /* Ẩn nút ban đầu */
+    position: fixed; /* Định vị cố định ở góc dưới bên phải */
+    bottom: 80px; /* Khoảng cách từ dưới cùng của màn hình */
+    right: 20px; /* Khoảng cách từ bên phải của màn hình */
+    z-index: 1000; /* Đảm bảo nút nằm trên các phần tử khác */
+    border: none; /* Bỏ đường viền */
+    outline: none; /* Bỏ viền khi nhấn */
+    background-color: #025ba1; /* Màu nền */
+    color: white; /* Màu chữ */
+    cursor: pointer; /* Con trỏ chuột khi di chuyển qua nút */
+    padding: 10px 15px; /* Khoảng cách bên trong nút */
+    border-radius: 5px; /* Bo tròn các góc */
+    font-size: 16px; /* Kích thước chữ */
+}
+
+#scroll-to-top:hover {
+    background-color: #003366; /* Màu nền khi di chuột qua nút */
+}
+
+
+/*Mục comment*/
+.comment-sectionkh {
+    width: 100%;
+    margin: 50px 0;
+}
+
+.comment-headerkh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#comments-containerkh {
+    border: 1px solid #ccc;
+    padding: 10px;
+    max-height: 400px;
+    overflow-y: auto;
+}
+
+.comment-inputkh {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.commentkh {
+    display: flex;
+    align-items: center;
+    background-color: #e6f7ff; /* Nền màu xanh nhạt */
+    border: 1px solid #b3d7ff;
+    border-radius: 6px; /* Bo góc 6px */
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.comment-datekh {
+    margin-bottom: 10px;
+    align-self: flex-start; /* Canh ngày ở đầu */
+}
+
+.commentkh p {
+    margin: 0;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.comment-detailskh p {
+    text-align: justify;
+}
+
+#comment-textkh {
+    flex-grow: 1;
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+}
+
+#post-commentkh {
+    padding: 10px 20px;
+    color: white;
+    background-color: #025ba1;
+    border-color: #025ba1;
+    cursor: pointer;
+    border-style: none;
+}
+
+#sort-commentskh {
+    color: white;
+    background-color: #025ba1;
+    border-color: #025ba1;
+    cursor: pointer;
+    border-style: none;
+    padding: 5px;
+    border-radius: 5px;
+}

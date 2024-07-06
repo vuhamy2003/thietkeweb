@@ -10,8 +10,10 @@
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../../img/logo.ico" type="image/x-icon">
     <title>Thông báo: Về việc thi sinh viên giỏi năm học 2020-2021 - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
-    <link rel="stylesheet" type="text/css" href="../../css/thongbao/styleveviecthisinhviengioi.css">  
+    <link rel="stylesheet" type="text/css" href="../../css/thongbao/styleveviecthisinhviengioi.css">
+    <link rel="stylesheet" type="text/css" href="../../css/tintuc/style scroll_to_top.css">  
     <script src="../../js/thongbao/mainveviecthisinhviengioi.js"></script>  
+    <script src="../../js/tintuc/maincmt.js"></script> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
 </head>
@@ -282,11 +284,27 @@
                 <i class="fa fa-eye"></i> <span class="views">792</span>
             </div>
             <hr>
-                    <div class="pdf-container">
-                        <iframe src="../../tailieu/thongbaothisinhviengioi.pdf" frameborder="0"></iframe>
+                <div class="pdf-container">
+                    <iframe src="../../tailieu/thongbaothisinhviengioi.pdf" frameborder="0"></iframe>
+                </div>
+                <div class="comment-sectionkh">
+                    <div class="comment-headerkh">
+                        <span id="comment-countkh">0 bình luận</span>
+                        <button id="sort-commentskh">Sắp xếp</button>
                     </div>
+                    <div id="comments-containerkh"></div>
+                    <div class="comment-inputkh">
+                        <img id="user-avatar" src="../../img/avt.jpg" alt="Avatar" class="avatar">
+                        <input type="text" id="comment-textkh" placeholder="Viết bình luận...">
+                        <button id="post-commentkh">Gửi</button>
+                    </div>
+                </div>
+    
+            </div>
         </div>
-    </div>
+    
+        
+        <button id="scroll-to-top" title="Go to top">↑</button>
 
     <footer>
         <div class="chantrangweb">

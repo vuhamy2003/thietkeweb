@@ -121,10 +121,10 @@ function submitForm(event) {
     // Xử lý gửi form ở đây, ví dụ sử dụng AJAX
     // Sau khi xử lý thành công, hiển thị thông báo và đóng popup
     alert('Dữ liệu đã được gửi thành công!');
-    //closePopup(); // Đóng popup sau khi alert
+    closePopup(); // Đóng popup sau khi alert
 
     // Nếu muốn chuyển hướng người dùng sau khi alert, sử dụng:
-    window.location.href = "./tuyensinh/tuyensinh.html";
+    //window.location.href = "./tuyensinh/tuyensinh.html";
 }
 
 (document).ready(function() {
