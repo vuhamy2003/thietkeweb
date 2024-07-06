@@ -24,12 +24,23 @@ document.addEventListener('DOMContentLoaded', () => {
 document.addEventListener('DOMContentLoaded', function() {
     console.log("DOM fully loaded and parsed.");
 
-    // Array to store comments
-    let comments = [];
+    // Function to load comments from LocalStorage
+    function loadCommentsFromLocalStorage() {
+        const storedComments = localStorage.getItem('commentskh');
+        return storedComments ? JSON.parse(storedComments) : [];
+    }
+
+    // Function to save comments to LocalStorage
+    function saveCommentsToLocalStorage(comments) {
+        localStorage.setItem('commentskh', JSON.stringify(comments));
+    }
+
+    // Array to store comments, load from LocalStorage
+    let comments = loadCommentsFromLocalStorage();
 
     // Function to handle posting comments
     function postComment() {
-        const commentText = document.getElementById('comment-text').value;
+        const commentText = document.getElementById('comment-textkh').value;
         if (commentText.trim() !== "") {
             // Get current date and time
             const now = new Date();
@@ -44,11 +55,14 @@ document.addEventListener('DOMContentLoaded', function() {
             // Add the new comment to the array
             comments.push(newComment);
 
+            // Save comments to LocalStorage
+            saveCommentsToLocalStorage(comments);
+
             // Sort and render comments based on current sort order
             renderComments();
 
             // Clear the input field
-            document.getElementById('comment-text').value = '';
+            document.getElementById('comment-textkh').value = '';
 
             // Update the comment count
             updateCommentCount();
@@ -59,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to render comments based on current sort order
     function renderComments() {
-        const commentsContainer = document.getElementById('comments-container');
+        const commentsContainer = document.getElementById('comments-containerkh');
         commentsContainer.innerHTML = ''; // Clear existing comments
 
         // Sort comments based on current sortBy value
@@ -72,11 +86,11 @@ document.addEventListener('DOMContentLoaded', function() {
         // Render sorted comments
         comments.forEach(comment => {
             const commentElement = document.createElement('div');
-            commentElement.className = 'comment';
+            commentElement.className = 'commentkh';
             commentElement.innerHTML = `
                 <img src="../img/avt.jpg" alt="Avatar" class="avatar">
-                <div class="comment-details">
-                    <span class="comment-date">${new Date(comment.timestamp).toLocaleString('en-US', { dateStyle: 'medium', timeStyle: 'short' })}</span>
+                <div class="comment-detailskh">
+                    <span class="comment-datekh">${new Date(comment.timestamp).toLocaleString('vi-VN', { dateStyle: 'medium', timeStyle: 'short' })}</span>
                     <p>${comment.text}</p>
                 </div>
             `;
@@ -86,16 +100,22 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Function to update the comment count
     function updateCommentCount() {
-        const commentCountElement = document.getElementById('comment-count');
-        const currentCount = parseInt(commentCountElement.textContent);
-        commentCountElement.textContent = `${currentCount + 1} bình luận`;
+        const commentCountElement = document.getElementById('comment-countkh');
+        const count = comments.length;
+        commentCountElement.textContent = `${count} bình luận`;
+
+        // Cập nhật số lượng bình luận trên một phần khác của trang
+        const commentCountDisplay = document.getElementById('comment-count-display');
+        if (commentCountDisplay) {
+            commentCountDisplay.textContent = `${count}`;
+        }
     }
 
     // Event listener for the "Gửi" button click
-    document.getElementById('post-comment').addEventListener('click', postComment);
+    document.getElementById('post-commentkh').addEventListener('click', postComment);
 
     // Event listener for Enter key press in the comment input field
-    document.getElementById('comment-text').addEventListener('keydown', function(event) {
+    document.getElementById('comment-textkh').addEventListener('keydown', function(event) {
         if (event.key === 'Enter') {
             event.preventDefault(); // Prevent the default Enter key action (usually form submission)
             postComment(); // Call the postComment function to handle posting the comment
@@ -104,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Event listener for sorting comments
     let sortBy = 'newest'; // Default sorting by newest
-    document.getElementById('sort-comments').addEventListener('click', function() {
+    document.getElementById('sort-commentskh').addEventListener('click', function() {
         if (sortBy === 'newest') {
             sortBy = 'oldest';
         } else {
@@ -113,6 +133,9 @@ document.addEventListener('DOMContentLoaded', function() {
         renderComments(); // Re-render comments based on the new sort order
     });
 
+    // Initial render of comments
+    renderComments();
+    updateCommentCount();
 });
 
 /*Đổi trang*/
