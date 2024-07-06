@@ -293,6 +293,118 @@
             </div>
         </div>
     </div>
+
+    <div class="container2">
+        <div class="column">
+            <img src="./img/anh_soluongsinhvien.png" alt="Image 1">
+            <div class="item-number" data-count="2000">2000</div>
+            <p class="giaithich">Sinh viên theo học</p>
+        </div>
+        <div class="column">
+            <img src="./img/anh_songanhdaotao.png" alt="Image 2">
+            <p class="special">2</p>
+            <p class="giaithich">Ngành đào tạo</p>
+        </div>
+        <div class="column">
+            <img src="./img/anh_tylecovieclam.png" alt="Image 3">
+            <div class="item-number" data-target="98">98</div>
+            <p class="giaithich">% Sinh viên có việc làm</p>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>   
+    <!-- thêm thư viện jQuery -->
+    <script>
+    $('.item-number').each(function () {
+        $(this).prop('item-number', 0).animate({
+            Counter: $(this).text()
+        }, {
+            duration: 7000,  // Thời gian chạy hiệu ứng (ms)
+            easing: 'swing', // Phương thức điều chỉnh tốc độ (có thể sử dụng các giá trị như 'linear', 'easeOutBounce', ...)
+            step: function (now) {
+                $(this).text(Math.ceil(now)); // Cập nhật số lên giao diện, làm tròn số
+            }
+        });
+    });
+    </script>
+
+
+<div class="container1">
+    <div class="item">
+        <h2 style="text-align: left;">Công nghệ thông tin</h2>
+        <img src="./img/tuyensinh/tuyensinh1.png" alt="Công nghệ thông tin">
+        <p>Thành thạo sử dụng bộ công cụ thiết kế, ứng dụng trong sáng tạo hình ảnh như <b>Adobe Photoshop, Adobe Illustrator,...</b></p>
+    </div>
+    <div class="item">
+        <h2 style="text-align: left;">Công nghệ đa phương tiện</h2>
+        <img src="./img/tuyensinh/tuyensinh2.png" alt="Công nghệ đa phương tiện">
+        <p>Xây dựng <b>tư duy thiết kế</b> vững chắc. Tự do biến ý tưởng hành hiện thực</p>
+    </div>
+
+    <div class="item">
+        <h2>Tin tức hot cập nhật</h2>
+        <div class="news-container">
+            <div class="news-wrapper">
+                <div class="news-item">
+                    <img src="./img/anh_cuocthi.jpg" alt="News 1">
+                    <div class="news-info">
+                        <a href="#" class="news-category">Thông báo</a>
+                        <span class="news-date">14-May-2024</span>
+                        <a href="#" class="news-title">Đề tài tốt nghiệp sinh viên khóa 2019CN</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./img/anh_cntt.png" alt="News 2">
+                    <div class="news-info">
+                        <a href="#" class="news-category">Thông báo</a>
+                        <span class="news-date">14-May-2024</span>
+                        <a href="#" class="news-title">Đồ án tốt nghiệp của sinh viên khoa CNTT với chuyển đổi số</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./img/anh_giaibongda.png" alt="News 3">
+                    <div class="news-info">
+                        <a href="#" class="news-category">Chuyên ngành</a>
+                        <span class="news-date">14-May-2024</span>
+                        <a href="#" class="news-title">Tầm quan trọng của chip bán dẫn trong thời đại hiện nay</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./img/anh_giaibongda.png" alt="News 3">
+                    <div class="news-info">
+                        <a href="#" class="news-category">Chuyên ngành</a>
+                        <span class="news-date">14-May-2024</span>
+                        <a href="#" class="news-title">Tầm quan trọng của chip bán dẫn trong thời đại hiện nay</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./img/anh_giaibongda.png" alt="News 3">
+                    <div class="news-info">
+                        <a href="#" class="news-category">Chuyên ngành</a>
+                        <span class="news-date">14-May-2024</span>
+                        <a href="#" class="news-title">Tầm quan trọng của chip bán dẫn trong thời đại hiện nay</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./img/anh_giaibongda.png" alt="News 3">
+                    <div class="news-info">
+                        <a href="#" class="news-category">Chuyên ngành</a>
+                        <span class="news-date">14-May-2024</span>
+                        <a href="#" class="news-title">Tầm quan trọng của chip bán dẫn trong thời đại hiện nay</a>
+                    </div>
+                </div>
+                <div class="news-item">
+                    <img src="./img/anh_giaibongda.png" alt="News 3">
+                    <div class="news-info">
+                        <a href="#" class="news-category">Chuyên ngành</a>
+                        <span class="news-date">14-May-2024</span>
+                        <a href="#" class="news-title">Tầm quan trọng của chip bán dẫn trong thời đại hiện nay</a>
+                    </div>
+                </div>
+                <div class="news-item spacer"></div> <!-- Spacer to create space at the end -->
+            </div>
+        </div>
+    </div>
+</div>
     
 
     <div id="popupForm" class="popup-form">

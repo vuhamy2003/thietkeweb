@@ -136,3 +136,8 @@ function submitForm(event) {
         $('.news-wrapper').css('animation', 'scrollNews ' + scrollDuration + 's linear infinite');
     }
 });
+
+
+
+
+
