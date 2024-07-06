@@ -316,10 +316,35 @@
     <div id="popupForm" class="popup-form">
         <div class="popup-content">
             <span class="close-btn" onclick="closePopup()">&times;</span>
-            <img src="./img/vekythilaptrinhsvqtICPC.png" alt="Popup Image">
-            <a href="./tuyensinh/tuyensinh.html" class="popup-button">Thông tin tuyển sinh</a>
+            <h2>Nếu cần hỗ trợ tư vấn tuyển sinh, vui lòng gửi thông tin để được giải đáp</h2>
+            <form id="contactForm" action="process_form.php" method="POST" onsubmit="submitForm(event)">
+                <div class="form-group">
+                    <label for="name">Họ và tên*</label>
+                    <input type="text" id="name" name="name" placeholder="Nhập họ và tên" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Điện thoại*</label>
+                    <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" placeholder="Nhập email" required>
+                </div>
+                <div class="form-group">
+                    <label for="program">Loại câu hỏi</label>
+                    <select id="program" name="program">
+                        <option value="">Loại câu hỏi</option>
+                        <option value="option1">Thông tin ngành Công nghệ thông tin</option>
+                        <option value="option2">Thông tin ngành Công nghệ đa phương tiện</option>
+                        <option value="option3">Đăng ký xét tuyển bằng học bạ</option>
+                        <option value="option4">Chính sách ưu tiên trong tuyển sinh trình độ đại học</option>
+                </select>
+                </div>    
+                <button type="submit">Gửi thông tin</button>
+            </form>
         </div>
     </div>
+    
 
     <button id="specialOfferBtn" class="special-offer-btn" onclick="openPopup()">Tư vấn tuyển sinh 2024</button>
     

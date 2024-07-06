@@ -115,6 +115,18 @@ document.addEventListener("DOMContentLoaded", function() {
     }, 3000); // 3000 milliseconds = 3 seconds
 });
 
+function submitForm(event) {
+    event.preventDefault(); // Ngăn form gửi dữ liệu mặc định
+
+    // Xử lý gửi form ở đây, ví dụ sử dụng AJAX
+    // Sau khi xử lý thành công, hiển thị thông báo và đóng popup
+    alert('Dữ liệu đã được gửi thành công!');
+    //closePopup(); // Đóng popup sau khi alert
+
+    // Nếu muốn chuyển hướng người dùng sau khi alert, sử dụng:
+    window.location.href = "./tuyensinh/tuyensinh.html";
+}
+
 (document).ready(function() {
     var wrapperHeight = $('.news-wrapper').height();
     var containerHeight = $('.news-container').height();
