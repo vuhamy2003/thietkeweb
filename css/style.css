@@ -363,7 +363,7 @@ footer {
 }
 
 .item img {
-    max-width: 100%;
+    width: 300px;
     height: auto;
     border-radius: 5px;
 }
@@ -377,7 +377,7 @@ footer {
     text-align: justify;
 }
 
-h2 {
+.item h2 {
     font-size: 20px;
     margin-bottom: 15px;
     font-family: Arial, sans-serif;
@@ -468,14 +468,15 @@ h2 {
 }
 
 .popup-content {
-    background-color: #fff; /* Màu nền của nội dung popup */
-    margin: 10% auto; /* Canh giữa popup trên màn hình */
+    background-color: white; /* Màu nền của nội dung popup */
+    margin: auto; /* Canh giữa popup theo chiều dọc và ngang */
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Chiều rộng của popup */
     max-width: 600px; /* Giới hạn chiều rộng tối đa */
     position: relative;
-    text-align: center;
+    top: 50%; /* Canh giữa theo chiều dọc */
+    transform: translateY(-50%); /* Dịch chuyển popup lên trên 50% chiều cao của nó */
     border-radius: 10px;
 }
 
@@ -498,11 +499,15 @@ h2 {
 h2 {
     margin-bottom: 20px;
     color: #333;
+    text-align: center;
 }
 
 form {
     display: flex;
     flex-direction: column;
+    background-color: #025ba1; /* Màu nền của form */
+    padding: 20px;
+    border-radius: 10px;
 }
 
 label {
@@ -510,6 +515,7 @@ label {
     margin-bottom: 5px;
     font-weight: bold;
     text-align: left;
+    color: white;
 }
 
 input, select {
@@ -525,17 +531,29 @@ input, select {
 button[type="submit"] {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #025ba1;
+    background-color: #004080;
     color: white;
     font-weight: bold;
-    border: none;
+    border: 1px solid black;
     border-radius: 5px;
     cursor: pointer;
     font-size: 16px;
 }
 
 button[type="submit"]:hover {
-    background-color: #004080;
+    background-color: #fff;
+    color:#000;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    margin-bottom: 5px; /* Khoảng cách giữa label và input */
 }
 
 .special-offer-btn {
@@ -555,29 +573,6 @@ button[type="submit"]:hover {
 
 .special-offer-btn:hover {
     background-color: #004080;
-}
-
-
-.form-group {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
-
-.form-group label {
-    flex: 0 0 150px; /* Độ rộng của label */
-    margin-right: 10px;
-    font-weight: bold;
-}
-
-.form-group input {
-    flex: 1; /* Input mở rộng để lấp đầy phần còn lại của hàng */
-    padding: 8px;
-    margin-top: 5px;
-    margin-bottom: 10px;
-    border-radius: 4px;
-    box-sizing: border-box;
-    border: 1px solid black;
 }
 
 
