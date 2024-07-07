@@ -102,7 +102,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 
 //Model
 
-document.querySelectorAll('.anhslide').forEach(img => {
+
+document.querySelectorAll('.anhchungnhan').forEach(img => {
     img.addEventListener('click', function() {
         openModal(this.src);
     });
@@ -116,6 +117,5 @@ function openModal(src) {
 function closeModal() {
     document.getElementById('modal').style.display = "none";
 }
-
 
 

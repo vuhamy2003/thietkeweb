@@ -596,6 +596,7 @@ h2{
     position: absolute;
     opacity: 0;
     transition: opacity 0.3s ease;
+    
 }
 
 .tenanh {
@@ -646,8 +647,6 @@ h2{
 }
 
 /*Modal*/
-
-/* Modal (background) */
 .modal {
     display: none; /* Ẩn modal mặc định */
     position: fixed;
@@ -665,7 +664,7 @@ h2{
 .modal-content {
     margin: 50px auto 50px auto;
     display: block;
-    width: 100%;
+    width: 80%;
     max-width: 700px;
 }
 
