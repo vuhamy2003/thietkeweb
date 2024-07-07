@@ -138,6 +138,9 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             nextBtn.disabled = false;
         }
+
+        // Cuộn về đầu trang sau khi chuyển trang
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     // Khi tải trang, hiển thị trang đầu tiên
@@ -162,3 +165,4 @@ document.addEventListener("DOMContentLoaded", function() {
         }
     });
 });
+
