@@ -561,31 +561,31 @@ hr.dongke {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Tối đa 1 cột là 200px, tối đa 1 hàng 1fr */
     grid-gap: 10px;
-    /*grid-auto-rows: auto; */ /* Chiều cao tự động điều chỉnh theo nội dung */
 }
 
 .item {
     position: relative;
     overflow: hidden;
     border-radius: 10px;
-    width: 100%; /* Làm cho item rộng bằng phần bên trong nó (ảnh) */
+    width: 100%; /* Kích thước cố định cho .item */
+    aspect-ratio: 1; /* Tỉ lệ khối vuông */
 }
 
 .item img {
     display: block;
     width: 100%;
-    height: auto;
-    max-width: 100%; /* Giới hạn chiều rộng tối đa của ảnh */
-    object-fit: cover; /* Đảm bảo ảnh lấp đầy phần tử */
+    height: 100%; /* Đảm bảo chiều cao của ảnh bằng với chiều cao của .item */
+    object-fit: cover; /* Đảm bảo ảnh lấp đầy toàn bộ phần nội dung của .item */
     object-position: center;
     transition: transform 0.3s ease; /* Chuyển đổi hiệu ứng khi hover */
 }
+
 
 .item:hover img {
     transform: scale(0.9); /* Scale nhỏ lại khi hover */
 }
 
-.overlay {
+.overlay1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -602,7 +602,7 @@ hr.dongke {
     pointer-events: none;
 }
 
-.item:hover .overlay {
+.item:hover .overlay1 {
     opacity: 1;
     pointer-events: auto;
 }

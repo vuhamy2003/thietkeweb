@@ -47,34 +47,10 @@ document.addEventListener('DOMContentLoaded', () => {
     autoSlide();
 });
 
-// Masonry layout function
-function masonryLayout() {
-    const grid = document.getElementById('masonry-grid');
-    const items = grid.getElementsByClassName('item');
-
-    let columnCount = 3; // Số cột bạn muốn hiển thị, có thể thay đổi
-    let columns = [];
-
-    // Tạo ra số cột
-    for (let i = 0; i < columnCount; i++) {
-        let column = document.createElement('div');
-        column.classList.add('column');
-        grid.appendChild(column);
-        columns.push(column);
-    }
-
-    // Sắp xếp các item vào cột
-    for (let i = 0; i < items.length; i++) {
-        let columnIndex = i % columnCount;
-        columns[columnIndex].appendChild(items[i]);
-    }
-}
-
-// Chạy hàm Masonry layout sau khi tải xong tài liệu
-document.addEventListener('DOMContentLoaded', masonryLayout);
 
 
 // Function to handle saving the image
+
 function saveImage(imageUrl) {
     // Create an anchor element
     const link = document.createElement('a');
