@@ -138,7 +138,6 @@ document.addEventListener('DOMContentLoaded', function() {
     updateCommentCount();
 });
 
-/*Đổi trang*/
 document.addEventListener("DOMContentLoaded", function() {
     const articles = document.querySelectorAll(".article");
     const articlesPerPage = 4; // Số bài viết hiển thị mỗi trang
@@ -176,6 +175,9 @@ document.addEventListener("DOMContentLoaded", function() {
         } else {
             nextBtn.disabled = false;
         }
+
+        // Cuộn về đầu trang sau khi chuyển trang
+        window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
     // Khi tải trang, hiển thị trang đầu tiên

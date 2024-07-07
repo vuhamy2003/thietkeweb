@@ -39,7 +39,7 @@ function changeSlide(n) {
 
 function autoSlide() {
     changeSlide(1);
-    setTimeout(autoSlide, 4000); // Chuyển slide mỗi 4 giây
+    setTimeout(autoSlide, 3000); // Chuyển slide mỗi 3 giây
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -75,4 +75,47 @@ saveButtons.forEach(button => {
         saveImage(imageUrl);
     });
 });
+
+//Nút like
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    document.querySelectorAll('.like-button').forEach(button => {
+        let likeCount = button.querySelector('.like-count');
+        let imageId = button.dataset.imageId; // Lấy id của ảnh từ thuộc tính data-image-id
+        let storageKey = `likeCount_${imageId}`; // Key duy nhất cho mỗi ảnh
+
+        // Lấy số lượt thích từ local storage, nếu không có thì mặc định là 0
+        let initialLikes = parseInt(localStorage.getItem(storageKey)) || 0;
+
+        // Cập nhật số lượt thích ban đầu khi load trang
+        likeCount.textContent = initialLikes;
+
+        button.addEventListener('click', () => {
+            let currentLikes = parseInt(likeCount.textContent);
+            likeCount.textContent = currentLikes + 1;
+
+            // Lưu số lượt thích vào local storage
+            localStorage.setItem(storageKey, likeCount.textContent);
+        });
+    });
+});
+
+//Model
+
+document.querySelectorAll('.anhslide').forEach(img => {
+    img.addEventListener('click', function() {
+        openModal(this.src);
+    });
+});
+
+function openModal(src) {
+    document.getElementById('modal').style.display = "block";
+    document.getElementById('modal-img').src = src;
+}
+
+function closeModal() {
+    document.getElementById('modal').style.display = "none";
+}
+
+
 
