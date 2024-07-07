@@ -363,7 +363,7 @@ footer {
 }
 
 .item img {
-    width: 300px;
+    width: 400px;
     height: auto;
     border-radius: 5px;
 }
@@ -404,34 +404,33 @@ footer {
 .news-item {
     display: flex;
     margin-bottom: 20px;
+    align-items: flex-start;
 }
 
 .news-item img {
-    width: 320px;
-    height: 120px;
+    width: 160px;
+    height: auto;
     margin-right: 10px;
 }
 
-.news-info {
+.news-text {
     display: flex;
     flex-direction: column;
 }
 
-.news-category {
-    font-size: 12px;
-    color: #555;
+.news-item .news-date {
+    font-size: 14px; /* Điều chỉnh kích thước ngày tháng */
+    color: #888; /* Màu sắc ngày tháng */
+    margin: 3px 0 0 0; /* Khoảng cách giữa tiêu đề và ngày tháng, giảm giá trị margin-top */
 }
 
-.news-date {
-    font-size: 10px;
-    color: #999;
-}
-
-.news-title {
-    font-size: 14px;
+.news-item .news-title {
+    font-size: 16px;
     font-weight: bold;
     color: #000;
     text-decoration: none;
+    text-align: left;
+    margin: 0;
 }
 
 .news-item.spacer {
@@ -448,12 +447,6 @@ footer {
 }
 
 
-
-
-
-
-
-
 /* Popup Form Styles */
 .popup-form {
     display: none; /* Mặc định ẩn popup */
@@ -465,6 +458,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.5); /* Màu nền với độ trong suốt */
     z-index: 1000; /* Đảm bảo popup hiển thị trên cùng */
     overflow: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .popup-content {
@@ -473,7 +468,7 @@ footer {
     padding: 20px;
     border: 1px solid #888;
     width: 80%; /* Chiều rộng của popup */
-    max-width: 600px; /* Giới hạn chiều rộng tối đa */
+    max-width: 450px; /* Giới hạn chiều rộng tối đa */
     position: relative;
     top: 50%; /* Canh giữa theo chiều dọc */
     transform: translateY(-50%); /* Dịch chuyển popup lên trên 50% chiều cao của nó */
@@ -518,7 +513,7 @@ label {
     color: white;
 }
 
-input, select {
+input, select, textarea {
     margin-top: 5px;
     padding: 10px;
     border: 1px solid black;
@@ -528,11 +523,21 @@ input, select {
     font-size: 14px;
 }
 
+textarea {
+    height: 100px; /* Tăng chiều cao của textarea */
+}
+input::placeholder,
+textarea::placeholder {
+    font-family: Arial, sans-serif; /* Đặt font cho placeholder */
+    font-size: 14px; /* Đặt kích thước chữ cho placeholder */
+    color: #888; /* Đặt màu chữ cho placeholder */
+}
+
 button[type="submit"] {
     margin-top: 20px;
     padding: 10px 20px;
-    background-color: #004080;
-    color: white;
+    background-color: #fff;
+    color:#000;
     font-weight: bold;
     border: 1px solid black;
     border-radius: 5px;
@@ -576,7 +581,7 @@ button[type="submit"]:hover {
 }
 
 
-
+/*định dạng 3 ảnh có số liệu*/
 .container2 {
     display: flex;
     align-items: center;
