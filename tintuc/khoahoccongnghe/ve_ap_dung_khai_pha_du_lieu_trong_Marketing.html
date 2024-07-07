@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="Tin học ứng dụng Khoa CNTT HAU Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội, Công nghệ thông tin, Công nghệ đa phương tiện">
-    <meta name="description" content="Tin học ứng dụng Khoa CNTT HAU Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội">
+    <meta name="keyword" content="Khoa học công nghệ Khoa CNTT HAU Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội, Công nghệ thông tin, Công nghệ đa phương tiện">
+    <meta name="description" content="Khoa học công nghệ Khoa CNTT HAU Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội">
     <meta name="Author" content="Nhóm 3">
     <meta name="copyright" content="Nhóm 3">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../../img/logo.ico" type="image/x-icon">
-    <title>Phần mềm GPU RENDER trong diễn họa kiến trúc - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
+    <title>Áp dụng khai phá dữ liệu trong Marketing - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
     <link rel="stylesheet" type="text/css" href="../../css/thongbao/stylecnttdonghanhcds.css">  
     <link rel="stylesheet" type="text/css" href="../../css/tintuc/style scroll_to_top.css">
     <script src="../../js/thongbao/mainveviecthisinhviengioi.js"></script>  
@@ -239,7 +239,7 @@
     <div class="display">
         <div class="display-container">
             <p><a href="../../index.html"><img src="../../img/nuttrangchu.png" class="iconchatbox"></a> > <a href="../../tintuc/tintuc.html">TIN TỨC</a> >
-                <a href="../../tintuc/tinhocungdung.html">TIN HỌC ỨNG DỤNG</a> > <a href="../../tintuc/tinhocungdung/ve_phan_mem_gpu_render.html">Phần mềm GPU RENDER trong diễn họa kiến trúc</a>               
+                <a href="../../tintuc/khoahoccongnghe.html">KHOA HỌC CÔNG NGHỆ</a> > <a href="../../tintuc/khoahoccongnghe/ve_ap_dung_khai_pha_du_lieu_trong_Marketing.html">Áp dụng khai phá dữ liệu trong Marketing</a>               
             </p>
         </div>
     </div>
@@ -266,69 +266,60 @@
                 </div>
                 <div class="sidebar-item">
                     <ul>
-                        <li><a href="../../tintuc/tinhocungdung.html" class="selected">Tin học ứng dụng</a></li>  
+                        <li><a href="../../tintuc/tinhocungdung.html">Tin học ứng dụng</a></li>  
                     </ul>
                 </div>
                 <div class="sidebar-item">
                     <ul>
-                        <li><a href="../../tintuc/khoahoccongnghe.html">Khoa học công nghệ</a></li>  
+                        <li><a href="../../tintuc/khoahoccongnghe.html" class="selected">Khoa học công nghệ</a></li>  
                     </ul>
                 </div>
             </div>
         </div>
         
         <div class="content">
-            <h2>Phần mềm GPU RENDER trong diễn họa kiến trúc</h2>
+            <h2>Áp dụng khai phá dữ liệu trong Marketing</h2>
             <div class="article-meta">
-                <i class="fa fa-clock"></i> <span class="date">13/04/2021</span>
-                <i class="fa fa-eye"></i> <span class="views">905</span>
+                <i class="fa fa-clock"></i> <span class="date">30/04/2022</span>
+                <i class="fa fa-eye"></i> <span class="views">1175</span>
             </div>
             <hr>
-            <p><em>Trong lĩnh vực diễn họa kiến trúc, các phần mềm Render (Kết xuất hình ảnh) sử dụng CPU để tính toán như Vray đã rất phổ biến trong thời điểm hiện tại. Tuy nhiên, sử dụng tài nguyên CPU để tính toán bắt đầu bộc lộ một số nhược điểm như thời gian Render, khả năng Preview,… Gần đây, một phương thức Render mới, sử dụng tài nguyên GPU (Graphic Processing Unit – Card đồ họa) để Render bắt đầu được phát triển. Phương thức này có thể khắc phục được các nhược điểm của Render CPU. Trong bài viết này, những thông tin cơ bản của GPU Render, kèm theo đó là một số phần mềm cơ bản sẽ được giới thiệu. </em></p>
-            <p><b>CPU Render và GPU Render</b></p>
-            <p>Trong Render 3D kiến trúc, thì 2 yếu tố quan trọng nhất là chất lượng hình ảnh (video) và tốc độ Render. Hiện nay, giữa các phần mềm Render nói chung, thì chất lượng hình ảnh (video) hầu như không có sự chênh lệch. Chỉ có những chuyên gia, hoặc sử dụng cho những yêu cầu đặc biệt, thì yêu cầu về chất lượng hình ảnh cao mới được đề cập tới. Do vậy, yếu tố tốc độ Render trở thanh 1 yếu tố quan trọng, đặc biệt là đối với những dự án lớn.</p>
-            <p>Vậy, CPU Render và GPU Render có điểm gì khác nhau? Ngay từ tên gọi, CPU Render sử dụng hoàn toàn khả năng tính toán của CPU để tính toán và hiển thị các điểm ảnh, trong khi đó GPU Render lại sử dụng khả năng của GPU. Do vậy, sự khác nhau của 2 công nghệ này nằm ở bản chất của CPU và GPU.</p>
-            <p>Đối với CPU, mặc dù thời gian gần đây có sự tiến bộ trong công nghệ bán dẫn, tuy nhiên 1 CPU thường không có nhiều nhân xử lí (Dòng Xeon của Intel hay Threadripper của AMD cũng chỉ có tối đa 64 nhân – 128 luồng xử lí). Bù lại, tốc độ xử lí của các nhân riêng lẻ là rất cao (lên đến 5.3 Ghz đối với vi xử lí mới nhất của Intel – Core i9 11900k). CPU được thiết kế cho các tác vụ yêu cầu độ trễ thấp, và được tối ưu hóa cho các tác vụ đơn lẻ. Ngược lại, đối với GPU, chúng được thiết kế cho các nhiệm vụ chạy song song, chẳng hạn như việc tính toán màu sắc cho các pixel để hiển thị trên màn hình. 1 GPU tuy có tốc độ xử lí trên mỗi nhân đơn lẻ là thấp hơn so với CPU (khoảng 1.73Ghz cho GPU mới nhất của Nvidia – RTX 3090), tuy nhiên số nhân tính toán của nó lại rất lớn, lên đến hang nghìn, do vậy, GPU lại có thể xử lí được nhiều công việc đơn giản cùng 1 lúc . Và Render 3D lại là công việc không yêu cầu tốc độ xử lí cao trên mỗi nhân, do vậy, về bản chất, nó hợp với GPU hơn là CPU. Có thể tưởng tượng CPU như 1 chiếc xe ô tô thể thao, có khả năng tang tốc và đạt tốc độ rất cao, tuy nhiên khả năng chuyên chở hành lí lại kém hơn, còn GPU như 1 chiếc xe container, tuy không có tốc độ cao nhưng lại có khả năng mang nhiều hang hóa (thông tin).</p>
-            <p><b><em>CPU Render</em></b></p>
-            <p><em>Ưu điểm</em></p>
-            <ul>
-                <li>Có sự quen thuộc với người dung (do có lịch sử lâu hơn)</li>
-                <li>Số lượng phần mềm nhiều hơn</li>
-                <li>Ổn định hơn</li>
-            </ul>
-            <p><em>Nhược điểm</em></p>
-            <ul>
-                <li>Tốc độ Render chậm</li>
-                <li>Rất khó để nâng cấp CPU (sẽ phải thay Mainboard)</li>
-                <li>Chiếm dụng tài nguyên máy tính, không thể đa nhiệm khi đang Render</li>
-            </ul>
-            <p><b><em>GPU Render</em></b></p>
-            <p><em>Ưu điểm</em></p>
-            <ul>
-                <li>Tốc độ Render rất nhanh (Từ 5-15 lần CPU Render)</li>
-                <li>Có khả năng kết hợp nhiều GPU trên 1 bộ máy tính để tăng tốc Render</li>
-                <li>Khả năng Render Real time (vừa chỉnh sửa Model vừa Render)</li>
-            </ul>
-            <p><em>Nhược điểm</em></p>
-            <ul>
-                <li>Phụ thuộc vào driver</li>
-                <li>Có thể xảy ra tình trạng nghẽn cổ chai giữa CPU và GPU</li>
-            </ul>
-            <img src="../../img/gpurender2.png" class="anhminhhoa">
-            <figcaption>Hình trên so sánh chất lượng hình ảnh, thời gian Render giữa CPU Render và GPU Render <em>(Nguồn: minhancomputer.com)</em></figcaption>
-            <p>Có thể thấy rằng, chất lượng hình ảnh giữa 2 công nghệ là không quá khác biệt, trong khi đó, thời gian Render của GPU chỉ bằng 1/5 so với CPU</p>
-            <p><b>MỘT SỐ PHẦN MỀM GPU RENDER</b></p>
-            <p><b>Vray RT (Real Time)</b></p>
-            <p>Nhắc đến Vray, thì người ta thường nghĩ đến CPU Render, tuy nhiên, đối với Vray RT, thì sức mạnh tính toán của GPU đã được sử dụng. Về chất lượng hình ảnh Render, thì Vray đã quá quen thuộc với người dung, và đã được đảm bảo qua lịch sử lâu đời.</p>
-            <p><b>Arnold Render</b></p>
-            <img src="../../img/gpurender1.jpg" class="anhminhhoa">
-            <p><b>Vray RT (Real Time)</b></p>
-            <p>Nhắc đến Vray, thì người ta thường nghĩ đến CPU Render, tuy nhiên, đối với Vray RT, thì sức mạnh tính toán của GPU đã được sử dụng. Về chất lượng hình ảnh Render, thì Vray đã quá quen thuộc với người dung, và đã được đảm bảo qua lịch sử lâu đời.</p>
-            <img src="../../img/gpurender2.png" class="anhminhhoa">
-            <p><b>Arnold Render</b></p>
-            <p>Năm 2018, Autodesk đã phát hành bản 3DsMax 2018 với việc thay thế plugin Mental Ray bằngArnold 5. Với việc đầu tư nhiều công nghệ mới, Arnold đang hứa hẹn trở thanh 1 công cụ Render hang đầu trong thời gian tương lai. </p>
-            <img src="../../img/gpurender3.jpg" class="anhminhhoa">
-            
+            <p style="font-size: 20px;"><b>Khai phá dữ liệu trong marketing là gì?</b></p>
+            <p><b> Khai phá dữ liệu</b>(Data Mining) là một kỹ thuật phân tích marketing, là quá trình được các công ty sử dụng để biến dữ liệu thô thành thông tin hữu ích. Bằng cách sử dụng phần mềm để tìm kiếm các mẫu trong bộ dữ liệu lớn, doanh nghiệp có thể tìm hiểu thêm về khách hàng của mình. Từ đó phát triển các chiến lược marketing hiệu quả hơn, tăng doanh số và giảm chi phí. Khai phá dữ liệu phụ thuộc vào việc thu thập dữ liệu, lưu kho cơ sở dữ liệu và xử lý máy tính hiệu quả.</p>
+            <p>Khai phá dữ liệu là một công nghệ mới, mạnh mẽ, có tiềm năng lớn. Nó giúp các công ty tập trung vào thông tin quan trọng nhất trong dữ liệu họ đã thu thập về hành vi của khách hàng và khách hàng tiềm năng của họ. Nó phát hiện ra thông tin trong dữ liệu mà các truy vấn và báo cáo không thể tiết lộ một cách hiệu quả.</p>
+            <p style="font-size: 20px;"><b>Quy trình khai phá dữ liệu trong Marketing</b></p>
+            <p style="font-size: 18px;"><b>1. Làm sạch dữ liệu</b></p>
+            <p>Làm sạch dữ liệu là bước đầu tiên để phân tích dữ liệu. Dữ liệu trong thế giới thực thường không đầy đủ, nhiều sạn và không nhất quán. Dữ liệu có sẵn từ các nguồn thứ cấp có thể thiếu các giá trị thuộc tính, dữ liệu quan tâm, … Ví dụ: bạn muốn dữ liệu nhân khẩu học của khách hàng. Nếu dữ liệu khả dụng không bao gồm các thuộc tính cho giới tính hoặc độ tuổi của khách hàng thì sao? Do đó, dữ liệu là không đầy đủ. Đôi khi dữ liệu có thể chứa lỗi hoặc ngoại lệ. Một ví dụ như thuộc tính tuổi lại có giá trị 200. Rõ ràng giá trị tuổi là sai trong trường hợp này. Dữ liệu cũng có thể không nhất quán. Ví dụ, tên của một nhân viên có thể được lưu trữ khác nhau trong các bảng dữ liệu hoặc tài liệu khác nhau. Nếu dữ liệu không sạch, kết quả khai phá dữ liệu sẽ không đáng tin cậy cũng như không chính xác.</p>
+            <p>Làm sạch dữ liệu bao gồm một số kỹ thuật như điền vào các giá trị còn thiếu bằng tay, kết hợp kiểm tra máy tính và con người,…Đầu ra của quy trình làm sạch dữ liệu là dữ liệu được làm sạch đầy đủ.</p>
+            <p style="font-size: 18px;"><b>2. Tích hợp dữ liệu</b></p>
+            <p>Tích hợp dữ liệu là quá trình dữ liệu từ các nguồn dữ liệu khác nhau được tích hợp thành một. Dữ liệu nằm ở các định dạng khác nhau ở các vị trí khác nhau. Dữ liệu có thể được lưu trữ trong cơ sở dữ liệu, tệp văn bản, bảng tính, tài liệu, khối dữ liệu, Internet, v.v. Tích hợp dữ liệu là một nhiệm vụ thực sự phức tạp và khó khắn. Vì dữ liệu từ các nguồn khác nhau sẽ không khớp với nhau. Giả sử một bảng A chứa một thực thể có tên customer_id trong đó một bảng B khác chứa một thực thể có tên là số. Thực sự rất khó để đảm bảo rằng cả hai thực thể này có cùng giá trị hay không. Big data có thể được sử dụng hiệu quả để giảm lỗi trong quá trình tích hợp dữ liệu.</p>
+            <p>Một vấn đề khác phải đối mặt là dư thừa dữ liệu. Cùng một dữ liệu có thể có sẵn trong các bảng khác nhau trong cùng một cơ sở dữ liệu. Hoặchậm chí trong các nguồn dữ liệu khác nhau.</p>
+            <p style="font-size: 18px;"><b>3. Lựa chọn dữ liệu</b></p>
+            <p>Quá trình khai phá dữ liệu đòi hỏi khối lượng lớn dữ liệu lịch sử để phân tích. Vì vậy, thông thường kho lưu trữ dữ liệu với dữ liệu tích hợp chứa nhiều dữ liệu hơn thực tế yêu cầu. Từ dữ liệu có sẵn, dữ liệu quan tâm cần phải được chọn và lưu trữ.</p>
+            <p>Lựa chọn dữ liệu là quá trình mà dữ liệu liên quan đến phân tích được lấy từ cơ sở dữ liệu.</p>
+            <p style="font-size: 18px;"><b>4. Chuyển đổi dữ liệu</b></p>
+            <p>Chuyển đổi dữ liệu là quá trình biến đổi và hợp nhất dữ liệu thành các dạng phù hợp để khai phá. Chuyển đổi dữ liệu thường bao gồm chuẩn hóa, tổng hợp, tổng quát hóa, …</p>
+            <p>Ví dụ: một bộ dữ liệu có sẵn là “-5, 37, 100, 89, 78” có thể được chuyển đổi thành “-0,05, 0,37, 1,00, 0,89, 0,78”. Ở đây dữ liệu trở nên phù hợp hơn cho khai phá dữ liệu. Sau khi tích hợp dữ liệu, dữ liệu có sẵn đã sẵn sàng để khai phá dữ liệu.</p>
+            <p style="font-size: 18px;"><b>5. Khai phá dữ liệu</b></p>
+            <p>Khai phá dữ liệu là quá trình cốt lõi. Một số phương pháp phức tạp và thông minh được áp dụng để trích xuất các mẫu từ dữ liệu. Quá trình khai phá dữ liệu bao gồm một số nhiệm vụ như liên kết, phân loại, dự đoán, phân cụm, phân tích chuỗi thời gian, …</p>
+            <p style="font-size: 18px;"><b>6. Đánh giá mẫu</b></p>
+            <p>Đánh giá mẫu xác định các mẫu thực sự thú vị đại diện cho kiến ​​thức dựa trên các loại biện pháp thú vị khác nhau. Một mô hình được coi là thú vị nếu nó có khả năng hữu ích, dễ hiểu bởi con người, xác nhận một số giả thuyết rằng ai đó muốn xác nhận hoặc hợp lệ trên dữ liệu mới với một mức độ chắc chắn.</p>
+            <p>Xem thêm: <a href="https://dtmconsulting.vn/cac-phuong-phap-chon-mau-trong-nghien-cuu-thi-truong-ma-ban-can-phai-biet/" target="_blank" class="linkthamkhao">Các phương pháp chọn mẫu trong nghiên cứu thị trường</a></p>
+            <p style="font-size: 18px;"><b>7. Báo cáo trực quan</b></p>
+            <p>Thông tin khai phá từ dữ liệu cần phải được trình bày cho người dùng theo cách hấp dẫn. Các kỹ thuật biểu diễn và trực quan hóa kiến ​​thức khác nhau được áp dụng để cung cấp đầu ra của việc khai phá dữ liệu cho người dùng. Các sơ đồ, bảng biểu là cần thiết để ban lãnh đạo các doanh nghiệp có thể nắm được trực quan kết quả của khai phá dữ liệu. Qua đó xem xét các đề xuất, đưa ra các chiến lược phù hợp.</p>
+            <p style="font-size: 20px;"><b>Các công cụ hỗ trợ khai phá dữ liệu</b></p>
+            <p>Dưới đây là một số công cụ khai phá dữ liệu phổ biến được sử dụng rộng rãi tại các doanh nghiệp ở Việt Nam:</p>
+            <p><b><em>SPSS Modeler của IBM</em></b></p>
+            <p>IBM SPSS là bộ phần mềm do IBM sở hữu , được sử dụng để khai thác dữ liệu & phân tích văn bản để xây dựng các mô hình dự đoán.</p>
+            <p>SPSS Modeler có giao diện trực quan cho phép người dùng làm việc với các thuật toán khai thác dữ liệu mà không cần lập trình. Nó loại bỏ sự phức tạp không cần thiết phải đối mặt trong quá trình biến đổi dữ liệu và để dễ sử dụng các mô hình dự đoán.</p>
+            <p><b><em>Ngôn ngữ R</em></b></p>
+            <p>Ngôn ngữ R là một công cụ nguồn mở cho tính toán và đồ họa thống kê. R có nhiều loại thống kê, kiểm tra thống kê cổ điển, phân tích chuỗi thời gian, phân loại và kỹ thuật đồ họa. Nó cung cấp cơ sở lưu trữ và lưu trữ dữ liệu hiệu quả. Xem bài viết về phân tích dữ liệu bằng ngôn ngữ R.</p>
+            <p><b><em>Ngôn ngữ Python</em></b></p>
+            <p>Có sẵn như là một ngôn ngữ nguồn mở và miễn phí, Python thường được so sánh với R để dễ sử dụng. Không giống như R, đường cong học tập của Python có xu hướng ngắn đến mức nó trở nên dễ sử dụng. Nhiều người dùng thấy rằng họ có thể bắt đầu xây dựng bộ dữ liệu và thực hiện phân tích mối quan hệ cực kỳ phức tạp trong vài phút. Các trường hợp trực quan hóa dữ liệu trường hợp sử dụng kinh doanh phổ biến. Miễn là bạn cảm thấy thoải mái với các khái niệm lập trình cơ bản như biến, kiểu dữ liệu, hàm, điều kiện và vòng lặp.</p>
+            <p><b><em>Weka của Đại học Waikato, New Zealand</em></b></p>
+            <p>Chương trình được viết bằng Java. Nó chứa một tập hợp các công cụ và thuật toán trực quan để phân tích dữ liệu và mô hình dự đoán kết hợp với giao diện người dùng đồ họa. Weka hỗ trợ một số tác vụ khai thác dữ liệu tiêu chuẩn. Cụ thể hơn là xử lý trước dữ liệu, phân cụm, phân loại, hồi quy, trực quan hóa và lựa chọn tính năng.</p>
+
+
             <div class="comment-sectionkh">
                 <div class="comment-headerkh">
                     <span id="comment-countkh">0 bình luận</span>
