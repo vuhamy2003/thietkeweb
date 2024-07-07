@@ -72,6 +72,7 @@ figcaption{
 
 /*Lectures list*/
 
+/* Grid container settings */
 .lecturers {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 columns layout */
@@ -79,6 +80,7 @@ figcaption{
     padding: 20px 0;
 }
 
+/* Lecture item settings */
 .lecturer {
     text-align: center;
     border: 1px solid #ddd;
@@ -93,9 +95,11 @@ figcaption{
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-/* Center the last lecturer in the grid */
-.lecturers .lecturer:last-child {
-    grid-column: 2 / 3;
+/* Center the first lecturer in the grid */
+.lecturer:first-child {
+    grid-column: 1 / 4; /* Sử dụng 3 cột của grid */
+    justify-self: center; /* Căn giữa theo chiều ngang */
+    align-self: center; /* Căn giữa theo chiều dọc */
 }
 
 .lecturer img:hover {

@@ -13,6 +13,8 @@
     <link rel="stylesheet" type="text/css" href="../css/nckh/nckhstyle.css">  
     <link rel="stylesheet" type="text/css" href="../css/albumanh.css">  
     <script src="../js/gioithieu/gioithieu.js"></script>  
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
 <body>
     <header class="header" id="main-header">
@@ -52,14 +54,17 @@
 
 
     <nav class="tieude">
-        <a href="../index.html"  id="selected">TRANG CHỦ</a>
+        <a href="../index.html" >TRANG CHỦ</a>
          
         <div class="dropdown">
-            <a href="../gioithieu/gioithieu.html">GIỚI THIỆU</a>
+            <a href="../gioithieu/gioithieu.html" id="selected">GIỚI THIỆU</a>
             <div class="dropdown-content">
                 <a href="../gioithieu/gioithieukhoacntthau.html">GIỚI THIỆU KHOA CNTT HAU</a>
                 <a href="../gioithieu/tamnhin_nhiemvu.html">TẦM NHÌN - NHIỆM VỤ</a>
                 <a href="../gioithieu/doingugiangvien.html">ĐỘI NGŨ GIẢNG VIÊN</a>
+                <a href="../gioithieu/albumanh.html">THƯ VIỆN ẢNH</a>
+                <a href="../gioithieu/thuvienclip.html">THƯ VIỆN CLIP</a>
+                <a href="../gioithieu/doanthanhnien.html">ĐOÀN THANH NIÊN</a>
             </div>
         </div>
 
@@ -91,9 +96,9 @@
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
                     <div class="sub-dropdown-content">
                         <a href="../sinhvien/thongbao.html">THÔNG BÁO</a>
-                        <a href="../sinhvien/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
-                        <a href="../sinhvien/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
-                        <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tuyendung.html">TUYỂN DỤNG</a>
                     </div>
                 </div>
                 <a href="../sinhvien/cuusinhvien.html">CỰU SINH VIÊN</a>
@@ -161,14 +166,17 @@
 
 
     <nav class="tieude">
-        <a href="../index.html"  id="selected">TRANG CHỦ</a>
+        <a href="../index.html" >TRANG CHỦ</a>
          
         <div class="dropdown">
-            <a href="../gioithieu/gioithieu.html">GIỚI THIỆU</a>
+            <a href="../gioithieu/gioithieu.html" id="selected">GIỚI THIỆU</a>
             <div class="dropdown-content">
                 <a href="../gioithieu/gioithieukhoacntthau.html">GIỚI THIỆU KHOA CNTT HAU</a>
                 <a href="../gioithieu/tamnhin_nhiemvu.html">TẦM NHÌN - NHIỆM VỤ</a>
                 <a href="../gioithieu/doingugiangvien.html">ĐỘI NGŨ GIẢNG VIÊN</a>
+                <a href="../gioithieu/albumanh.html">THƯ VIỆN ẢNH</a>
+                <a href="../gioithieu/thuvienclip.html">THƯ VIỆN CLIP</a>
+                <a href="../gioithieu/doanthanhnien.html">ĐOÀN THANH NIÊN</a>
             </div>
         </div>
 
@@ -200,9 +208,9 @@
                     <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
                     <div class="sub-dropdown-content">
                         <a href="../sinhvien/thongbao.html">THÔNG BÁO</a>
-                        <a href="../sinhvien/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
-                        <a href="../sinhvien/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
-                        <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
+                        <a href="../sinhvien/sinhvienchuanbitotnghiep/tuyendung.html">TUYỂN DỤNG</a>
                     </div>
                 </div>
                 <a href="../sinhvien/cuusinhvien.html">CỰU SINH VIÊN</a>
@@ -229,6 +237,7 @@
                 <a href="http://www.thuviendhkt.net/" target="_blank">THƯ VIỆN SỐ HAU</a>
             </div>
         </div>
+
     </nav>
     </header>
 
@@ -238,10 +247,17 @@
             <button class="explore-button" onclick="scrollToContent()"><b>Khám phá</b></button>
         </div>
     </div>
+
+    <div class="display" id="content" >
+        <div class="display-container">
+            <p><a href="../index.html"><img src="../img/nuttrangchu.png" class="iconchatbox"></a> > <a href="gioithieu.html">GIỚI THIỆU</a>
+                > <a href="albumanh.html">THƯ VIỆN ẢNH</a>
+            </p>
+        </div>
+    </div>
+    <hr class="dongke">
     
-    <hr id="content">
-    <h2>ẢNH NỔI BẬT</h2>
-    <hr>
+    <h2 class="anhnoibat">ẢNH NỔI BẬT</h2>
 
     <div class="container1">
         <div class="slideshow-container">
@@ -267,81 +283,134 @@
         </div>
     </div>
 
-    <div class="container2" id="container2">
-        <div class="description">
-            <h2>Chào mừng đến với Thư viện ảnh Khoa Công nghệ thông tin</h2>
-            <p>Thư viện ảnh Khoa Công nghệ thông tin tự hào là kho tàng lưu trữ hình ảnh phong phú, chuyên sâu về lĩnh vực CNTT, phục vụ cho nhu cầu học tập, nghiên cứu và sáng tạo của cán bộ, giảng viên, sinh viên và cộng đồng yêu thích CNTT.</p>
-        </div>
-        <div class="image">
-            <img src="../img/thuvienanh/slideshow (760 x 300 px).png" alt="Ảnh của bạn">
-        </div>
-    </div>
+    <hr>
+    <h2>BỘ SƯU TẬP</h2>
 
-    <!-- <div class="collection">
-        <div class="item"><img src="../img/thuvienanh/slideshow.png" alt="Image 1"></div>
-        <div class="item"><img src="../img/thuvienanh/slideshow.png" alt="Image 2"></div>
-        <div class="item"><img src="../img/thuvienanh/slideshow.png" alt="Image 3"></div>
-    </div> -->
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js"></script>
 
     <div class="collection" id="masonry-grid">
         <div class="item">
-            <img src="../img/thuvienanh/1.jpg" alt="Image 1">
-            <div class="overlay1">
-                <div class="tenanh">Title for Image 1</div>
-                <button class="save-button">Save</button>
-            </div>
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0dVYxNKdCH6mUcqe4H5PTkAWZXdmJCW3EDHo7L6AaMiDDS6G6KpuNrhJ62DK6yhfcl" target="_blank"><img id="image-to-save" src="../img/thuvienanh/1.jpg" alt="Image 1" data-url="../img/thuvienanh/1.jpg"></a>
+            <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0dVYxNKdCH6mUcqe4H5PTkAWZXdmJCW3EDHo7L6AaMiDDS6G6KpuNrhJ62DK6yhfcl" target="_blank">Hội thảo Chuyển đổi số trong giáo dục và đào tạo phục vụ ngành Công nghệ thông tin, Kinh tế, Quy hoạch, Xây dựng.</a></div>
+            <button class="save-button">Lưu ảnh</button>
+            <button class="like-button" data-image-id="1"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
         </div>
+
         <div class="item">
-            <img src="../img/thuvienanh/2.jpg" alt="Image 2">
+            <a href="https://www.facebook.com/LCKcongnghethongtinHAU/posts/pfbid0UKv7SVwD8sQUsdLJRRnTe8GeD9n4NDLyAXG35d2z63U8FBw6nQzVanSgV1thxkfAl" target="_blank"><img src="../img/thuvienanh/2.jpg" alt="Image 2"></a>
+
             <div class="overlay1">
-                <div class="tenanh">Title for Image 2 siêu dàiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
-                <button class="save-button">Save</button>
-            </div>
-        </div>
-        <div class="item">
-            <img src="../img/thuvienanh/3.jpg" alt="Image 1">
-            <div class="overlay1">
-                <div class="tenanh">Title for Image 1</div>
-                <button class="save-button">Save</button>
-            </div>
-        </div>
-        <div class="item">
-            <img src="../img/thuvienanh/1.jpg" alt="Image 2">
-            <div class="overlay1">
-                <div class="tenanh">Title for Image 2 siêu dàiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
-                <button class="save-button">Save</button>
-            </div>
-        </div>
-        <div class="item">
-            <img src="../img/thuvienanh/2.jpg" alt="Image 2">
-            <div class="overlay1">
-                <div class="tenanh">Title for Image 2 siêu dàiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
-                <button class="save-button">Save</button>
+                <div class="tenanh"><a href="https://www.facebook.com/LCKcongnghethongtinHAU/posts/pfbid0UKv7SVwD8sQUsdLJRRnTe8GeD9n4NDLyAXG35d2z63U8FBw6nQzVanSgV1thxkfAl" target="_blank">FC LCK CÔNG NGHỆ THÔNG TIN LỌT VÀO VÒNG CHUNG KẾT GIẢI BÓNG ĐÁ 7VS7 TRONG TUẦN LỄ SINH VIÊN 5 TỐT 2024 </a></div>
+                <button class="save-button" data-image-id="2">Lưu ảnh</button>
+                <button class="like-button"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
             </div>
         </div>
 
         <div class="item">
-            <img src="../img/thuvienanh/3.jpg" alt="Image 2">
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0g2z5igsqjhRhP7CQL78QCMNHV77rArRJDNzAubquoDJ9G9USPP5kKTptNvbfzH3el" target="_blank"><img src="../img/thuvienanh/3.jpg" alt="Image 1"></a>
+            
             <div class="overlay1">
-                <div class="tenanh">Title for Image 2 siêu dàiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</div>
-                <button class="save-button">Save</button>
+                <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0g2z5igsqjhRhP7CQL78QCMNHV77rArRJDNzAubquoDJ9G9USPP5kKTptNvbfzH3el" target="_blank">Ngày hội tư vấn tuyển sinh </a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="3"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+            </div>
+        </div>
+        
+        <div class="item">
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid02ra1pUdMpNeHZKc43WCCooJdYAGfo39WGEsY5mNZqVFfkAQZb5cbYziMEbz4GvTZyl" target="_blank"><img src="../img/thuvienanh/4.jpg" alt="Image 1"></a>
+            
+            <div class="overlay1">
+                <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid02ra1pUdMpNeHZKc43WCCooJdYAGfo39WGEsY5mNZqVFfkAQZb5cbYziMEbz4GvTZyl" target="_blank">Chào xuân </a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="4"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+            </div>
+        </div>
+        
+        <div class="item">
+            <a href="https://facebook.com/LCKcongnghethongtinHAU/posts/pfbid02E4Rwtu3oHgFvr7TmxxRcjA2zNp15Qp4fM3RxhqVCBYae5PmQi4YHhVCYFSS716vNl" target="_blank"><img src="../img/thuvienanh/5.jpg" alt="Image 1"></a>
+            
+            <div class="overlay1">
+                <div class="tenanh"><a href="https://facebook.com/LCKcongnghethongtinHAU/posts/pfbid02E4Rwtu3oHgFvr7TmxxRcjA2zNp15Qp4fM3RxhqVCBYae5PmQi4YHhVCYFSS716vNl" target="_blank">Bảo vệ đồ án K19</a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="5"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
             </div>
         </div>
 
         <div class="item">
-            <img src="../img/thuvienanh/1.jpg" alt="Image 1">
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0Ra9CPzkvvwDpN5CMP7bh1Wrh9yRW6izAdK6tHFL9raZhFB2cmswxRGeedhXGawiXl" target="_blank"><img src="../img/thuvienanh/6.jpg" alt="Image 1"></a>
+            
             <div class="overlay1">
-                <div class="tenanh">Title for Image 1</div>
-                <button class="save-button">Save</button>
+                <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0Ra9CPzkvvwDpN5CMP7bh1Wrh9yRW6izAdK6tHFL9raZhFB2cmswxRGeedhXGawiXl" target="_blank">Chào tân khóa 2023</a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="6"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
             </div>
         </div>
-        <!-- Thêm các div .item và ảnh cần hiển thị -->
+
+        <div class="item">
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid028Fqz6GxQ45vRd1bcXEp7c7YxnWqYt3RECVvRWkiE7N4USWAMobunyR7tvZgzSMFpl" target="_blank"><img src="../img/thuvienanh/7.jpg" alt="Image 1"></a>
+            
+            <div class="overlay1">
+                <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid028Fqz6GxQ45vRd1bcXEp7c7YxnWqYt3RECVvRWkiE7N4USWAMobunyR7tvZgzSMFpl" target="_blank">Lễ trao bằng tốt nghiệp cho khóa 2018</a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="7"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="item">
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid022Gmv6xmXrYb4p2QxGPF6pnpNXise8smEN13e2qrATvTyaUSbuNpi2fiMHP6hEdV9l" target="_blank"><img src="../img/thuvienanh/8.jpg" alt="Image 1"></a>
+            
+            <div class="overlay1">
+                <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid022Gmv6xmXrYb4p2QxGPF6pnpNXise8smEN13e2qrATvTyaUSbuNpi2fiMHP6hEdV9l" target="_blank"></a>Gặp mặt & khen ngợi các thành tích đã đạt được của đoàn sinh viên của khoa trong đoàn dự thi Olympic Toán học sinh viên toàn quốc năm 2023 và đoàn dự thi MOS.</a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="8"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="item">
+            <a href="https://www.facebook.com/LCKcongnghethongtinHAU/posts/pfbid02p1aVPALe4bgSFzqR2amABHpm6hMvV7WTxLuQeEed7RWiDWkWr6SSsZKx9VyjsC3l" target="_blank"><img src="../img/thuvienanh/9.jpg" alt="Image 1"></a> 
+            <div class="overlay1">
+                <div class="tenanh"><a href="https://www.facebook.com/LCKcongnghethongtinHAU/posts/pfbid02p1aVPALe4bgSFzqR2amABHpm6hMvV7WTxLuQeEed7RWiDWkWr6SSsZKx9VyjsC3l" target="_blank">Lễ khai mạc giải bóng đá IT - LEAGUE 2023</a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="9"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="item">
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid032uuWDt7quVhQoKkzmKJEJtDhU69yAxuaTs6jXhU3agRM5vfFwqL1qmtXHjKBQbUwl" target="_blank"><img src="../img/thuvienanh/10.jpg" alt="Image 1"></a>
+            
+            <div class="overlay1">
+                <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid032uuWDt7quVhQoKkzmKJEJtDhU69yAxuaTs6jXhU3agRM5vfFwqL1qmtXHjKBQbUwl" target="_blank">LỄ BẢO VỆ ĐỒ ÁN TỐT NGHIỆP CỦA SINH VIÊN K18 </a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="10"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="item">
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0Mch58C4SRf3JNYxgYWXizxpvg8phwmGJBVXnhGfuWwLsnPpUESyNH5UwbsEMEGJal" target="_blank"><img src="../img/thuvienanh/11.jpg" alt="Image 1"></a>
+            
+            <div class="overlay1">
+                <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0Mch58C4SRf3JNYxgYWXizxpvg8phwmGJBVXnhGfuWwLsnPpUESyNH5UwbsEMEGJal" target="_blank">Chào xuân Qúy Mão</a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="11"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+            </div>
+        </div>
+
+        <div class="item">
+            <a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0ZVhUg4KfMMNNnTcX4JAnFwUp1m7wdssLGPMYiuWAEZAwDJwACGpaRbbJnPDsxn6cl" target="_blank"><img src="../img/thuvienanh/12.jpg" alt="Image 1"></a>
+            
+            <div class="overlay1">
+                <div class="tenanh"><a href="https://www.facebook.com/cntt.dhkt/posts/pfbid0ZVhUg4KfMMNNnTcX4JAnFwUp1m7wdssLGPMYiuWAEZAwDJwACGpaRbbJnPDsxn6cl" target="_blank">CHÀO TÂN SINH VIÊN KHOA CÔNG NGHỆ THÔNG TIN 2022</a></div>
+                <button class="save-button">Lưu ảnh</button>
+                <button class="like-button" data-image-id="12"><i class="fas fa-heart"></i> <span class="like-count">0</span></button>
+            </div>
+        </div>
     </div>
-    
 
     <button id="scroll-to-top" title="Go to top">↑</button>
+
+    <div id="modal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modal-img">
+    </div>
 
     <script src="../js/album.js"></script> 
 
