@@ -561,6 +561,7 @@ hr.dongke {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Tối đa 1 cột là 200px, tối đa 1 hàng 1fr */
     grid-gap: 10px;
+    /*grid-auto-rows: auto; */ /* Chiều cao tự động điều chỉnh theo nội dung */
 }
 
 .item {
