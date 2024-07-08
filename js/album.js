@@ -47,35 +47,6 @@ document.addEventListener('DOMContentLoaded', () => {
     autoSlide();
 });
 
-
-
-// Function to handle saving the image
-
-function saveImage(imageUrl) {
-    // Create an anchor element
-    const link = document.createElement('a');
-    link.href = imageUrl; // Set the href attribute to the image URL
-    link.download = 'image.jpg'; // Set the download attribute with a default file name
-    document.body.appendChild(link); // Append the anchor element to the body
-
-    // Trigger a click event on the anchor element to start download
-    link.click();
-
-    // Clean up: remove the anchor element from the body
-    document.body.removeChild(link);
-}
-
-// Add event listener to all save buttons
-const saveButtons = document.querySelectorAll('.save-button');
-saveButtons.forEach(button => {
-    button.addEventListener('click', function() {
-        // Find the image URL from the button's parent item
-        const imageUrl = this.closest('.item').querySelector('img').src;
-        // Call saveImage function with the image URL
-        saveImage(imageUrl);
-    });
-});
-
 //Nút like
 
 document.addEventListener('DOMContentLoaded', (event) => {
@@ -118,4 +89,17 @@ function closeModal() {
     document.getElementById('modal').style.display = "none";
 }
 
+//Chia sẻ
+document.querySelectorAll('.save-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const postLink = this.closest('.item').querySelector('.post-link').href;
+        const facebookUrl = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(postLink)}`;
 
+        const popupWidth = 600;
+        const popupHeight = 400;
+        const popupLeft = (window.screen.width / 2) - (popupWidth / 2);
+        const popupTop = (window.screen.height / 2) - (popupHeight / 2);
+
+        window.open(facebookUrl, 'Share', `width=${popupWidth},height=${popupHeight},left=${popupLeft},top=${popupTop}`);
+    });
+});
