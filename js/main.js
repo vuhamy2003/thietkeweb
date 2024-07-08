@@ -137,7 +137,13 @@ function submitForm(event) {
     }
 });
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    const video = document.querySelector('.videoclip');
+    if (video) {
+        video.loop = true;
+        video.play();
+    }
+});
 
 
 

@@ -619,6 +619,11 @@ img {
     font-weight: bold;
 }
 
+.videoclip {
+    width: 400px;
+    height: auto;
+    border-radius: 5px;
+}
 
 
 
