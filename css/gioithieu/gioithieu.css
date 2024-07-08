@@ -38,38 +38,38 @@
     margin-bottom: 20px;
 }
 
-.video {
-    flex: 1; /* Video chiếm 1/3 */
-    margin-right: 10px; /* Khoảng cách giữa video và chứng nhận */
-}
-
+.video,
 .chungnhan {
-    flex: 1; /* Chứng nhận chiếm 1/3 */
-    margin-left: 10px;
+    flex: 1;
+    margin-right: 10px;
+    display: flex;
+    flex-direction: column;
 }
 
+.video iframe,
 .anhchungnhan {
-    width: 100%; /* Đảm bảo hình ảnh chứng nhận chiếm đủ 1/3 phần bên phải */
+    width: 100%;
     height: auto;
-    cursor: pointer; /* Thêm con trỏ khi hover vào ảnh */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
-}
-
-.anhchungnhan:hover {
-    transform: scale(1.05); /* Phóng to ảnh khi hover */
-    opacity: 0.8; /* Thay đổi độ mờ khi hover */
+    cursor: pointer;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .video iframe {
-    width: 100%;
-    height: 286.54px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Thêm hiệu ứng chuyển tiếp */
+    height: 100%; /* Đặt chiều cao của iframe là 100% để lấp đầy phần bên trong .video */
+    aspect-ratio: 16/9; /* Đảm bảo tỷ lệ khung hình 16:9 cho video */
+    object-fit: cover; /* Chỉnh sửa để video bao phủ toàn bộ khu vực hiển thị */
 }
 
 .video iframe:hover {
-    transform: scale(1.02); /* Phóng to video khi hover */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Thêm bóng đổ khi hover */
+    transform: scale(1.02);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.anhchungnhan:hover {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
 
 figcaption{
     font-size: 14px;
