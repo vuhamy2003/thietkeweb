@@ -20,7 +20,8 @@
     margin-top: 0;
     text-transform: uppercase; /*in hoa*/
     color: #004080;
-    font-size: 28px;
+    font-size: 24px;
+    margin-bottom: 0;
 }
 
 .article p {
@@ -34,11 +35,12 @@
 }
 
 .anhtuyendung {
-    width: 840px; /* Độ rộng mong muốn */
+    width: 100%; /* Độ rộng mong muốn */
     height: auto; /* Chiều cao tự điều chỉnh theo tỷ lệ */
     display: block; /* Để ảnh hiển thị dạng block */
     margin-left: auto; /* Căn lề trái tự động */
     margin-right: auto; /* Căn lề phải tự động */
+
 }
 
 /*Mục comment*/
@@ -242,7 +244,7 @@
         right: auto;
     }
 }
-.noidungbaidang h2 {
+.noidungbaidang Xem {
     text-transform: none;
     font-size: 18px;
     margin:0;
