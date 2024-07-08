@@ -25,13 +25,13 @@ function showSlides(n) {
     slides[slideIndex].classList.add('active');
     dots[slideIndex].classList.add('active');
 
-    timeout = setTimeout(showSlides, 3000); // Change image every 3 seconds
+    timeout = setTimeout(showSlides, 4000); // Change image every 3 seconds
 }
 
 function currentSlide(n) {
     clearTimeout(timeout); // Clear the current timeout to prevent auto sliding
     showSlides(n);
-    timeout = setTimeout(showSlides, 3000); // Restart the timeout for auto sliding
+    timeout = setTimeout(showSlides, 4000); // Restart the timeout for auto sliding
 }
 
 // Initialize the slideshow

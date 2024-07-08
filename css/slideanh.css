@@ -9,7 +9,8 @@
 }
 
 .slide {
-    min-width: 100%;
+    position: relative;
+    max-width: 100%;
     box-sizing: border-box;
     display: none; /* Hide all slides by default */
 }
@@ -20,6 +21,22 @@
 
 .slideanh {
     width: 100%;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.87), rgba(0, 0, 0, 0));
+    color: white;
+    padding: 35px 0;
+    text-align: center;
+}
+
+.text h2{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
 }
 
 .dots {
@@ -33,7 +50,7 @@
     height: 15px;
     width: 15px;
     margin: 0 2px;
-    background-color: #bbbbbb80;
+    background-color: #bbbbbb98;
     border-radius: 50%;
     display: inline-block;
     transition: background-color 0.6s ease;
@@ -42,4 +59,9 @@
 
 .dot.active {
     background-color: #ffffff;
+}
+
+.container5{
+    margin: 0;
+    padding: 0;
 }
