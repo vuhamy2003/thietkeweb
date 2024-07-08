@@ -179,6 +179,12 @@
     z-index: 1;
 }
 
+.noidungbaidang h2 {
+    text-transform: none;
+    text-align: justify;
+    font-size: 20px;
+}
+
 .time.right::after {
     left: -12.5px;
 }
