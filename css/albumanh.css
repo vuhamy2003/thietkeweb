@@ -506,13 +506,20 @@ hr.dongke {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    background-color: #025ca1;
+    background-color: #025ca183;
     color: white;
     border: none;
     padding: 15px 15px;
     cursor: pointer;
     border-radius: 5px;
     z-index: 999;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.prev:hover, .next:hover {
+    transform: translateY(-50%);
+    background-color: #025ca1;
+    color: white;
 }
 
 .prev {
@@ -617,8 +624,8 @@ h2{
 .save-button {
     bottom: 10px;
     left: 10px;
-    background: #025ba1;
-    color: white;
+    background: #b3d7ff;
+    color: #025ca1;
     border: none;
     padding: 5px 10px;
     border-radius: 10px;
@@ -628,7 +635,7 @@ h2{
 .like-button {
     bottom: 10px;
     right: 10px;
-    background: #025ba1;
+    background: #e60a0a;
     color: white;
     border: none;
     padding: 5px 10px;
