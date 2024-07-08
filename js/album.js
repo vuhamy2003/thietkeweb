@@ -103,7 +103,7 @@ document.addEventListener('DOMContentLoaded', (event) => {
 //Model
 
 
-document.querySelectorAll('.anhchungnhan').forEach(img => {
+document.querySelectorAll('.anhslide').forEach(img => {
     img.addEventListener('click', function() {
         openModal(this.src);
     });
