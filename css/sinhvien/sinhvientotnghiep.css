@@ -1,6 +1,7 @@
-.xemchitiet {
-    font-size: 13px;
+.article .xemchitiet p{
+    font-size: 8px;
     font-style: italic;
+    margin-top: 5px;
 }
 
 .bold-list {
