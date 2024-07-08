@@ -133,7 +133,10 @@ function submitForm(event) {
 
     if (wrapperHeight > containerHeight) {
         var scrollDuration = wrapperHeight / 50;
+        // Tính toán thời gian cuộn dựa trên chiều cao của .news-wrapper, chia cho 50 để có tốc độ cuộn phù hợp
         $('.news-wrapper').css('animation', 'scrollNews ' + scrollDuration + 's linear infinite');
+        // Thiết lập thuộc tính CSS 'animation' cho .news-wrapper
+        // Gán animation tên là 'scrollNews' với thời gian cuộn là scrollDuration giây, kiểu cuộn là 'linear' (tuyến tính), và lặp vô hạn (infinite)
     }
 });
 
@@ -145,6 +148,34 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 });
 
+var data = [
+    { "title": "Thông tin về công nghệ thông tin", "url": "congnghe.html" },
+    { "title": "Khoa học dữ liệu và ứng dụng", "url": "khoahocdulieu.html" },
+    { "title": "Phát triển phần mềm hiện đại", "url": "phattrienphanmem.html" },
+    { "title": "Tìm hiểu về mạng máy tính", "url": "mangmaytinh.html" }
+];
 
+function search() {
+    var query = document.getElementById('searchInput').value.toLowerCase();
+    var resultsContainer = document.getElementById('searchResults');
+    resultsContainer.innerHTML = ''; // Xóa kết quả cũ
+
+    // Tìm kiếm trong dữ liệu
+    var results = data.filter(item => item.title.toLowerCase().includes(query));
+
+    if (results.length > 0) {
+        results.forEach(function(result) {
+            var resultItem = document.createElement('div');
+            resultItem.className = 'result-item';
+            var resultLink = document.createElement('a');
+            resultLink.href = result.url;
+            resultLink.textContent = result.title;
+            resultItem.appendChild(resultLink);
+            resultsContainer.appendChild(resultItem);
+        });
+    } else {
+        resultsContainer.textContent = 'Không tìm thấy kết quả nào.';
+    }
+}
 
 
