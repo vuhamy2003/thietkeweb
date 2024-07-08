@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
 document.addEventListener("DOMContentLoaded", function() {
     const articles = document.querySelectorAll(".article");
     const articlesPerPage = 4; // Số bài viết hiển thị mỗi trang
-    let currentPage = 1; // Trang hiện tại
+    let currentPage = history.state && history.state.page ? history.state.page : 1; // Trang hiện tại
 
     // Hiển thị số trang và tính toán số lượng trang
     function displayPagination() {
@@ -150,6 +150,7 @@ document.addEventListener("DOMContentLoaded", function() {
     document.querySelector(".prev-btn").addEventListener("click", function() {
         if (currentPage > 1) {
             currentPage--;
+            history.replaceState({ page: currentPage }, '', window.location.href);
             displayPagination();
         }
     });
@@ -161,8 +162,15 @@ document.addEventListener("DOMContentLoaded", function() {
 
         if (currentPage < totalPages) {
             currentPage++;
+            history.replaceState({ page: currentPage }, '', window.location.href);
             displayPagination();
         }
     });
-});
 
+    // Thêm sự kiện khi bấm vào bài viết
+    articles.forEach(article => {
+        article.addEventListener("click", function() {
+            history.pushState({ page: currentPage }, '', window.location.href);
+        });
+    });
+});
