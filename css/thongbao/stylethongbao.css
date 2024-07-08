@@ -523,3 +523,19 @@ hr.dongke {
     margin-left: 10px; /* Khoảng cách với nút trước đó */
 }
 
+/*Xem chi tiết*/
+.article .xemchitiet a {
+    font-size: 16px;
+    font-style: italic;
+    font-family: Arial, sans-serif;
+    color: black;
+    text-decoration: none;
+}
+
+.article .xemchitiet a:link,
+.article .xemchitiet a:visited,
+.article .xemchitiet a:hover,
+.article .xemchitiet a:active {
+    color: black; /* Đảm bảo màu sắc liên kết không thay đổi */
+    text-decoration: none; /* Loại bỏ gạch chân */
+}
