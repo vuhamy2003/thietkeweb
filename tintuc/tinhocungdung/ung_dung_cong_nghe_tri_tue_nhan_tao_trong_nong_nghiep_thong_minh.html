@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keyword" content="Khoa học công nghệ Khoa CNTT HAU Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội, Công nghệ thông tin, Công nghệ đa phương tiện">
-    <meta name="description" content="Khoa học công nghệ Khoa CNTT HAU Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội">
+    <meta name="keyword" content="Tin học ứng dụng Khoa CNTT HAU Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội, Công nghệ thông tin, Công nghệ đa phương tiện">
+    <meta name="description" content="Tin học ứng dụng Khoa CNTT HAU Website Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội">
     <meta name="Author" content="Nhóm 3">
     <meta name="copyright" content="Nhóm 3">
     <meta name="ROBOTS" content="INDEX, FOLLOW">
     <link rel="shortcut icon" href="../../img/logo.ico" type="image/x-icon">
-    <title>Top 6 xu hướng mới trong lĩnh vực khoa học máy tính - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
+    <title>Ứng dụng công nghệ trí tuệ nhân tạo trong nông nghiệp thông minh - Khoa Công Nghệ Thông Tin - Đại Học Kiến Trúc Hà Nội</title>
     <link rel="stylesheet" type="text/css" href="../../css/thongbao/stylecnttdonghanhcds.css">  
     <link rel="stylesheet" type="text/css" href="../../css/tintuc/style scroll_to_top.css">
     <script src="../../js/thongbao/mainveviecthisinhviengioi.js"></script>  
@@ -19,6 +19,118 @@
 </head>
 <body>
     <header class="header" id="main-header">
+        <div id="search-bar-container" class="search-bar-container">
+            <input type="text" id="search-bar" class="search-bar" placeholder="Nhập từ khóa tìm kiếm...">
+            <button onclick="search()" class="search-button">Tìm kiếm</button>
+        </div>
+        <div class="container">
+            <div class="logo">
+                <img src="../../img/logo.png" alt="Logo" class="ảnh">
+                <div class="title">
+                    <span class="line1">KHOA CÔNG NGHỆ THÔNG TIN</span><br>
+                    <span class="line2">ĐẠI HỌC KIẾN TRÚC HÀ NỘI</span>
+                </div>
+            </div>          
+            
+            <nav class="navbar">
+                <div class="hotline">
+                    <a href="#" id="hotline-link" onclick="showHotline()"><img src="../../img/Hotline.png" alt="Hotline" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="hotline-number" style="display: none;" onclick="showHotline()">024.3854.2391</span>
+                </div>
+                <div class="email">
+                    <a href="#" id="email-link" onclick="showEmail()"><img src="../../img/Email.png" alt="Email" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                    <span id="email-text" style="display: none;" onclick="showEmail()">khoacntt@hau.edu.vn</span>
+                </div>
+                <div class="facebook">
+                    <a href="https://www.facebook.com/cntt.dhkt" target="_blank"><img src="../../img/Facebook.png" alt="Facebook" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="youtube">
+                    <a href="https://www.youtube.com/channel/UC1LQLaQng8hdIqcUhWKFbnw" target="_blank"><img src="../../img/YouTube.png" alt="YouTube" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+                <div class="search">
+                    <a href="#" id="search-link" onclick="showSearchBar()"><img src="../../img/Search.png" alt="Search" onmouseover="hoverEffect(this)" onmouseout="normalEffect(this)"></a>
+                </div>
+            </nav>
+        </div>
+
+
+    <nav class="tieude">
+        <a href="../../index.html" >TRANG CHỦ</a>
+         
+        <div class="dropdown">
+            <a href="../../gioithieu/gioithieu.html">GIỚI THIỆU</a>
+            <div class="dropdown-content">
+                <a href="../../gioithieu/gioithieukhoacntthau.html">GIỚI THIỆU KHOA CNTT HAU</a>
+                <a href="../../gioithieu/tamnhin_nhiemvu.html">TẦM NHÌN - NHIỆM VỤ</a>
+                <a href="../../gioithieu/doingugiangvien.html">ĐỘI NGŨ GIẢNG VIÊN</a>
+                <a href="../../gioithieu/albumanh.html">THƯ VIỆN ẢNH</a>
+                <a href="../../gioithieu/thuvienclip.html">THƯ VIỆN CLIP</a>
+                <a href="../../gioithieu/doanthanhnien.html">ĐOÀN THANH NIÊN</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../../tintuc/tintuc.html" id="selected">TIN TỨC</a>
+            <div class="dropdown-content">
+                <a href="../../tintuc/thongbao.html">THÔNG BÁO</a>
+                <a href="../../tintuc/cntt.html">CÔNG NGHỆ THÔNG TIN</a>
+                <a href="../../tintuc/congnghedaphuongtien.html">CÔNG NGHỆ ĐA PHƯƠNG TIỆN</a>
+                <a href="../../tintuc/tinhocungdung.html">TIN HỌC ỨNG DỤNG</a>
+                <a href="../../tintuc/khoahoccongnghe.html">KHOA HỌC CÔNG NGHỆ</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../../daotao/daotao.html">ĐÀO TẠO</a>
+            <div class="dropdown-content">
+                <a href="../../daotao/nam2022.html">NĂM 2022</a>
+                <a href="../../daotao/nam2021.html">NĂM 2021</a>
+                <a href="../../daotao/nam2020.html">NĂM 2020</a>
+                <a href="../../daotao/nam2016.html">NĂM 2016</a>
+            </div>
+        </div>
+
+        <div class="dropdown">
+            <a href="../sinhvien/sinhvien.html">SINH VIÊN</a>
+            <div class="dropdown-content">
+                <div class="sub-dropdown">
+                    <a href="../sinhvien/sinhvien.html">SINH VIÊN CHUẨN BỊ TỐT NGHIỆP</a>
+                    <div class="sub-dropdown-content">
+                        <a href="../sinhvien/thongbao.html">THÔNG BÁO</a>
+                        <a href="../sinhvien/vanbanhuongdan.html">VĂN BẢN HƯỚNG DẪN</a>
+                        <a href="../sinhvien/tailieuthamkhao.html">TÀI LIỆU THAM KHẢO</a>
+                        <a href="../sinhvien/tuyendung.html">TUYỂN DỤNG</a>
+                    </div>
+                </div>
+                <a href="../sinhvien/cuusinhvien.html">CỰU SINH VIÊN</a>
+            </div>
+        </div>
+        
+
+        <div class="dropdown">
+            <a href ="../../nckh/nghiencuukhoahoc.html">NGHIÊN CỨU KHOA HỌC</a>
+            <div class="dropdown-content">
+                <a href="../../nckh/hoatdongnckhsinhvien.html">HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC SINH VIÊN</a>
+                <a href="../../nckh/hoatdongnckhgiangvien.html">HOẠT ĐỘNG NGHIÊN CỨU KHOA HỌC GIẢNG VIÊN</a>
+            </div>
+        </div>
+
+        <a href="../../tuyensinh/tuyensinh.html">TUYỂN SINH</a> 
+        <div class="dropdown">
+            <a href="../thuvienso/thuvienso.html">THƯ VIỆN SỐ</a>
+            <div class="dropdown-content">
+                <a href="../thuvienso/thuvienso.html">GIỚI THIỆU</a>
+                <a href="../thuvienso/congnghe.html">ĐỀ CƯƠNG CNTT</a>
+                <a href="../thuvienso/cndaphuongtien.html">ĐỀ CƯƠNG CNĐPT</a>
+                <a href="../thuvienso/giaotrinh.html">GIÁO TRÌNH</a>
+                <a href="http://www.thuviendhkt.net/" target="_blank">THƯ VIỆN SỐ HAU</a>
+            </div>
+        </div>
+
+    </nav>
+    </header>
+
+    <header class="header sticky-header" id="sticky-header">
         <div id="search-bar-container" class="search-bar-container">
             <input type="text" id="search-bar" class="search-bar" placeholder="Nhập từ khóa tìm kiếm...">
             <button onclick="search()" class="search-button">Tìm kiếm</button>
@@ -246,7 +358,7 @@
     <div class="display">
         <div class="display-container">
             <p><a href="../../index.html"><img src="../../img/nuttrangchu.png" class="iconchatbox"></a> > <a href="../../tintuc/tintuc.html">TIN TỨC</a> >
-                <a href="../../tintuc/khoahoccongnghe.html">KHOA HỌC CÔNG NGHỆ</a> > <a href="../../tintuc/khoahoccongnghe/ve_top_6_xu_huong_trong_khoa_hoc_may_tinh.html">Top 6 xu hướng mới trong lĩnh vực khoa học máy tính</a>               
+                <a href="../../tintuc/tinhocungdung.html">TIN HỌC ỨNG DỤNG</a> > <a href="../../tintuc/tinhocungdung/ung_dung_cong_nghe_tri_tue_nhan_tao_trong_nong_nghiep_thong_minh.html">Ứng dụng công nghệ trí tuệ nhân tạo trong nông nghiệp thông minh</a>               
             </p>
         </div>
     </div>
@@ -273,41 +385,56 @@
                 </div>
                 <div class="sidebar-item">
                     <ul>
-                        <li><a href="../../tintuc/tinhocungdung.html">Tin học ứng dụng</a></li>  
+                        <li><a href="../../tintuc/tinhocungdung.html" class="selected">Tin học ứng dụng</a></li>  
                     </ul>
                 </div>
                 <div class="sidebar-item">
                     <ul>
-                        <li><a href="../../tintuc/khoahoccongnghe.html" class="selected">Khoa học công nghệ</a></li>  
+                        <li><a href="../../tintuc/khoahoccongnghe.html">Khoa học công nghệ</a></li>  
                     </ul>
                 </div>
             </div>
         </div>
         
         <div class="content">
-            <h2>Top 6 xu hướng mới trong lĩnh vực khoa học máy tính</h2>
+            <h2>Ứng dụng công nghệ trí tuệ nhân tạo trong nông nghiệp thông minh</h2>
             <div class="article-meta">
-                <i class="fa fa-clock"></i> <span class="date">30/03/2024</span>
-                <i class="fa fa-eye"></i> <span class="views">1064</span>
+                <i class="fa fa-clock"></i> <span class="date">14/05/2024</span>
+                <i class="fa fa-eye"></i> <span class="views">115</span>
             </div>
             <hr>
-            <p style="font-size: 20px;"><b>1. Trí tuệ nhân tạo (AI) và ngành công nghiệp robot</b></p>
-            <p>Với dự đoán ngành công nghiệp robot toàn cầu trị giá 80 tỷ USD vào năm 2024, một phần lớn của sự tăng trưởng này là nhờ vào sự quan tâm và đầu tư vào mảng trí tuệ nhân tạo (AI) – một trong những lĩnh vực gây tranh cãi và hấp dẫn nhất trong nghiên cứu khoa học máy tính. Công nghệ này vẫn đang ở giai đoạn đầu, nhưng những gã khổng lồ công nghệ như Facebook, Google và IBM đã và đang đầu tư tiền bạc và tài nguyên khổng lồ vào nghiên cứu AI. Do đó, cơ hội đột phá và phạm vi phát triển cho các ứng dụng công nghệ trong thế giới thực là vô cùng lớn.</p>
-            <p style="font-size: 20px;"><b>2. Phân tích dữ liệu lớn (Big Data)</b></p>
-            <p>Trở lại năm 2012, Tạp chí Harvard Business Review đã vinh danh lĩnh vực khoa học dữ liệu là “công việc quyến rũ nhất thế kỷ 21”. Vâng, bạn đã đọc đúng rồi đó. Đã có sự gia tăng nhu cầu đối với các chuyên gia trong lĩnh vực này và tăng gấp đôi nỗ lực từ phía các thương hiệu và doanh nghiệp nhằm nâng cao chính sách phúc lợi và thu hút các tài năng trong lĩnh vực khoa học dữ liệu. Từ dịch vụ ngân hàng đến chăm sóc sức khỏe, phân tích dữ liệu lớn có ở khắp mọi nơi, khi các công ty ngày càng cố gắng sử dụng tốt hơn các bộ dữ liệu khổng lồ mà họ có, để cá nhân hóa và cải thiện chất lượng dịch vụ.</p>
-            <p style="font-size: 20px;"><b>3. Giáo dục hỗ trợ máy tính (Computer-assisted education)</b></p>
-            <p>Việc sử dụng máy tính và phần mềm để hỗ trợ giáo dục – đào tạo, cũng như lĩnh vực hệ thống giáo dục có sự hỗ trợ của máy tính mang lại nhiều lợi ích và có nhiều công dụng. Ví dụ, đối với học sinh khiếm khuyết, nó có thể cung cấp hướng dẫn được cá nhân hóa và cho phép học sinh học theo tốc độ của riêng mình, giúp giáo viên dành nhiều thời gian hơn cho từng học sinh. Lĩnh vực này vẫn đang phát triển và đầy hứa hẹn, cùng với sự ủng hộ từ các chuyên gia giáo dục ca ngợi khả năng cho phép học sinh, sinh viên tham gia học tập tích cực, độc lập và và dựa trên phương pháp play-based learning.</p>
-            <p style="font-size: 20px;"><b>4. Nhà khoa học máy tính và thông tin</b></p>
-            <p>Không chỉ phát minh công nghệ giải quyết các vấn đề phức tạp trong các lĩnh vực như khoa học, y học, kinh doanh,….nhà khoa học máy tính và thông tin còn phát hiện và phát triển những cách sử dụng mới cho công nghệ có sẵn nhằm đạt được mục tiêu tương tự. Một số nhà khoa học còn tạo ra các chương trình điều khiển robot.</p>
-            <p>Để làm tốt vị trí này đòi hỏi thành thạo khả năng viết thuật toán để phát triển và phân tích mẫu trong bộ dữ liệu khổng lồ.</p>
-            <p style="font-size: 20px;"><b>5. Quản lý hệ thống thông tin và máy tính</b></p>
-            <p>Với nhiệm vụ phân tích nhu cầu công nghệ của công ty và giám sát các hệ thống dữ liệu thích hợp nên nhà quản lý hệ thống thông tin và máy tính phải có khả năng đánh giá phần mềm, phần cứng, hệ thống mạng và các tài nguyên công nghệ nhằm mục đích mua hoặc phát triển.</p>
-            <p>Ngoài ra, kỹ năng giao tiếp cũng không thể thiếu nếu muốn làm tốt vị trí này.</p>
-            <p style="font-size: 20px;"><b>6. Quản lý dự án công nghệ thông tin (CNTT)</b></p>
-            <p>Công việc của các nhà quản lý dự án CNTT là điều phối đội ngũ lập trình viên/nhà phát triển, nhà phân tích để hoàn thành dự án. Bên cạnh đó là nhiệm vụ phân tích các vấn đề kỹ thuật cho khách hàng và đề xuất các giải pháp cần thiết để nâng cao năng suất.</p>
-            <p>Để trở thành nhà quản lý dự án CNTT yêu cầu kỹ năng giải quyết vấn đề và am hiểu về công nghệ cũng như hệ thống máy tính. Ngoài ra, khả năng giao tiếp tốt cũng được đề cao để có thể xác định nhu cầu người dùng và chuyển tải thông số kỹ thuật đến nhà phát triển.</p>
-
-
+            <p><b>Ứng dụng trí tuệ nhân tạo (AI) trong nông nghiệp góp phần thúc đẩy nền nông nghiệp một cách nhanh chóng qua việc phân tích, giám sát và dự đoán các tác động môi trường khác nhau liên quan đến năng suất và chất lượng cây trồng. Từ đó, hỗ trợ người nông dân đưa ra và thực hiện các quyết định đúng đắn về thời gian và đối tượng canh tác để giảm thiểu rủi ro, tối đa hóa lợi nhuận canh tác.</b></p>
+            <p style="font-size: 20px;"><b>Sự phát triển của nền nông nghiệp thông minh</b></p>
+            <p>Nông nghiệp không chỉ là ngành nghề tồn tại lâu đời nhất có sự tham gia của con người mà còn là nền tảng của nền văn minh nhân loại. Cùng với đó, nông nghiệp là nguồn cung nguyên liệu thô chính cho hầu hết các ngành công nghiệp sản xuất. Được nhìn nhận là một ngành nghề quan trọng, đầu tư cho thị trường nông nghiệp đang không ngừng tăng. Thị trường nông nghiệp thông minh ước tính trị giá 13,7 tỷ USD vào năm 2020 và dự kiến đạt 22,0 tỷ USD vào năm 2025 với CAGR khoảng 9,8% trong giai đoạn dự báo 2020-2025.</p>
+            <img src="../../img/nongnghiep1.jpeg" class="anhminhhoa">
+            <figcaption>Hình 1: Giá trị thị trường nông nghiệp thông minh toàn cầu</em></figcaption>
+            <p>Các yếu tố như biến đổi khí hậu, gia tăng dân số và mối lo ngại về an ninh lương thực đã thúc đẩy ngành nông nghiệp tìm kiếm các phương pháp cải tiến hơn để bảo vệ và cải thiện năng suất cây trồng. Bên cạnh đó, khi dân số ngày càng đông và đất đai ngày càng bị thu hẹp, ngành nông nghiệp cần có các phương pháp canh tác thông minh sáng tạo hơn để mang lại những hiệu quả cao nhất.</p>
+            <p>Các phương pháp đưa ra cần ưu tiên đạt được mục tiêu sử dụng ít đất hơn nhưng vẫn cần đảm bảo gia tăng năng suất sản xuất của cây trồng cũng như của quỹ đất được sử dụng. Nông nghiệp đang dần ứng dụng các giải pháp công nghệ để cây trồng khỏe mạnh hơn, kiểm soát dịch bệnh tốt hơn hay kiểm soát được tài nguyên đất hiệu quả nhất, cũng như đưa ra các dự báo chính xác hơn về điều kiện môi trường, thời tiết.</p>
+            <p style="font-size: 20px;"><b>Ứng dụng trí tuệ nhân tạo (AI) trong nông nghiệp</b></p>
+            <p>Công nghệ AI kết hợp cùng các thiết bị cảm biến IoT là những công nghệ đang được ứng dụng khá phổ biến trong nhiều ngành nghề, góp phần cho sự phát triển bền vững. Ngành nông nghiệp cũng không đứng ngoài vòng ảnh hưởng này. Theo MarketandMarkets, giá trị của AI trong ngành nông nghiệp được ước tính tăng từ 1 tỷ đô vào năm 2020 đến 4 tỷ đô vào năm 2026 với CAGR đạt 25,5% trong giai đoạn 2020-2026 (3).</p>
+            <p>Bằng cách phân tích các nguồn dữ liệu khác nhau như nhiệt độ, độ ẩm, thời tiết và hiệu suất cây trồng lịch sử, trí tuệ nhân tạo trong lĩnh vực nông nghiệp có thể giúp tự động đưa ra các cảnh báo và dự báo, đưa ra dự đoán tốt hơn về thời tiết cũng như các điều kiện môi trường đất nước tác động trực tiếp đến sự phát triển của cây trồng, vụ mùa, trong quá trình nuôi trồng, sản xuất.</p>
+            <img src="../../img/nongnghiep2.jpeg" class="anhminhhoa">
+            <figcaption>Hình 2: AI trong ngành nông nghiệp</em></figcaption>
+            <p style="font-size: 20px;"><b>Một số ứng dụng AI trong nông nghiệp trên thực tế</b></p>
+            <p>Ứng dụng AI trong nông nghiệp giúp phân tích các dữ liệu trong thời gian thực, góp phần giúp người nông dân phát hiện và kiểm soát sâu bệnh; theo dõi sử dụng nước phù hợp, tình trạng đất và điều kiện trồng trọt; phân tích sức khỏe cây trồng, dự đoán thời gian canh tác và đưa ra các quyết định chính xác.</p>
+            <p style="font-size: 18px;"><b>Ứng dụng AI cho dự báo thời tiết</b></p>
+            <p>Một nhóm nghiên cứu từ NOAA (5) phát hiện ra việc đưa các kỹ thuật sử dụng công nghệ AI kết hợp với nguồn thông tin hiểu biết về môi trường có thể cải thiện đáng kể khả năng dự đoán cho nhiều vấn đề thời tiết có ảnh hưởng cao như giông bão, lốc xoáy, mưa đá, v.v. và các dạng thời tiết cực đoan khắc nhiệt như sương muối, bão côn trùng, v.v.</p>
+            <p>Người nông dân đang sử dụng AI để tạo ra các mô hình dự báo theo mùa để cải thiện độ chính xác trong canh tác nông nghiệp và gia tăng năng suất. Những mô hình này có thể dự đoán các kiểu thời tiết trong vài tháng sắp tới để hỗ trợ các quyết định của nông dân. Dự báo theo mùa có giá trị đặc biệt đối với các trang trại nhỏ ở các nước đang phát triển, vì dữ liệu và kiến thức họ có có thể bị hạn chế. Việc giúp các trang trại nhỏ hoạt động và gia tăng sản lượng bội thu là rất quan trọng bởi các trang trại nhỏ sản xuất cung cấp 70% hoa màu của thế giới (6).</p>
+            <p>Sử dụng các ứng dụng để dự báo thời tiết giúp người nông dân xác định thời điểm tốt nhất để trồng cây, bón phân, phun thuốc, tưới và thu hoạch nông sản. Thông tin thời tiết chính xác cho phép người nông dân tối đa hóa năng suất sản xuất của cánh đồng trang trại.</p>
+            <p style="font-size: 18px;"><b>Ứng dụng theo dõi chất lượng các yếu tố môi trường tác động tới nuôi trồng</b></p>
+            <p>Giải pháp Nextfarm Smart Farm (7) sử dụng các công nghệ, các cảm biến được đặt trực tiếp dưới đất bên trong khu vực trồng trọt để đo đạc theo dõi chất lượng nguồn nước, hệ thống châm phân, các thông số pH, độ ẩm không khí, độ ẩm đất, v.v. giúp giám sát chất lượng môi trường 24/24 và cập nhật kịp thời, gửi cảnh báo sớm tới các thiết bị di động của người quản lý khi có bất kỳ vấn đề nào xảy ra; hay gửi cảnh báo khi có thông số môi trường vượt ngưỡng tiêu chuẩn. Từ đó, giải pháp giúp đưa ra hành động xử lý theo các kịch bản được thiết lập sẵn như tưới nước, căng lưới che nắng, v.v. Bên cạnh đó, giải pháp cũng cung cấp khả năng lưu trữ toàn bộ thông số môi trường.</p>
+            <p>Công nghệ AI sẽ tiếp tục được phát triển và ứng dụng một cách mạnh mẽ để phân tích, giám sát và dự đoán các tác động môi trường khác nhau đến năng suất, chất lượng cây trồng. Cùng với đó, trước ảnh hưởng thực tế từ biến đổi khí hậu, việc dự báo thời tiết chính xác giúp nông dân đưa ra các quyết định đúng đắn về thời gian và đối tượng canh tác để tối đa hóa lợi nhuận canh tác.</p>
+            <p>Sự đầu tư mạnh mẽ vào việc ứng dụng công nghệ trong nông nghiệp đã, đang và sẽ thúc đẩy sự phát triển mạnh mẽ trong ngành này. Đại dịch Covid-19 có thể tạm thời ảnh hưởng đến thị trường nông nghiệp nhưng nó có đầy tiềm năng hứa hẹn tăng trưởng mạnh mẽ hơn trong tương lai dài hạn.</p>
+            <br>
+            <p><b>Nguồn tham khảo</b></p>
+            <p><em>(1) MarketAndMarkets. 2020. Smart Agriculture Market.</em></p>
+            <p><em>(2) Zion Market Research. 2018. Global Smart Agriculture Market.</em></p>
+            <p><em>(3) MarketAndMarkets. 2020. Artificial Intelligence in Agriculture Market by Technology.</em></p>
+            <p><em>(4) Cognilytica. 2019. AI in Agriculture.</em></p>
+            <p><em>(5) Emerj Artificial Intelligence Research. 2019. AI for Weather Forecasting – In Retail, Agriculture, Disaster Prediction, and More.</em></p>
+            <p><em>(6) Forbes. 2019. How AI Is Transforming Agriculture.</em></p>
+            
+            
             <div class="comment-sectionkh">
                 <div class="comment-headerkh">
                     <span id="comment-countkh">0 bình luận</span>
